@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C75" name="Keratan sulfate degradation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S737" name="Asn_X_Ser_Thr[l]"/>
+      <species id="S1249" name="Ser_Thr[l]"/>
+      <species id="S2369" name="Tn_antigen[l]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S383" name="acnam[l]"/>
+      <species id="S1888" name="core6[l]"/>
+      <species id="S1666" name="f1a[l]"/>
+      <species id="S1459" name="fuc_L[e]"/>
+      <species id="S1785" name="fuc_L[l]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S287" name="h[l]"/>
+      <species id="S1507" name="ksi[e]"/>
+      <species id="S1784" name="ksi[l]"/>
+      <species id="S2340" name="ksi_deg10[l]"/>
+      <species id="S1896" name="ksi_deg11[l]"/>
+      <species id="S1897" name="ksi_deg12[l]"/>
+      <species id="S2341" name="ksi_deg13[l]"/>
+      <species id="S1898" name="ksi_deg14[l]"/>
+      <species id="S1899" name="ksi_deg15[l]"/>
+      <species id="S2342" name="ksi_deg16[l]"/>
+      <species id="S1900" name="ksi_deg17[l]"/>
+      <species id="S1901" name="ksi_deg18[l]"/>
+      <species id="S2343" name="ksi_deg19[l]"/>
+      <species id="S1508" name="ksi_deg1[e]"/>
+      <species id="S1786" name="ksi_deg1[l]"/>
+      <species id="S1902" name="ksi_deg20[l]"/>
+      <species id="S1903" name="ksi_deg21[l]"/>
+      <species id="S2344" name="ksi_deg22[l]"/>
+      <species id="S1904" name="ksi_deg23[l]"/>
+      <species id="S1905" name="ksi_deg24[l]"/>
+      <species id="S2345" name="ksi_deg25[l]"/>
+      <species id="S1869" name="ksi_deg26[l]"/>
+      <species id="S1871" name="ksi_deg27[l]"/>
+      <species id="S2346" name="ksi_deg28[l]"/>
+      <species id="S1872" name="ksi_deg29[l]"/>
+      <species id="S1381" name="ksi_deg2[l]"/>
+      <species id="S1873" name="ksi_deg30[l]"/>
+      <species id="S2347" name="ksi_deg31[l]"/>
+      <species id="S1874" name="ksi_deg32[l]"/>
+      <species id="S1875" name="ksi_deg33[l]"/>
+      <species id="S2348" name="ksi_deg34[l]"/>
+      <species id="S1876" name="ksi_deg35[l]"/>
+      <species id="S1877" name="ksi_deg36[l]"/>
+      <species id="S2350" name="ksi_deg37[l]"/>
+      <species id="S1878" name="ksi_deg38[l]"/>
+      <species id="S1879" name="ksi_deg39[l]"/>
+      <species id="S1382" name="ksi_deg3[l]"/>
+      <species id="S1880" name="ksi_deg40[l]"/>
+      <species id="S1881" name="ksi_deg41[l]"/>
+      <species id="S2623" name="ksi_deg4[l]"/>
+      <species id="S1892" name="ksi_deg5[l]"/>
+      <species id="S1893" name="ksi_deg6[l]"/>
+      <species id="S2339" name="ksi_deg7[l]"/>
+      <species id="S1894" name="ksi_deg8[l]"/>
+      <species id="S1895" name="ksi_deg9[l]"/>
+      <species id="S2198" name="ksii_core2[l]"/>
+      <species id="S2624" name="ksii_core2_deg1[l]"/>
+      <species id="S1882" name="ksii_core2_deg2[l]"/>
+      <species id="S1883" name="ksii_core2_deg3[l]"/>
+      <species id="S2351" name="ksii_core2_deg4[l]"/>
+      <species id="S1884" name="ksii_core2_deg5[l]"/>
+      <species id="S1885" name="ksii_core2_deg6[l]"/>
+      <species id="S2352" name="ksii_core2_deg7[l]"/>
+      <species id="S1886" name="ksii_core2_deg8[l]"/>
+      <species id="S1887" name="ksii_core2_deg9[l]"/>
+      <species id="S2200" name="ksii_core4[l]"/>
+      <species id="S2625" name="ksii_core4_deg1[l]"/>
+      <species id="S1890" name="ksii_core4_deg2[l]"/>
+      <species id="S1891" name="ksii_core4_deg3[l]"/>
+      <species id="S2353" name="ksii_core4_deg4[l]"/>
+      <species id="S239" name="m2mn[l]"/>
+      <species id="S686" name="so4[l]"/>
+      <species id="S2370" name="udp[l]"/>
+      <species id="S2371" name="udpacgal[l]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ENGASE3ly" name="endo-beta-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1381"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1382"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCASE2e" name="alpha-fucosidase, extracellular" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1459"/>
+          <speciesReference id="SpeciesReference" species="S1508"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCASE2ly" name="alpha-fucosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1784"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1785"/>
+          <speciesReference id="SpeciesReference" species="S1786"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE10ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1869"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1871"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE11ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1872"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1873"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE12ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1874"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1875"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE13ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1876"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1877"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE14ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1878"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1879"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE15ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1880"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1881"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE16ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1881"/>
+          <speciesReference id="SpeciesReference" species="S1882"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1882"/>
+          <speciesReference id="SpeciesReference" species="S1883"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE17ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1885"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE18ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1886"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1887"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE19ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1666"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1888"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE20ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1888"/>
+          <speciesReference id="SpeciesReference" species="S1890"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1890"/>
+          <speciesReference id="SpeciesReference" species="S1891"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE3ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1891"/>
+          <speciesReference id="SpeciesReference" species="S1892"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1892"/>
+          <speciesReference id="SpeciesReference" species="S1893"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE4ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1894"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1895"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE5ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1896"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1897"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE6ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1898"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1899"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE7ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1900"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1901"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE8ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1902"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1903"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE9ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1904"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1905"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GASNASE3ly" name="glycosylasparaginase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1786"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S737"/>
+          <speciesReference id="SpeciesReference" species="S1381"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX10ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1381"/>
+          <speciesReference id="SpeciesReference" species="S2339"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2339"/>
+          <speciesReference id="SpeciesReference" species="S1894"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX11ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2340"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1896"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX12ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1898"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX13ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2342"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1900"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX14ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2343"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1902"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX15ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2344"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1904"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX16ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1869"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX17ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2346"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1872"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX18ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2347"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1874"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX19ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2348"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1876"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX20ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2350"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1878"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX21ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1879"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1880"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX22ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1881"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S239"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX23ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2351"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX24ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2352"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1886"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX25ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1887"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1666"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX26ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1666"/>
+          <speciesReference id="SpeciesReference" species="S2353"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2353"/>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA10ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+          <speciesReference id="SpeciesReference" species="S1895"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1896"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA11ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1896"/>
+          <speciesReference id="SpeciesReference" species="S1897"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1898"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA12ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1898"/>
+          <speciesReference id="SpeciesReference" species="S1899"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1900"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA13ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1900"/>
+          <speciesReference id="SpeciesReference" species="S1901"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1902"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA14ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1902"/>
+          <speciesReference id="SpeciesReference" species="S1903"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1904"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA15ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1904"/>
+          <speciesReference id="SpeciesReference" species="S1905"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1869"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA16ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1869"/>
+          <speciesReference id="SpeciesReference" species="S1871"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1872"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA17ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1872"/>
+          <speciesReference id="SpeciesReference" species="S1873"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1874"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA18ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1874"/>
+          <speciesReference id="SpeciesReference" species="S1875"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1876"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA19ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1876"/>
+          <speciesReference id="SpeciesReference" species="S1877"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1878"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA20ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1878"/>
+          <speciesReference id="SpeciesReference" species="S1883"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA21ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+          <speciesReference id="SpeciesReference" species="S1885"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1886"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA22ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1886"/>
+          <speciesReference id="SpeciesReference" species="S1891"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEXA9ly" name="beta-N-acetylhexosaminidase A, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1884"/>
+          <speciesReference id="SpeciesReference" species="S1893"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1894"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NAGA2ly" name="N-acetylgalactosaminidase, alpha-" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2369"/>
+          <speciesReference id="SpeciesReference" species="S2370"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1249"/>
+          <speciesReference id="SpeciesReference" species="S2371"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NAGLCAly" name="N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1888"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2369"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE10ly" name="galactose-6-sulfate sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2623"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1892"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE11ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1893"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE12ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1895"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2340"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE13ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1897"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2341"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE14ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1899"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2342"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE15ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1901"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2343"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE16ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1903"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2344"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE17ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1905"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2345"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE18ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1871"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE19ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1873"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2347"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE20ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1875"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2348"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE21ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1877"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2350"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE22ly" name="galactose-6-sulfate sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2624"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1882"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE23ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1883"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2351"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE24ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1885"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2352"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE25ly" name="galactose-6-sulfate sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2625"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S1890"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE26ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1891"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2353"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAASE2ly" name="sialidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1382"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S383"/>
+          <speciesReference id="SpeciesReference" species="S2623"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAASE3ly" name="sialidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S383"/>
+          <speciesReference id="SpeciesReference" species="S2624"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAASE4ly" name="sialidase, lysosomal" reversible="false" compartment="C75">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2200"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S383"/>
+          <speciesReference id="SpeciesReference" species="S2625"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C59" name="Keratan sulfate synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S248" name="h[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S254" name="core2[g]"/>
+      <species id="S1006" name="core4[g]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S2201" name="ksi[g]"/>
+      <species id="S508" name="ksi_pre10[g]"/>
+      <species id="S1844" name="ksi_pre11[g]"/>
+      <species id="S509" name="ksi_pre12[g]"/>
+      <species id="S510" name="ksi_pre13[g]"/>
+      <species id="S1825" name="ksi_pre14[g]"/>
+      <species id="S511" name="ksi_pre15[g]"/>
+      <species id="S512" name="ksi_pre16[g]"/>
+      <species id="S1826" name="ksi_pre17[g]"/>
+      <species id="S477" name="ksi_pre18[g]"/>
+      <species id="S478" name="ksi_pre19[g]"/>
+      <species id="S501" name="ksi_pre1[g]"/>
+      <species id="S1827" name="ksi_pre20[g]"/>
+      <species id="S479" name="ksi_pre21[g]"/>
+      <species id="S480" name="ksi_pre22[g]"/>
+      <species id="S1828" name="ksi_pre23[g]"/>
+      <species id="S481" name="ksi_pre24[g]"/>
+      <species id="S482" name="ksi_pre25[g]"/>
+      <species id="S1829" name="ksi_pre26[g]"/>
+      <species id="S483" name="ksi_pre27[g]"/>
+      <species id="S484" name="ksi_pre28[g]"/>
+      <species id="S1830" name="ksi_pre29[g]"/>
+      <species id="S502" name="ksi_pre2[g]"/>
+      <species id="S485" name="ksi_pre30[g]"/>
+      <species id="S486" name="ksi_pre31[g]"/>
+      <species id="S1831" name="ksi_pre32[g]"/>
+      <species id="S487" name="ksi_pre33[g]"/>
+      <species id="S488" name="ksi_pre34[g]"/>
+      <species id="S1832" name="ksi_pre35[g]"/>
+      <species id="S1833" name="ksi_pre36[g]"/>
+      <species id="S503" name="ksi_pre3[g]"/>
+      <species id="S504" name="ksi_pre4[g]"/>
+      <species id="S1842" name="ksi_pre5[g]"/>
+      <species id="S505" name="ksi_pre6[g]"/>
+      <species id="S506" name="ksi_pre7[g]"/>
+      <species id="S1843" name="ksi_pre8[g]"/>
+      <species id="S507" name="ksi_pre9[g]"/>
+      <species id="S2197" name="ksii_core2[g]"/>
+      <species id="S1841" name="ksii_core2_pre10[g]"/>
+      <species id="S1838" name="ksii_core2_pre1[g]"/>
+      <species id="S495" name="ksii_core2_pre2[g]"/>
+      <species id="S496" name="ksii_core2_pre3[g]"/>
+      <species id="S497" name="ksii_core2_pre4[g]"/>
+      <species id="S498" name="ksii_core2_pre5[g]"/>
+      <species id="S1839" name="ksii_core2_pre6[g]"/>
+      <species id="S499" name="ksii_core2_pre7[g]"/>
+      <species id="S500" name="ksii_core2_pre8[g]"/>
+      <species id="S1840" name="ksii_core2_pre9[g]"/>
+      <species id="S2199" name="ksii_core4[g]"/>
+      <species id="S1837" name="ksii_core4_pre10[g]"/>
+      <species id="S1834" name="ksii_core4_pre1[g]"/>
+      <species id="S489" name="ksii_core4_pre2[g]"/>
+      <species id="S490" name="ksii_core4_pre3[g]"/>
+      <species id="S491" name="ksii_core4_pre4[g]"/>
+      <species id="S492" name="ksii_core4_pre5[g]"/>
+      <species id="S1835" name="ksii_core4_pre6[g]"/>
+      <species id="S493" name="ksii_core4_pre7[g]"/>
+      <species id="S494" name="ksii_core4_pre8[g]"/>
+      <species id="S1836" name="ksii_core4_pre9[g]"/>
+      <species id="S1845" name="l2fn2m2masn[g]"/>
+      <species id="S1866" name="pap[g]"/>
+      <species id="S1865" name="paps[g]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="AG13T10g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S477"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S478"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T11g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S479"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S480"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T12g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S481"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S482"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T13g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S483"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S484"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T14g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S485"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S486"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T15g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S487"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S488"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T16g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S489"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S490"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T17g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S491"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S492"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T18g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S493"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S494"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T1g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S495"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S496"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T2g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S497"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S498"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T3g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S499"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S500"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T4g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S501"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S502"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T5g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S503"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S504"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T6g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S505"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S506"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T7g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S508"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T8g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S509"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S510"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AG13T9g" name="N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S511"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S512"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T10g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1825"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S511"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T11g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1826"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S477"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T12g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1827"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S479"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T13g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1828"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S481"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T14g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1829"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S483"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T15g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1830"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S485"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T16g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1831"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S487"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T17g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1832"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1833"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T18g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1833"/>
+          <speciesReference id="SpeciesReference" species="S1006"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1006"/>
+          <speciesReference id="SpeciesReference" species="S1006"/>
+          <speciesReference id="SpeciesReference" species="S1834"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T19g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S490"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S491"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T20g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1835"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S493"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T21g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1836"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1837"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T2g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S495"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T3g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S496"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S497"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T4g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1839"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S499"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T5g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1840"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1841"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T6g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S502"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S503"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T7g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1842"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S505"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T8g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1843"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S507"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14T9g" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase, Golgi" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1844"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S509"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S23T2g" name="beta-galactoside alpha-2,3-sialyltransferase (core 2)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S254"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S23T3g" name="beta-galactoside alpha-2,3-sialyltransferase (complex N-glycan)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1845"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S501"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S23T4g" name="beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1834"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S489"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T10g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S480"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1828"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T11g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S482"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1829"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T12g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S484"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1830"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T13g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S486"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1831"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T14g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S488"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1832"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T15g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1833"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+          <speciesReference id="SpeciesReference" species="S2201"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T16g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S492"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1835"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T17g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S494"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1836"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T18g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1837"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+          <speciesReference id="SpeciesReference" species="S2199"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T1g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S498"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1839"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T2g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S500"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1840"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T3g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1841"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+          <speciesReference id="SpeciesReference" species="S2197"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T4g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S504"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1842"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T5g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S506"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1843"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T6g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S508"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1844"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T7g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S510"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1825"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T8g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S512"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1826"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6T9g" name="galactose/N-acetylglucosamine 6-O-sulfotransferase, Golgi apparatus" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S478"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1827"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

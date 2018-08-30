@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C50" name="R group synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S692" name="R1coa_hs[c]"/>
+      <species id="S696" name="R2coa_hs[c]"/>
+      <species id="S706" name="R3coa_hs[c]"/>
+      <species id="S710" name="R4coa_hs[c]"/>
+      <species id="S696" name="R2coa_hs[c]"/>
+      <species id="S714" name="R5coa_hs[c]"/>
+      <species id="S696" name="R2coa_hs[c]"/>
+      <species id="S710" name="R4coa_hs[c]"/>
+      <species id="S714" name="R5coa_hs[c]"/>
+      <species id="S714" name="R5coa_hs[c]"/>
+      <species id="S527" name="Rtotal2coa[c]"/>
+      <species id="S689" name="Rtotal3coa[c]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S692" name="R1coa_hs[c]"/>
+      <species id="S696" name="R2coa_hs[c]"/>
+      <species id="S706" name="R3coa_hs[c]"/>
+      <species id="S710" name="R4coa_hs[c]"/>
+      <species id="S714" name="R5coa_hs[c]"/>
+      <species id="S722" name="R6coa_hs[c]"/>
+      <species id="S523" name="Rtotal2[c]"/>
+      <species id="S527" name="Rtotal2coa[c]"/>
+      <species id="S725" name="Rtotal2coa[m]"/>
+      <species id="S690" name="Rtotal3[c]"/>
+      <species id="S689" name="Rtotal3coa[c]"/>
+      <species id="S726" name="Rtotal3coa[m]"/>
+      <species id="S688" name="Rtotal[c]"/>
+      <species id="S687" name="Rtotalcoa[c]"/>
+      <species id="S723" name="Rtotalcoa[m]"/>
+      <species id="S457" name="adrncoa[c]"/>
+      <species id="S665" name="arachcoa[c]"/>
+      <species id="S670" name="arachdcoa[c]"/>
+      <species id="S704" name="c226coa[c]"/>
+      <species id="S702" name="clpndcoa[c]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S703" name="dcsptn1coa[c]"/>
+      <species id="S699" name="dlnlcgcoa[c]"/>
+      <species id="S716" name="eicostetcoa[c]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S693" name="hdcoa[c]"/>
+      <species id="S721" name="hdd2coa[c]"/>
+      <species id="S715" name="hexccoa[c]"/>
+      <species id="S713" name="lgnccoa[c]"/>
+      <species id="S709" name="lneldccoa[c]"/>
+      <species id="S701" name="lnlccoa[c]"/>
+      <species id="S695" name="lnlncacoa[c]"/>
+      <species id="S697" name="lnlncgcoa[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S711" name="nrvnccoa[c]"/>
+      <species id="S712" name="od2coa[c]"/>
+      <species id="S707" name="odecoa[c]"/>
+      <species id="S691" name="pmtcoa[c]"/>
+      <species id="S724" name="pmtcoa[m]"/>
+      <species id="S705" name="stcoa[c]"/>
+      <species id="S698" name="strdnccoa[c]"/>
+      <species id="S694" name="tdcoa[c]"/>
+      <species id="S720" name="tethex3coa[c]"/>
+      <species id="S718" name="tetpent3coa[c]"/>
+      <species id="S717" name="tetpent6coa[c]"/>
+      <species id="S719" name="tettet6coa[c]"/>
+      <species id="S700" name="tmndnccoa[c]"/>
+      <species id="S708" name="vacccoa[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ARTCOAL1" name="R group coenzyme a ligase" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S688"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTCOAL2" name="R group coenzyme a ligase" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S523"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTCOAL3" name="R group coenzyme a ligase" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S689"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S690"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR11" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S692"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR12" name="R group artificial flux (C16:1)" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S693"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S692"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR13" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S694"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S694"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR202" name="R group artificial flux (C18:3, n-3)" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S695"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR203" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S697"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR204" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S698"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S698"/>
+          <speciesReference id="SpeciesReference" species="S698"/>
+          <speciesReference id="SpeciesReference" species="S698"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR205" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S699"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR206" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S670"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S670"/>
+          <speciesReference id="SpeciesReference" species="S670"/>
+          <speciesReference id="SpeciesReference" species="S670"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR207" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S665"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S665"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR208" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S665"/>
+          <speciesReference id="SpeciesReference" species="S665"/>
+          <speciesReference id="SpeciesReference" species="S665"/>
+          <speciesReference id="SpeciesReference" species="S700"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S700"/>
+          <speciesReference id="SpeciesReference" species="S700"/>
+          <speciesReference id="SpeciesReference" species="S700"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR209" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S700"/>
+          <speciesReference id="SpeciesReference" species="S700"/>
+          <speciesReference id="SpeciesReference" species="S700"/>
+          <speciesReference id="SpeciesReference" species="S457"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S457"/>
+          <speciesReference id="SpeciesReference" species="S457"/>
+          <speciesReference id="SpeciesReference" species="S457"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR210" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S701"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR211" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S702"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S702"/>
+          <speciesReference id="SpeciesReference" species="S702"/>
+          <speciesReference id="SpeciesReference" species="S702"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR212" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S702"/>
+          <speciesReference id="SpeciesReference" species="S702"/>
+          <speciesReference id="SpeciesReference" species="S702"/>
+          <speciesReference id="SpeciesReference" species="S703"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S703"/>
+          <speciesReference id="SpeciesReference" species="S703"/>
+          <speciesReference id="SpeciesReference" species="S703"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR213" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S703"/>
+          <speciesReference id="SpeciesReference" species="S703"/>
+          <speciesReference id="SpeciesReference" species="S703"/>
+          <speciesReference id="SpeciesReference" species="S704"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S704"/>
+          <speciesReference id="SpeciesReference" species="S704"/>
+          <speciesReference id="SpeciesReference" species="S704"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR31" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S705"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S705"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR32" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S707"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR33" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S708"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR34" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S709"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S709"/>
+          <speciesReference id="SpeciesReference" species="S709"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR41" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S693"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S710"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR42" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S707"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR43" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S708"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR44" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S709"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S709"/>
+          <speciesReference id="SpeciesReference" species="S709"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR45" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S711"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR46" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S712"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR51" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S713"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S713"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR52" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S715"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S715"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR53" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S715"/>
+          <speciesReference id="SpeciesReference" species="S715"/>
+          <speciesReference id="SpeciesReference" species="S715"/>
+          <speciesReference id="SpeciesReference" species="S716"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S716"/>
+          <speciesReference id="SpeciesReference" species="S716"/>
+          <speciesReference id="SpeciesReference" species="S716"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR54" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S716"/>
+          <speciesReference id="SpeciesReference" species="S716"/>
+          <speciesReference id="SpeciesReference" species="S716"/>
+          <speciesReference id="SpeciesReference" species="S717"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S717"/>
+          <speciesReference id="SpeciesReference" species="S717"/>
+          <speciesReference id="SpeciesReference" species="S717"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR55" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S717"/>
+          <speciesReference id="SpeciesReference" species="S717"/>
+          <speciesReference id="SpeciesReference" species="S717"/>
+          <speciesReference id="SpeciesReference" species="S718"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S718"/>
+          <speciesReference id="SpeciesReference" species="S718"/>
+          <speciesReference id="SpeciesReference" species="S718"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR56" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S718"/>
+          <speciesReference id="SpeciesReference" species="S718"/>
+          <speciesReference id="SpeciesReference" species="S718"/>
+          <speciesReference id="SpeciesReference" species="S719"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S719"/>
+          <speciesReference id="SpeciesReference" species="S719"/>
+          <speciesReference id="SpeciesReference" species="S719"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR57" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S719"/>
+          <speciesReference id="SpeciesReference" species="S719"/>
+          <speciesReference id="SpeciesReference" species="S719"/>
+          <speciesReference id="SpeciesReference" species="S720"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S720"/>
+          <speciesReference id="SpeciesReference" species="S720"/>
+          <speciesReference id="SpeciesReference" species="S720"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTFR61" name="R group artificial flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S721"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S722"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM1" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM1m" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S723"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S724"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM2" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM2m" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S725"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S724"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM3" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S689"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARTPLM3m" name="R group to palmitate conversion" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S726"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S724"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT_2" name="R total flux 2 position" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S696"/>
+          <speciesReference id="SpeciesReference" species="S710"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S710"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT_3" name="R total flux 3 position" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S692"/>
+          <speciesReference id="SpeciesReference" species="S696"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S696"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT1" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S692"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT2" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S696"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT3" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S706"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT4" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S710"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT5" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S714"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RTOT6" name="R total flux" reversible="false" compartment="C50">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S722"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

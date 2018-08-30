@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C10" name="Oxidative phosphorylation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2427" name="o2s[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S1074" name="ficytC[m]"/>
+      <species id="S1073" name="focytC[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1074" name="ficytC[m]"/>
+      <species id="S1073" name="focytC[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S5034" name="dhap[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S1852" name="glyc3p[c]"/>
+      <species id="S2046" name="glyc3p[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S27" name="o2[m]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S1000" name="q10[m]"/>
+      <species id="S1075" name="q10h2[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ATPS4m" name="ATP synthase (four protons for one ATP)" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S73110224"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYOOm2" name="cytochrome c oxidase, mitochondrial Complex IV" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYOR_u10m" name="ubiquinol-6 cytochrome c reductase, Complex III" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADH2_u10m" name="NADH dehydrogenase, mitochondrial" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPA" name="inorganic diphosphatase" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPAm" name="inorganic diphosphatase" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0205" name="sn-Glycerol-3-phosphate:(acceptor) 2-oxidoreductase Glycerophospholipid metabolism EC:1.1.5.3" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S1852"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S602"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYOOm3" name="cytochrome c oxidase, mitochondrial Complex IV" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FADH2ETC" name="Complex II reaction for respiratory chain" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYC3PFADm" name="glycerophosphate shuttle for trasnfer of reducing equivalents" reversible="false" compartment="C10">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S2046"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S5034"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

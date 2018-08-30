@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C161" name="Transport, endoplasmic reticular"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S12" name="11docrtsl[c]"/>
+      <species id="S14" name="11docrtsl[r]"/>
+      <species id="S15" name="11docrtstrn[c]"/>
+      <species id="S17" name="11docrtstrn[r]"/>
+      <species id="S2437" name="13_cis_retn[c]"/>
+      <species id="S2601" name="13_cis_retn[r]"/>
+      <species id="S2597" name="13_cis_retnglc[c]"/>
+      <species id="S1429" name="13_cis_retnglc[e]"/>
+      <species id="S2598" name="13_cis_retnglc[r]"/>
+      <species id="S608" name="5HPET[c]"/>
+      <species id="S5010" name="5HPET[r]"/>
+      <species id="S1686" name="ocdcea[c]"/>
+      <species id="S3081" name="ocdcea[r]"/>
+      <species id="S929" name="pe_hs[c]"/>
+      <species id="S2090" name="pe_hs[r]"/>
+      <species id="S691" name="pmtcoa[c]"/>
+      <species id="S2833" name="pmtcoa[r]"/>
+      <species id="S174" name="4mptnl[c]"/>
+      <species id="S177" name="4mptnl[r]"/>
+      <species id="S191" name="5adtststerone[c]"/>
+      <species id="S193" name="5adtststerone[r]"/>
+      <species id="S186" name="5adtststeroneglc[c]"/>
+      <species id="S188" name="5adtststeroneglc[r]"/>
+      <species id="S222" name="6htststerone[c]"/>
+      <species id="S224" name="6htststerone[r]"/>
+      <species id="S229" name="7dhchsterol[c]"/>
+      <species id="S228" name="7dhchsterol[r]"/>
+      <species id="S737" name="Asn_X_Ser_Thr[l]"/>
+      <species id="S736" name="Asn_X_Ser_Thr[r]"/>
+      <species id="S2915" name="C02528[c]"/>
+      <species id="S2913" name="C02528[r]"/>
+      <species id="S2991" name="HC00004[c]"/>
+      <species id="S3055" name="HC00004[r]"/>
+      <species id="S3044" name="HC00005[c]"/>
+      <species id="S3053" name="HC00005[r]"/>
+      <species id="S3049" name="HC00006[c]"/>
+      <species id="S3057" name="HC00006[r]"/>
+      <species id="S3050" name="HC00007[c]"/>
+      <species id="S3058" name="HC00007[r]"/>
+      <species id="S3051" name="HC00008[c]"/>
+      <species id="S3059" name="HC00008[r]"/>
+      <species id="S3052" name="HC00009[c]"/>
+      <species id="S3054" name="HC00009[r]"/>
+      <species id="S2888" name="HC01231[c]"/>
+      <species id="S2924" name="HC01231[m]"/>
+      <species id="S3118" name="HC02100[r]"/>
+      <species id="S3165" name="HC02198[c]"/>
+      <species id="S3164" name="HC02198[e]"/>
+      <species id="S2866" name="HC10854[c]"/>
+      <species id="S2864" name="HC10854[r]"/>
+      <species id="S2857" name="HC10855[c]"/>
+      <species id="S2856" name="HC10855[r]"/>
+      <species id="S2850" name="HC10859[c]"/>
+      <species id="S2849" name="HC10859[r]"/>
+      <species id="S311" name="acald[c]"/>
+      <species id="S313" name="acald[r]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S328" name="accoa[r]"/>
+      <species id="S345" name="acgam[c]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S3000" name="acgam[r]"/>
+      <species id="S2771" name="acmana[e]"/>
+      <species id="S2815" name="acmana[r]"/>
+      <species id="S416" name="acrn[c]"/>
+      <species id="S1055" name="acrn[r]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S749" name="adp[r]"/>
+      <species id="S542" name="ahandrostanglc[c]"/>
+      <species id="S544" name="ahandrostanglc[r]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S547" name="ahcys[r]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S619" name="amet[r]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S626" name="amp[r]"/>
+      <species id="S636" name="andrstrn[c]"/>
+      <species id="S637" name="andrstrn[r]"/>
+      <species id="S632" name="andrstrnglc[c]"/>
+      <species id="S634" name="andrstrnglc[r]"/>
+      <species id="S604" name="arachd[c]"/>
+      <species id="S3002" name="arachd[l]"/>
+      <species id="S673" name="arachd[r]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S750" name="atp[r]"/>
+      <species id="S825" name="bildglcur[c]"/>
+      <species id="S826" name="bildglcur[r]"/>
+      <species id="S828" name="bilglcur[c]"/>
+      <species id="S829" name="bilglcur[r]"/>
+      <species id="S831" name="bilirub[c]"/>
+      <species id="S833" name="bilirub[r]"/>
+      <species id="S855" name="bz[c]"/>
+      <species id="S856" name="bz[r]"/>
+      <species id="S739" name="cbp[c]"/>
+      <species id="S906" name="cbp[r]"/>
+      <species id="S514" name="cdpchol[c]"/>
+      <species id="S3065" name="cdpchol[r]"/>
+      <species id="S939" name="chol[c]"/>
+      <species id="S949" name="chol[r]"/>
+      <species id="S945" name="cholate[c]"/>
+      <species id="S2884" name="cholate[r]"/>
+      <species id="S2902" name="cholcoa[c]"/>
+      <species id="S2885" name="cholcoa[r]"/>
+      <species id="S950" name="chsterol[c]"/>
+      <species id="S953" name="chsterol[l]"/>
+      <species id="S937" name="chsterol[r]"/>
+      <species id="S516" name="cmp[c]"/>
+      <species id="S2999" name="cmp[r]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S888" name="co2[r]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S996" name="coa[r]"/>
+      <species id="S930" name="crm_hs[c]"/>
+      <species id="S933" name="crm_hs[r]"/>
+      <species id="S459" name="crn[c]"/>
+      <species id="S1054" name="crn[r]"/>
+      <species id="S1031" name="crtsl[c]"/>
+      <species id="S1033" name="crtsl[r]"/>
+      <species id="S1035" name="crtstrn[c]"/>
+      <species id="S1037" name="crtstrn[r]"/>
+      <species id="S927" name="dag_hs[c]"/>
+      <species id="S1123" name="dag_hs[r]"/>
+      <species id="S2916" name="dcholcoa[c]"/>
+      <species id="S2914" name="dcholcoa[r]"/>
+      <species id="S2929" name="dhcholestanate[c]"/>
+      <species id="S2755" name="dhcholestanate[r]"/>
+      <species id="S1196" name="dhea[c]"/>
+      <species id="S1197" name="dhea[r]"/>
+      <species id="S1228" name="dlnlcg[c]"/>
+      <species id="S699" name="dlnlcgcoa[c]"/>
+      <species id="S3131" name="dlnlcgcoa[r]"/>
+      <species id="S1355" name="ebastine[c]"/>
+      <species id="S1356" name="ebastine[r]"/>
+      <species id="S1352" name="ebastineoh[c]"/>
+      <species id="S1353" name="ebastineoh[r]"/>
+      <species id="S1405" name="estradiol[c]"/>
+      <species id="S1406" name="estradiol[r]"/>
+      <species id="S1402" name="estradiolglc[c]"/>
+      <species id="S1403" name="estradiolglc[r]"/>
+      <species id="S1411" name="estriol[c]"/>
+      <species id="S1410" name="estriol[r]"/>
+      <species id="S1407" name="estriolglc[c]"/>
+      <species id="S1409" name="estriolglc[r]"/>
+      <species id="S1418" name="estrone[c]"/>
+      <species id="S1417" name="estrone[r]"/>
+      <species id="S1412" name="estroneglc[c]"/>
+      <species id="S1414" name="estroneglc[r]"/>
+      <species id="S1190" name="fad[c]"/>
+      <species id="S1183" name="fad[r]"/>
+      <species id="S1191" name="fadh2[c]"/>
+      <species id="S1182" name="fadh2[r]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S1763" name="for[r]"/>
+      <species id="S1334" name="frdp[c]"/>
+      <species id="S1768" name="frdp[r]"/>
+      <species id="S1859" name="g6p[c]"/>
+      <species id="S908" name="g6p[r]"/>
+      <species id="S1862" name="gacpail_hs[c]"/>
+      <species id="S1863" name="gacpail_hs[r]"/>
+      <species id="S1981" name="glac[c]"/>
+      <species id="S1985" name="glac[r]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S907" name="glc_D[r]"/>
+      <species id="S2033" name="glcur[c]"/>
+      <species id="S2034" name="glcur[r]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1971" name="glu_L[r]"/>
+      <species id="S934" name="gluside_hs[c]"/>
+      <species id="S935" name="gluside_hs[r]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S2083" name="gthrd[r]"/>
+      <species id="S2040" name="gullac[c]"/>
+      <species id="S2038" name="gullac[r]"/>
+      <species id="S2088" name="guln[c]"/>
+      <species id="S2037" name="guln[r]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S1680" name="hdca[c]"/>
+      <species id="S3003" name="hdca[l]"/>
+      <species id="S2070" name="hdca[r]"/>
+      <species id="S1682" name="hdcea[c]"/>
+      <species id="S3095" name="hdcea[l]"/>
+      <species id="S3079" name="hdcea[r]"/>
+      <species id="S2105" name="hestratriol[c]"/>
+      <species id="S2106" name="hestratriol[r]"/>
+      <species id="S921" name="inost[c]"/>
+      <species id="S2994" name="inost[r]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S2191" name="ipdp[r]"/>
+      <species id="S609" name="leuktrA4[c]"/>
+      <species id="S2216" name="leuktrA4[r]"/>
+      <species id="S2217" name="leuktrB4[c]"/>
+      <species id="S2218" name="leuktrB4[r]"/>
+      <species id="S2220" name="leuktrD4[c]"/>
+      <species id="S1972" name="leuktrD4[r]"/>
+      <species id="S1688" name="lnlc[c]"/>
+      <species id="S3008" name="lnlc[r]"/>
+      <species id="S701" name="lnlccoa[c]"/>
+      <species id="S2855" name="lnlccoa[r]"/>
+      <species id="S1699" name="lnlnca[c]"/>
+      <species id="S3085" name="lnlnca[r]"/>
+      <species id="S1698" name="lnlncg[c]"/>
+      <species id="S3086" name="lnlncg[r]"/>
+      <species id="S697" name="lnlncgcoa[c]"/>
+      <species id="S3074" name="lnlncgcoa[r]"/>
+      <species id="S237" name="man[c]"/>
+      <species id="S2278" name="man[r]"/>
+      <species id="S586" name="meoh[c]"/>
+      <species id="S1363" name="meoh[r]"/>
+      <species id="S80" name="na1[c]"/>
+      <species id="S3004" name="na1[r]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S889" name="nad[r]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S890" name="nadh[r]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S1686" name="ocdcea[c]"/>
+      <species id="S3081" name="ocdcea[r]"/>
+      <species id="S529" name="pa_hs[c]"/>
+      <species id="S2467" name="pa_hs[r]"/>
+      <species id="S928" name="pchol_hs[c]"/>
+      <species id="S2480" name="pchol_hs[r]"/>
+      <species id="S929" name="pe_hs[c]"/>
+      <species id="S2090" name="pe_hs[r]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S861" name="pmtcrn[c]"/>
+      <species id="S2853" name="pmtcrn[r]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S912" name="ppi[r]"/>
+      <species id="S2148" name="prgnlone[c]"/>
+      <species id="S2149" name="prgnlone[r]"/>
+      <species id="S2562" name="prostgi2[c]"/>
+      <species id="S2503" name="prostgi2[r]"/>
+      <species id="S2567" name="ps_hs[c]"/>
+      <species id="S2568" name="ps_hs[r]"/>
+      <species id="S451" name="r5p[c]"/>
+      <species id="S2829" name="r5p[r]"/>
+      <species id="S2435" name="retn[c]"/>
+      <species id="S2600" name="retn[r]"/>
+      <species id="S2596" name="retnglc[c]"/>
+      <species id="S2599" name="retnglc[r]"/>
+      <species id="S2059" name="ru5p_D[c]"/>
+      <species id="S2061" name="ru5p_D[r]"/>
+      <species id="S2652" name="sph1p[c]"/>
+      <species id="S2629" name="sph1p[r]"/>
+      <species id="S116" name="sphgn[c]"/>
+      <species id="S2630" name="sphgn[r]"/>
+      <species id="S2658" name="sphings[c]"/>
+      <species id="S2632" name="sphings[r]"/>
+      <species id="S2664" name="sphs1p[c]"/>
+      <species id="S2631" name="sphs1p[r]"/>
+      <species id="S1700" name="strdnc[c]"/>
+      <species id="S3005" name="strdnc[l]"/>
+      <species id="S3006" name="strdnc[r]"/>
+      <species id="S2900" name="thcholstoic[c]"/>
+      <species id="S2756" name="thcholstoic[r]"/>
+      <species id="S2713" name="tmlys[c]"/>
+      <species id="S2533" name="tmlys[r]"/>
+      <species id="S2726" name="tststerone[c]"/>
+      <species id="S2142" name="tststerone[r]"/>
+      <species id="S2723" name="tststeroneglc[c]"/>
+      <species id="S2724" name="tststeroneglc[r]"/>
+      <species id="S2729" name="txa2[c]"/>
+      <species id="S2730" name="txa2[r]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S2814" name="uacgam[r]"/>
+      <species id="S2734" name="udpacgal[c]"/>
+      <species id="S2741" name="udpacgal[r]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S2736" name="udpg[r]"/>
+      <species id="S2103" name="udpglcur[c]"/>
+      <species id="S2735" name="udpglcur[r]"/>
+      <species id="S2739" name="udpxyl[c]"/>
+      <species id="S2740" name="udpxyl[r]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S2376" name="ump[r]"/>
+      <species id="S564" name="xol7ah2[c]"/>
+      <species id="S2759" name="xol7ah2[r]"/>
+      <species id="S567" name="xol7aone[c]"/>
+      <species id="S2156" name="xol7aone[r]"/>
+      <species id="S568" name="xoldiolone[c]"/>
+      <species id="S2760" name="xoldiolone[m]"/>
+      <species id="S2463" name="xoldiolone[r]"/>
+      <species id="S2762" name="xoltri24[c]"/>
+      <species id="S2453" name="xoltri24[r]"/>
+      <species id="S2763" name="xoltri25[c]"/>
+      <species id="S2460" name="xoltri25[r]"/>
+      <species id="S2764" name="xoltri27[c]"/>
+      <species id="S2462" name="xoltri27[r]"/>
+      <species id="S566" name="xoltriol[c]"/>
+      <species id="S2765" name="xoltriol[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="11-deoxycortisol intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S12"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S14"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="11-deoxycorticosterone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S15"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S17"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="4-methylpentanal transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S174"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S177"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S186"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S188"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="5 alpha dihydrotesterone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S193"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S191"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="hydroxylated testosterone transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S222"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S224"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="cholesterol precursor intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S228"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACALDtr" name="acetaldehyde reversible transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S313"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACCOAtr" name="acetyl-coa transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S328"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AHANDROSTANGLCtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S542"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S544"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AHCYStr" name="S-Adenosyl-L-homocysteine intracellular diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S547"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMETr" name="S-Adenosyl-L-methionine intracellular diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S619"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMPtr" name="AMP transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S626"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ANDRSTRNGLCtr" name="glucuronidated compound transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S632"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S634"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ANDRSTRNtr" name="androsterone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S637"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S636"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARACHDtr" name="intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S604"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S673"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Asn_X_Ser_Thrtr" name="Asn-X-Ser/Thr transport (from ER to lysosome)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S736"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S737"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATP1ter" name="ADP/ATP transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S749"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATP2ter" name="AMP/ATP transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S626"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BILDGLCURtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S825"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S826"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BILGLCURtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S828"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S829"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BILIRUBtr" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S831"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S833"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BZtr" name="Benzene transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S855"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S856"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CBPter" name="carbamoyl phosphate transport, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S739"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S906"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S912"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CERT1rt" name="ceramide transport protein" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S933"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CERT2rt" name="ceramide transport protein" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S934"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S935"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLtr" name="choline intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S949"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S939"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CO2ter" name="CO2 endoplasmic reticular transport via diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S888"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="COAtr" name="COA transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S996"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CRTSLtr" name="cortisol intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1031"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1033"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CRTSTRNtr" name="corticosterone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1035"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1037"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DAG_HSter" name="diacylglycerol ER export" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHEAtr" name="Dehydroepiandrosterone transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1197"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1196"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EBASTINEOHtr" name="xenobiotic transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1353"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1352"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EBASTINEtr" name="xenobiotic transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1356"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRADIOLGLCtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1402"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1403"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRADIOLtr" name="estradiol intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1406"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1405"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRIOLGLCtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1407"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1409"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRIOLtr" name="estriol intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1410"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1411"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRONEGLCtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1412"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1414"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ESTRONEtr" name="estrone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1417"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FADH2tru" name="FADH2 transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1191"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1182"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FADtru" name="FAD transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1183"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FORtr" name="FOR transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S969"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1763"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G6Pter" name="glucose 6-phosphate endoplasmic reticular transport via diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S908"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GACPAILter" name="glucosaminyl-acylphosphatidylinositol ER flippase" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1862"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1863"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLACter" name="D-glucurono-6,3-lactone transport, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1981"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1985"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCter" name="glucose transport, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCURter" name="glucuronate endoplasmic reticular transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2033"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2034"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUtr" name="intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1971"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHRDtr" name="glutathione transport via diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2083"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GULLACter" name="gulonolactone endoplasmic reticular transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2040"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2038"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GULNter" name="L-gulonate endoplasmic reticular export" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2037"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2088"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2Oter" name="H2O endoplasmic reticulum transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HDCAter" name="palmitate ER export" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1680"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HESTRATRIOLtr" name="hydroxylated estrogen derivative transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2105"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2106"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Htr" name="H transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IPDPtr" name="Isopentenyl diphosphate transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2191"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LEUKTRA4tr" name="leukotriene intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S609"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2216"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LEUKTRB4tr" name="leukotriene intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2217"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2218"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LEUKTRD4tr" name="leukotriene intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2220"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1972"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MANter" name="mannose efflux from endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S237"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MEOHtr" name="Methanol transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S586"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1363"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADHtru" name="NADH transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S890"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADPHtru" name="NADPH transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S858"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADPtru" name="NADP transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S860"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADtru" name="NAD transporter, endoplasmic reticulum" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S889"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="O2ter" name="O2 transport, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S612"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PA_HSter" name="phosphatidate scramblase" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2467"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PCHOL_HSter" name="phosphatidylcholine scramblase" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S928"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2480"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PE_HSter" name="phosphatidylethanolamine scramblase" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S929"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIter" name="phosphate transport, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPItr" name="Diphosphate transporter, endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S912"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRGNLONEtr" name="pregnenolone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2149"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PROSTGI2tr" name="Prostaglandin I2 transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2562"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2503"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PS_HSter" name="phosphatidylserine scramblase" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2567"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2568"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RETNGLCt2" name="retinoyl glucuronide efflux (13-cis)" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2597"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1429"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RETNGLCt2r" name="retinoyl glucuronide efflux (13-cis) from ER" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2598"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2597"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RETNGLCtr" name="retinoyl glucuronide efflux from ER" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2599"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2596"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RETNtr" name="retinoic acid transport in ER" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2435"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2600"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RETNtr2" name="retinoic acid transport in ER (13-cis)" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2601"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPH1Ptr" name="sph1p intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2652"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2629"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHGNtr" name="sphinganine intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2630"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHINGStr" name="sphingosine intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2658"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2632"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHS1Ptr" name="sphingosine-1-phosphate transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2664"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2631"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMLYSter" name="trimethyl-L-lysine transport (ER to cytosol)" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2533"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2713"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TSTSTERONEGLCtr" name="glucuronidated compound transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2723"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2724"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TSTSTERONEtr" name="testosterone intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2142"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2726"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TXA2tr" name="thromboxane A2 intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2729"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2730"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGLCAter" name="UDPGlcA endoplasmic reticulum transport via UMP antiport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2735"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGLCter" name="UDP-Glc endoplasmic reticulum transport via CMP antiport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2736"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPXYLter" name="UDP-Xyl endoplasmic reticular transport via CMP antiport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+          <speciesReference id="SpeciesReference" species="S2739"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2740"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGALNACter" name="UDP-GalNAc endoplasmic reticulum transport via CMP antiport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+          <speciesReference id="SpeciesReference" species="S2734"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2741"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPtr" name="UMP transport (ER)" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOL7AH2tr" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S564"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2759"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOL7AONEtr" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S567"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2156"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLDIOLONEt" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S568"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2463"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLDIOLONEtm" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2760"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2463"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLTRI24tc" name="24 trihydroxy cholesterol transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2453"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2762"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLTRI25tc" name="25 trihydroxy cholesterol transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2460"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2763"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLTRI27tc" name="27 trihydroxy cholesterol transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2462"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2764"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XOLTRIOLtr" name="lipid, flip-flop intracellular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S566"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2765"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0002" name="Active transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0826" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2994"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0840" name="Free diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S451"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2829"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0841" name="Free diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2059"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2061"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0842" name="Postulated transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2736"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0845" name="Drug/Metabolite Transporter (DMT) TCDB:2.A.7.12.7" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2814"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0886" name="Postulated transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2999"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0908" name="Postulated transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3000"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0909" name="Transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S350"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3000"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0931" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3002"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S673"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0936" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3003"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0960" name="Resistance-Nodulation-Cell Division (RND) TCDB:2.A.65.1.1" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S80"/>
+          <speciesReference id="SpeciesReference" species="S831"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S833"/>
+          <speciesReference id="SpeciesReference" species="S3004"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0968" name="Postulated transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2815"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2771"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0970" name="Active transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S945"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2884"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0983" name="solute carrier family 27 (fatty acid transporter), member 5 TCDB:4.C.1.1.5 TCDB:4.C.1.1.8" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3005"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3006"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0989" name="Postulated transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2885"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2902"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0994" name="Facilitated diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2915"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2913"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0995" name="Mitochondrial Carrier (MC) TCDB:2.A.29.8.3" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S1055"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S416"/>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0998" name="Facilitated diffusion" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S2853"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S861"/>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1000" name="Facilitated diffusion" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S2864"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S2866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1002" name="Facilitated diffusion" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S2856"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S2857"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1004" name="Facilitated diffusion" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S2849"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S2850"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1010" name="Postulated transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2888"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1011" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2929"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2755"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1013" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2900"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2756"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1018" name="Transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2914"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2916"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1024" name="Active transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2156"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S567"/>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1051" name="Vesicular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S953"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S937"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1127" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3044"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3053"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1128" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3052"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1129" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2991"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3055"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1131" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3049"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1132" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3050"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3058"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1133" name="Transport reaction" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3051"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3059"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1159" name="Vesicular transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S514"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3065"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1303" name="Vesicular transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3095"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3079"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1318" name="Transport reaction" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S701"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2855"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2473" name="Major Facilitator(MFS) TCDB:2.A.1.4.5" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S908"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2505" name="ATP-binding Cassette (ABC) TCDB:3.A.1.208.8" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S3165"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S3164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2506" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S80"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S3004"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2507" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S604"/>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S673"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2508" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1680"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2509" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1686"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3081"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2510" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1700"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3006"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2511" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1688"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3008"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2512" name="Utilized transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1698"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2513" name="Utilized transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3085"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1699"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2514" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1682"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3079"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2515" name="Utilized transport" reversible="false" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S3118"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1054"/>
+          <speciesReference id="SpeciesReference" species="S1228"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2519" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2735"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2521" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S912"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2537" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S697"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3074"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r2538" name="Utilized transport" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S699"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HPETFABP1tc" name="transport of 5-HPETE into the enterocytes" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OCDEAFABP1tc" name="Transport of octadecenoyl coA into the enterocytes" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PEHSFABPe" name="transport of lysophosphatidylethanolamine into the enterocytes" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMTCOAFABP1tc" name="transport of palmitoyl coA into the enterocytes" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHSTEROLtrc" name="transport of cholesterol into the cytosol" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S937"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FRDPtcr" name="transport of Farnesyl diphosphate into the endoplasmic reticulum" reversible="true" compartment="C161">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1768"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

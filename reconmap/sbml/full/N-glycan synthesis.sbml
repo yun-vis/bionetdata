@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C108" name="N-glycan synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S812" name="chito2pdol_L[c]"/>
+      <species id="S815" name="chito2pdol_U[c]"/>
+      <species id="S1161" name="dedol_L[c]"/>
+      <species id="S1162" name="dedol_U[c]"/>
+      <species id="S1157" name="dedoldp_L[c]"/>
+      <species id="S1159" name="dedoldp_U[c]"/>
+      <species id="S1158" name="dedolp_L[c]"/>
+      <species id="S1160" name="dedolp_U[c]"/>
+      <species id="S1294" name="doldp_L[r]"/>
+      <species id="S1297" name="doldp_U[r]"/>
+      <species id="S1298" name="dolglcp_L[c]"/>
+      <species id="S1299" name="dolglcp_L[r]"/>
+      <species id="S1300" name="dolglcp_U[c]"/>
+      <species id="S1301" name="dolglcp_U[r]"/>
+      <species id="S1163" name="dolichol_L[c]"/>
+      <species id="S1302" name="dolichol_L[r]"/>
+      <species id="S1164" name="dolichol_U[c]"/>
+      <species id="S1303" name="dolichol_U[r]"/>
+      <species id="S1306" name="dolmanp_L[c]"/>
+      <species id="S835" name="dolmanp_L[r]"/>
+      <species id="S1307" name="dolmanp_U[c]"/>
+      <species id="S840" name="dolmanp_U[r]"/>
+      <species id="S1304" name="dolp_L[c]"/>
+      <species id="S837" name="dolp_L[r]"/>
+      <species id="S1305" name="dolp_U[c]"/>
+      <species id="S841" name="dolp_U[r]"/>
+      <species id="S1309" name="g1m8mpdol_L[r]"/>
+      <species id="S1311" name="g1m8mpdol_U[r]"/>
+      <species id="S1312" name="g2m8mpdol_L[r]"/>
+      <species id="S1313" name="g2m8mpdol_U[r]"/>
+      <species id="S1293" name="g3m8mpdol_L[r]"/>
+      <species id="S1296" name="g3m8mpdol_U[r]"/>
+      <species id="S1823" name="m1mpdol_L[c]"/>
+      <species id="S1824" name="m1mpdol_U[c]"/>
+      <species id="S1817" name="m2mpdol_L[c]"/>
+      <species id="S1819" name="m2mpdol_U[c]"/>
+      <species id="S1818" name="m3mpdol_L[c]"/>
+      <species id="S1820" name="m3mpdol_U[c]"/>
+      <species id="S1821" name="m4mpdol_L[c]"/>
+      <species id="S1314" name="m4mpdol_L[r]"/>
+      <species id="S1822" name="m4mpdol_U[c]"/>
+      <species id="S1316" name="m4mpdol_U[r]"/>
+      <species id="S1315" name="m5mpdol_L[r]"/>
+      <species id="S1317" name="m5mpdol_U[r]"/>
+      <species id="S1318" name="m6mpdol_L[r]"/>
+      <species id="S1319" name="m6mpdol_U[r]"/>
+      <species id="S1320" name="m7mpdol_L[r]"/>
+      <species id="S1321" name="m7mpdol_U[r]"/>
+      <species id="S1308" name="m8mpdol_L[r]"/>
+      <species id="S1310" name="m8mpdol_U[r]"/>
+      <species id="S814" name="mpdol_L[c]"/>
+      <species id="S816" name="mpdol_U[c]"/>
+      <species id="S2029" name="naglc2p_L[c]"/>
+      <species id="S2031" name="naglc2p_U[c]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S2265" name="man[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+      <species id="S736" name="Asn_X_Ser_Thr[r]"/>
+      <species id="S1096" name="cdp[c]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S1671" name="fn2m2masn[g]"/>
+      <species id="S1334" name="frdp[c]"/>
+      <species id="S1396" name="g1m6masnB1[g]"/>
+      <species id="S1846" name="g1m6masnB1[r]"/>
+      <species id="S1394" name="g1m7masnB[g]"/>
+      <species id="S1847" name="g1m7masnB[r]"/>
+      <species id="S1392" name="g1m7masnC[g]"/>
+      <species id="S1848" name="g1m7masnC[r]"/>
+      <species id="S1385" name="g1m8masn[g]"/>
+      <species id="S1849" name="g1m8masn[r]"/>
+      <species id="S1388" name="g2m8masn[g]"/>
+      <species id="S1851" name="g2m8masn[r]"/>
+      <species id="S1390" name="g3m8masn[g]"/>
+      <species id="S1295" name="g3m8masn[r]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S1672" name="gdp[g]"/>
+      <species id="S1669" name="gdpfuc[g]"/>
+      <species id="S813" name="gdpmann[c]"/>
+      <species id="S1386" name="glc1man[g]"/>
+      <species id="S1389" name="glc2man[g]"/>
+      <species id="S1391" name="glc3man[g]"/>
+      <species id="S907" name="glc_D[r]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S1845" name="l2fn2m2masn[g]"/>
+      <species id="S2267" name="m4masn[g]"/>
+      <species id="S1821" name="m4mpdol_L[c]"/>
+      <species id="S1314" name="m4mpdol_L[r]"/>
+      <species id="S1822" name="m4mpdol_U[c]"/>
+      <species id="S1316" name="m4mpdol_U[r]"/>
+      <species id="S1397" name="m5masnB1[g]"/>
+      <species id="S2324" name="m5masnB2[g]"/>
+      <species id="S2323" name="m5masnC[g]"/>
+      <species id="S2325" name="m6masnA[g]"/>
+      <species id="S2326" name="m6masnB1[g]"/>
+      <species id="S1395" name="m6masnB2[g]"/>
+      <species id="S1393" name="m6masnC[g]"/>
+      <species id="S1387" name="m7masnA[g]"/>
+      <species id="S2272" name="m7masnB[g]"/>
+      <species id="S2271" name="m7masnB[r]"/>
+      <species id="S2327" name="m7masnC[g]"/>
+      <species id="S2274" name="m8masn[g]"/>
+      <species id="S2273" name="m8masn[r]"/>
+      <species id="S2265" name="man[g]"/>
+      <species id="S2278" name="man[r]"/>
+      <species id="S1670" name="n2m2masn[g]"/>
+      <species id="S2269" name="n2m2nmasn[g]"/>
+      <species id="S2268" name="n3m2masn[g]"/>
+      <species id="S2270" name="n4m2masn[g]"/>
+      <species id="S1247" name="n5m2masn[g]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S2266" name="nm2masn[g]"/>
+      <species id="S2264" name="nm4masn[g]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2611" name="s2l2fn2m2masn[g]"/>
+      <species id="S1771" name="ttc_ggdp[c]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S2030" name="ump[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="BDMT_L" name="GDPmannose:chitobiosyldiphosphodolichol beta-D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68152464"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BDMT_U" name="GDPmannose:chitobiosyldiphosphodolichol beta-D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLP1_L" name="dehydrodolichol diphosphate phosphatase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLP1_U" name="dehydrodolichol diphosphate phosphatase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLP2_L" name="dehydrodolichol phosphate phosphatase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLP2_U" name="dehydrodolichol phosphate phosphatase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLR_L" name="dehydrodolichol reductase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DEDOLR_U" name="dehydrodolichol reductase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLASNT_Ler" name="Dolichyl-diphosphooligosaccharide:protein-L-asparagine oligopolysaccharidotransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S736"/>
+          <speciesReference id="SpeciesReference" species="S736"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1295"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLASNT_Uer" name="Dolichyl-diphosphooligosaccharide:protein-L-asparagine oligopolysaccharidotransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S736"/>
+          <speciesReference id="SpeciesReference" species="S736"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1295"/>
+          <speciesReference id="SpeciesReference" species="S1295"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLDPP_Ler" name="Dolichyl-diphosphate phosphohydrolase, human (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLDPP_Uer" name="Dolichyl-diphosphate phosphohydrolase, human (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLGLCP_Lter" name="Dolichyl beta-D-glucosyl phosphate flippase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLGLCP_Uter" name="Dolichyl beta-D-glucosyl phosphate flippase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLGPP_Ler" name="Dolichyl-beta-D-glucosyl-phosphate dolichylphosphohydrolase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLGPP_Uer" name="Dolichyl-beta-D-glucosyl-phosphate dolichylphosphohydrolase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLICHOL_Lter" name="dolichol diffusion, human (liver)" reversible="true" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLICHOL_Uter" name="dolichol diffusion, human (uterus)" reversible="true" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLK_L" name="Dolichol kinase, human (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLK_U" name="Dolichol kinase, human (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLMANP_Lter" name="dolichol-phosphate mannose flippase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLMANP_Uter" name="dolichol-phosphate mannose flippase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLP_Lter" name="dolichol phosphate flippase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLP_Uter" name="dolichol phosphate flippase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT1_Ler" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT1_Uer" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT2_Ler" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT2_Uer" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT3_Ler" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPGT3_Uer" name="dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S614"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPH_Ler" name="Dolichol-phosphate phosphohydrolase, human (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPH_Uer" name="Dolichol-phosphate phosphohydrolase, human (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT_L" name="Dolichyl-phosphate D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT_U" name="Dolichyl-phosphate D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT1_Ler" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT1_Uer" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT2_Ler" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT2_Uer" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT3_Ler" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT3_Uer" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT4_Ler" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DOLPMT4_Uer" name="dolichyl-phosphate-mannose-glycolipid alpha-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN1g" name="Endomannosidase (glc1man-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1385"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1386"/>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN2g" name="Endomannosidase (glc2man-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1388"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+          <speciesReference id="SpeciesReference" species="S1389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN3g" name="Endomannosidase (glc3man-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1390"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+          <speciesReference id="SpeciesReference" species="S1391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN4g" name="Endomannosidase (m6masnC-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1392"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1386"/>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN5g" name="Endomannosidase (m6masnB2-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1394"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1386"/>
+          <speciesReference id="SpeciesReference" species="S1395"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENMAN6g" name="Endomannosidase (m5masnB1-producing), Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1396"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1386"/>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="F6Tg" name="glycoprotein 6-alpha-L-fucosyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1670"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1671"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FT" name="farnesyltranstransferase (trans,trans,cis-geranylgeranyl diphosphate-generating)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+          <speciesReference id="SpeciesReference" species="S1334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G12MT1_L" name="Glycolipid 1,2-alpha-D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G12MT1_U" name="Glycolipid 1,2-alpha-D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G12MT2_L" name="Glycolipid 1,2-alpha-D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G12MT2_U" name="Glycolipid 1,2-alpha-D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G13MT_L" name="Glycolipid 1,3-alpha-D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G13MT_U" name="Glycolipid 1,3-alpha-D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G14Tg" name="beta-N-acetylglucosaminylglycopeptide beta-1,4-galactosyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S1671"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1671"/>
+          <speciesReference id="SpeciesReference" species="S1671"/>
+          <speciesReference id="SpeciesReference" species="S1845"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G16MT_L" name="Glycolipid 1,6-alpha-D-mannosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G16MT_U" name="Glycolipid 1,6-alpha-D-mannosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G1M6MASNB1terg" name="g1m6masnB1 endoplasmic reticulum to Golgi transport" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1846"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G1M7MASNBterg" name="g1m7masnC endoplasmic reticulum to Golgi transport" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1847"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1394"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G1M7MASNCterg" name="g1m7masnC endoplasmic reticulum to Golgi transport" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1848"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1392"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G1M8MASNterg" name="g1m8masn transport from endoplasmic reticulum to Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1849"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1385"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G2M8MASNterg" name="g2m8masn transport from endoplasmic reticulum to Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1851"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1388"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G3M8MASNterg" name="g3m8masn transport from endoplasmic reticulum to Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1295"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1390"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGT_L" name="geranylgeranyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1390"/>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGT_U" name="geranylgeranyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACPT_L" name="UDP-GlcNAc:dolichol-phosphate GlcNAc phosphotransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1771"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACPT_U" name="UDP-GlcNAc:dolichol-phosphate GlcNAc phosphotransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACT_L" name="UDP-GlcNAc:N-acetyl-D-glucosaminyl diphosphodolichol N-acetyl-D-glucosaminyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACT_U" name="UDP-GlcNAc:N-acetyl-D-glucosaminyl diphosphodolichol N-acetyl-D-glucosaminyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M1316Mg" name="mannosyl-oligosaccharide 1,3-1,6-alpha-mannosidase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S2264"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2264"/>
+          <speciesReference id="SpeciesReference" species="S2266"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M13N2Tg" name="alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S2267"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S2264"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M13N4Tg" name="alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S1670"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S2268"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M14NTg" name="beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S1670"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S2269"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M16N4Tg" name="alpha-1,6-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S2270"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1247"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M16N6Tg" name="alpha-1,6-mannosyl-glycoprotein 6-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S2268"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S2270"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M16NTg" name="alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S2266"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1670"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4MPDOL_Lter" name="m4mpdol flippase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1821"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1314"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4MPDOL_Uter" name="m4mpdol flippase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1822"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1316"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M7MASNBterg" name="m7masnB transport from endoplasmic reticulum to Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2271"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2272"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M8MASNterg" name="m8masn transport from ER to Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2273"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2274"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN1_6B1er" name="mannosidase I, endoplasmic reticulum (g1m6masnB1-producing)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1848"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1846"/>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN1_7Ber" name="mannosidase I, endoplasmic reticulum (g1m7masnB-producing)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1849"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1847"/>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN2_6B1er" name="mannosidase II, endoplasmic reticulum (g1m6masnB1-producing)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1847"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1846"/>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN2_7Cer" name="mannosidase II, endoplasmic reticulum (g1m7masnC-producing)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1849"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1848"/>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MG1er" name="mannosyl-oligosaccharide glucosidase, endoplasmic reticulum" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1295"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+          <speciesReference id="SpeciesReference" species="S1851"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MG2er" name="mannosyl-oligosaccharide glucosidase, endoplasmic reticulum" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1851"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+          <speciesReference id="SpeciesReference" species="S1849"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MG3er" name="mannosyl-oligosaccharide glucosidase, endoplasmic reticulum" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S1849"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+          <speciesReference id="SpeciesReference" species="S2273"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM5ag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2323"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2267"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM5bg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2267"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM5cg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2324"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2267"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM6ag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2325"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM6B1ag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2326"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM6B1bg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1395"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM6B2g" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1395"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2324"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM6bg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM7Ag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2325"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM7B1g" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2272"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM7B2g" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2272"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1395"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM7Cag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM7Cbg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2327"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM8Ag" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2274"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1387"/>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM8Ber" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, endoplasmic reticulum" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2273"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2271"/>
+          <speciesReference id="SpeciesReference" species="S2278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MM8Cg" name="mannosyl-oligosaccharide 1,2-alpha-mannosidase, Golgi apparatus" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2274"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+          <speciesReference id="SpeciesReference" species="S2327"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S26Tg" name="beta-galactoside alpha-2,6-sialyltransferase" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2327"/>
+          <speciesReference id="SpeciesReference" species="S1845"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1845"/>
+          <speciesReference id="SpeciesReference" species="S1845"/>
+          <speciesReference id="SpeciesReference" species="S2611"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPDOLPT_L" name="UDPglucose:dolichyl-phosphate beta-D-glucosyltransferase (liver)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2611"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPDOLPT_U" name="UDPglucose:dolichyl-phosphate beta-D-glucosyltransferase (uterus)" reversible="false" compartment="C108">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

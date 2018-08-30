@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C16" name="Alanine and aspartate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S3433" name="CE0469[c]"/>
+      <species id="S3903" name="CE1554[c]"/>
+      <species id="S3647" name="CE1554[m]"/>
+      <species id="S2338" name="Nacasp[c]"/>
+      <species id="S746" name="Nacasp[m]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S577" name="ala_D[c]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S535" name="ala_L[m]"/>
+      <species id="S538" name="ala_L[x]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S678" name="arg_L[c]"/>
+      <species id="S682" name="argsuc[c]"/>
+      <species id="S570" name="asn_L[c]"/>
+      <species id="S734" name="asn_L[m]"/>
+      <species id="S745" name="asp_D[x]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S150" name="asp_L[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S623" name="cgly[c]"/>
+      <species id="S683" name="citr_L[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S471" name="fum[c]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S536" name="glx[m]"/>
+      <species id="S539" name="glx[x]"/>
+      <species id="S537" name="gly[m]"/>
+      <species id="S540" name="gly[x]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S735" name="nh4[m]"/>
+      <species id="S1128" name="nh4[x]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S364" name="oaa[c]"/>
+      <species id="S748" name="oaa[m]"/>
+      <species id="S1133" name="oaa[x]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S155" name="pyr[m]"/>
+      <species id="S541" name="pyr[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="AGTim" name="alanine-glyoxylate transaminase (irreversible), mitochondrial" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S535"/>
+          <speciesReference id="SpeciesReference" species="S536"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AGTix" name="alanine-glyoxylate transaminase (irreversible), (peroxisomal)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S538"/>
+          <speciesReference id="SpeciesReference" species="S539"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S540"/>
+          <speciesReference id="SpeciesReference" species="S541"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALAR" name="alanine racemase" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S571"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S577"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARGSL" name="argininosuccinate lyase" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S682"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S471"/>
+          <speciesReference id="SpeciesReference" species="S678"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARGSS" name="argininosuccinate synthase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S683"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S682"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASNNm" name="L-asparaginase (mitochondrial)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S734"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S150"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASNS1" name="asparagine synthase (glutamine-hydrolysing)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S570"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASPNATm" name="aspartate N-acetyltransferase, mitochondrial" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S150"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S746"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASPTA" name="aspartate transaminase" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S364"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASPTAm" name="aspartate transaminase" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S150"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DASPO1p" name="D-aspartate oxidase, peroxisomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S745"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+          <speciesReference id="SpeciesReference" species="S1133"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACASPAH" name="N-Acetyl-L-aspartate amidohydrolase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2338"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0127" name="L-Asparagine amidohydrolase Alanine and aspartate metabolism / Cyanoamino acid metabolism / Nitrogen metabolism EC:3.5.1.1 EC:3.5.1.38" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S570"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1473C" name="RE1473" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S623"/>
+          <speciesReference id="SpeciesReference" species="S3433"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2031M" name="RE2031" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S535"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3647"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2642C" name="RE2642" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3903"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S355"/>
+          <speciesReference id="SpeciesReference" species="S571"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

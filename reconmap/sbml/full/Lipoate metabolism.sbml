@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C2" name="Lipoate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S3831" name="CE2102[c]"/>
+      <species id="S3626" name="CE5656[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S2232" name="lipoate[c]"/>
+      <species id="S647" name="lys_L[c]"/>
+      <species id="S259" name="ppi[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="RE1944C" name="RE1944" reversible="true" compartment="C2">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2232"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S3626"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2459C" name="RE2459" reversible="true" compartment="C2">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3831"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S647"/>
+          <speciesReference id="SpeciesReference" species="S2232"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

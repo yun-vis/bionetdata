@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C27" name="Fructose and mannose metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S3434" name="C03693[c]"/>
+      <species id="S3287" name="CE1787[c]"/>
+      <species id="S3288" name="CE2846[c]"/>
+      <species id="S3289" name="CE2847[c]"/>
+      <species id="S3290" name="CE2848[c]"/>
+      <species id="S3931" name="CE3075[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S1745" name="f1p[c]"/>
+      <species id="S1751" name="f26bp[c]"/>
+      <species id="S1750" name="f6p[c]"/>
+      <species id="S1744" name="fdp[c]"/>
+      <species id="S1770" name="fru[c]"/>
+      <species id="S1667" name="fuc1p_L[c]"/>
+      <species id="S1757" name="fuc_L[c]"/>
+      <species id="S1339" name="g3p[c]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S1964" name="gdpddman[c]"/>
+      <species id="S1668" name="gdpfuc[c]"/>
+      <species id="S813" name="gdpmann[c]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S1746" name="glyald[c]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S342" name="idp[c]"/>
+      <species id="S341" name="itp[c]"/>
+      <species id="S449" name="man1p[c]"/>
+      <species id="S380" name="man6p[c]"/>
+      <species id="S237" name="man[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2633" name="sbt_D[c]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1069" name="utp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="F1PGT" name="fucose-1-phosphate guanylyltransferase" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S1667"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1668"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FBA2" name="D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1745"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S602"/>
+          <speciesReference id="SpeciesReference" species="S1746"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FBP26" name="Fructose-2,6-bisphosphate 2-phosphatase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1751"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FK" name="Fucokinase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1757"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1667"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GFUCS" name="GDP-L-fucose synthase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1964"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1668"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GMAND" name="GDP-D-mannose dehydratase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1964"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HEX4" name="hexokinase (D-mannose:ATP)" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S237"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S380"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HEX7" name="hexokinase (D-fructose:ATP)" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KHK" name="ketohexokinase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1745"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN1PT2" name="mannose-1-phosphate guanylyltransferase (GDP)" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S449"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MAN6PI" name="mannose-6-phosphate isomerase" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S380"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PFK26" name="6-phosphofructo-2-kinase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1751"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMANM" name="phosphomannomutase" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S449"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S380"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SBTD_D2" name="D-sorbitol dehydrogenase (D-fructose producing)" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2633"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SBTR" name="D-sorbitol reductase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2633"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TRIOK" name="triokinase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1746"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0191" name="UTP:D-fructose-6-phosphate 1-phosphotransferase EC:2.7.1.11" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1744"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0208" name="GTP:alpha-D-mannose-1-phosphate guanylyltransferase Fructose and mannose metabolism EC:2.7.7.13" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S449"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S813"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0357" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S341"/>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0358" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0360" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S237"/>
+          <speciesReference id="SpeciesReference" species="S341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+          <speciesReference id="SpeciesReference" species="S380"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0361" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S237"/>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S380"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0864C" name="RE0864" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S3287"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0875C" name="RE0875" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S3289"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3290"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1342C" name="RE1342" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2633"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1508C" name="RE1508" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S449"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3434"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2782C" name="RE2782" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2633"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3931"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

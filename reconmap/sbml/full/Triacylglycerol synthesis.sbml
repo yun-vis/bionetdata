@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C13" name="Triacylglycerol synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1430" name="1glyc_hs[e]"/>
+      <species id="S523" name="Rtotal2[c]"/>
+      <species id="S1594" name="Rtotal2[e]"/>
+      <species id="S527" name="Rtotal2coa[c]"/>
+      <species id="S690" name="Rtotal3[c]"/>
+      <species id="S1595" name="Rtotal3[e]"/>
+      <species id="S689" name="Rtotal3coa[c]"/>
+      <species id="S688" name="Rtotal[c]"/>
+      <species id="S687" name="Rtotalcoa[c]"/>
+      <species id="S723" name="Rtotalcoa[m]"/>
+      <species id="S1178" name="Rtotalcoa[x]"/>
+      <species id="S434" name="adhap_hs[c]"/>
+      <species id="S435" name="adhap_hs[x]"/>
+      <species id="S528" name="alpa_hs[c]"/>
+      <species id="S2067" name="alpa_hs[m]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S294" name="coa[x]"/>
+      <species id="S927" name="dag_hs[c]"/>
+      <species id="S1126" name="dag_hs[e]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S1179" name="dhap[x]"/>
+      <species id="S1852" name="glyc3p[c]"/>
+      <species id="S2046" name="glyc3p[m]"/>
+      <species id="S2050" name="glyc[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S2247" name="mag_hs[c]"/>
+      <species id="S529" name="pa_hs[c]"/>
+      <species id="S1563" name="pglyc_hs[e]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S1165" name="tag_hs[c]"/>
+      <species id="S1610" name="tag_hs[e]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="AGPAT1" name="1-acylglycerol-3-phosphate O-acyltransferase 1" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S527"/>
+          <speciesReference id="SpeciesReference" species="S528"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DGAT" name="diacylglycerol acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S689"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S1165"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHAPA" name="dihydroxyacetone phosphate acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S602"/>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S434"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHAPAx" name="dihydroxyacetone phosphate acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1178"/>
+          <speciesReference id="SpeciesReference" species="S1179"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S294"/>
+          <speciesReference id="SpeciesReference" species="S435"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPAM_hs" name="glycerol-3-phosphate acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S687"/>
+          <speciesReference id="SpeciesReference" species="S1852"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S528"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPAMm_hs" name="glycerol-3-phosphate acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S723"/>
+          <speciesReference id="SpeciesReference" species="S2046"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2067"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPS" name="lipase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1165"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S690"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPS2" name="lipase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S688"/>
+          <speciesReference id="SpeciesReference" species="S2247"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPS3" name="lipase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2247"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S523"/>
+          <speciesReference id="SpeciesReference" species="S2050"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPS4e" name="phospholipase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1563"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1430"/>
+          <speciesReference id="SpeciesReference" species="S1594"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPSe" name="lipase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1610"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1126"/>
+          <speciesReference id="SpeciesReference" species="S1595"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MOGAT" name="monoacylglycerol acyltransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S687"/>
+          <speciesReference id="SpeciesReference" species="S2247"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPAP" name="phosphatidic acid phosphatase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

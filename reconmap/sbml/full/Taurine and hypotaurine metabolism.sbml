@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C8" name="Taurine and hypotaurine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S149" name="3sala[c]"/>
+      <species id="S62" name="Lcyst[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S151" name="hyptaur[c]"/>
+      <species id="S2166" name="taur[c]"/>
+      <species id="S149" name="3sala[c]"/>
+      <species id="S62" name="Lcyst[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S573" name="cys_L[c]"/>
+      <species id="S2539" name="cysam[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S151" name="hyptaur[c]"/>
+      <species id="S80" name="na1[c]"/>
+      <species id="S2373" name="na1[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2166" name="taur[c]"/>
+      <species id="S793" name="taur[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="3-Sulfino-L-alanine carboxy-lyase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S82416592"/>
+          <speciesReference id="SpeciesReference" species="S149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S151"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="cysteinesulfinic acid oxidase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYSO" name="cysteine oxidase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S573"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S573"/>
+          <speciesReference id="SpeciesReference" species="S149"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HYPTROX" name="Hypotaurine oxidase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCYSTCBOXL" name="3-Sulfoalanine carboxy-lyase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S62"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S2166"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TAURtcx" name="taurine transport (sodium symport) (cytosol to peroxisome)" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S80"/>
+          <speciesReference id="SpeciesReference" species="S2166"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S793"/>
+          <speciesReference id="SpeciesReference" species="S2373"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0381" name="hypotaurine:NAD+ oxidoreductase Taurine and hypotaurine metabolism EC:1.8.1.3" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S151"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2166"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0539" name="Cysteamine:oxygen oxidoreductase Taurine and hypotaurine metabolism EC:1.13.11.19" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2539"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S151"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

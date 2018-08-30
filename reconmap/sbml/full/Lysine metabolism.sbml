@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C25" name="Lysine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S41" name="1pipdn2c[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S89" name="2oxoadp[c]"/>
+      <species id="S83" name="2oxoadp[m]"/>
+      <species id="S1976" name="3htmelys[c]"/>
+      <species id="S1978" name="3htmelys[m]"/>
+      <species id="S1977" name="4tmeabut[c]"/>
+      <species id="S1979" name="4tmeabut[m]"/>
+      <species id="S804" name="4tmeabutn[c]"/>
+      <species id="S2263" name="6a2ohxnt[x]"/>
+      <species id="S2889" name="L2aadp6sa[c]"/>
+      <species id="S263" name="L2aadp6sa[m]"/>
+      <species id="S65" name="L2aadp[c]"/>
+      <species id="S67" name="L2aadp[m]"/>
+      <species id="S44" name="Lpipecol[x]"/>
+      <species id="S2260" name="Ndmelys[n]"/>
+      <species id="S2259" name="Nmelys[n]"/>
+      <species id="S2261" name="Ntmelys[n]"/>
+      <species id="S2425" name="Ntmelys[r]"/>
+      <species id="S546" name="ahcys[n]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S622" name="amet[n]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S459" name="crn[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S87" name="glutcoa[m]"/>
+      <species id="S579" name="gly[c]"/>
+      <species id="S537" name="gly[m]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S647" name="lys_L[c]"/>
+      <species id="S650" name="lys_L[m]"/>
+      <species id="S2262" name="lys_L[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S45" name="nad[x]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S43" name="nadh[x]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S1128" name="nh4[x]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S2484" name="pcollg5hlys[c]"/>
+      <species id="S2483" name="pcollglys[c]"/>
+      <species id="S2258" name="peplys[n]"/>
+      <species id="S2532" name="pepslys[r]"/>
+      <species id="S2626" name="saccrp_L[m]"/>
+      <species id="S805" name="succ[c]"/>
+      <species id="S2711" name="thp2c[c]"/>
+      <species id="S2246" name="thp2c[x]"/>
+      <species id="S2713" name="tmlys[c]"/>
+      <species id="S2533" name="tmlys[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="delta1-piperideine-2-carboxylate reductase, perixosomal" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S41"/>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S43"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S44"/>
+          <speciesReference id="SpeciesReference" species="S45"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="L-2-aminoadipate shuttle (cytosol/mitochondria)" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S65"/>
+          <speciesReference id="SpeciesReference" species="S66"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S67"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating) (mitochondria)" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S83"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S87"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AASAD3m" name="L-aminoadipate-semialdehyde dehydrogenase (NADH), mitochondrial" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S263"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S263"/>
+          <speciesReference id="SpeciesReference" species="S67"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AATAi" name="2-aminoadipate transaminase, irreversible" reversible="true" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S65"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S89"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BBHOX" name="4-Trimethylammoniobutanoate,2-oxoglutarate:oxygen oxidoreductase (3-hydroxylating)" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S804"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S459"/>
+          <speciesReference id="SpeciesReference" species="S805"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GHMT3" name="glycine hydroxymethyltransferase" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1976"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S579"/>
+          <speciesReference id="SpeciesReference" species="S1977"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GHMT3m" name="glycine hydroxymethyltransferase, mitochondrial" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S1978"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S1979"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LPCOXp" name="L-pipecolate oxidase, peroxisomal" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S44"/>
+          <speciesReference id="SpeciesReference" species="S397"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S2246"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LYSMTF1n" name="histone-lysine N-methyltransferase, nuclear" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S622"/>
+          <speciesReference id="SpeciesReference" species="S2258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S546"/>
+          <speciesReference id="SpeciesReference" species="S2259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LYSMTF2n" name="histone-lysine N-methyltransferase, nuclear" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S622"/>
+          <speciesReference id="SpeciesReference" species="S2259"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S546"/>
+          <speciesReference id="SpeciesReference" species="S2260"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LYSMTF3n" name="histone-lysine N-methyltransferase, nuclear" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S622"/>
+          <speciesReference id="SpeciesReference" species="S2260"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S546"/>
+          <speciesReference id="SpeciesReference" species="S2261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LYSOXp" name="L-lysine oxidase, peroxisomal" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2262"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+          <speciesReference id="SpeciesReference" species="S2263"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PCLYSOX" name="Procollagen-lysine 1, 2-oxoglutarate 5-dioxygenase" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2483"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S805"/>
+          <speciesReference id="SpeciesReference" species="S2484"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PLYSPSer" name="protein lysine peptidase (endoplasmic reticulum)" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2425"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2532"/>
+          <speciesReference id="SpeciesReference" species="S2533"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPD2CSPp" name="PPD2CSPp" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2263"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S41"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SACCD3m" name="saccharopine dehydrogenase (NADP, L-lysine forming), mitochondrial" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S650"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2626"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SACCD4m" name="saccharopine dehydrogenase (NAD, L-glutamate forming), mitochondrial" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2626"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S263"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMABADH" name="4-trimethylaminobutyraldehyde dehydrogenase" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1977"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S804"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMLYSOX" name="trimethyllysine dioxygenase" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2713"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S805"/>
+          <speciesReference id="SpeciesReference" species="S1976"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0450" name="L-2-Aminoadipate:2-oxoglutarate aminotransferase Lysine biosynthesis / Lysine degradation EC:2.6.1.39" reversible="true" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S67"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S83"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0525" name="N6-(L-1,3-Dicarboxypropyl)-L-lysine:NAD+ oxidoreductase; N6-(L-1,3-Dicarboxypropyl)-L-lysine:NAD+ oxidoreductase (L-glutamate-forming) Lysine degradation EC:1.5.1.9" reversible="true" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2626"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S263"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0594" name="L-2-Aminoadipate-6-semialdehyde:NAD+ 6-oxidoreductase Lysine degradation EC:1.2.1.31" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2889"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2889"/>
+          <speciesReference id="SpeciesReference" species="S65"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1386" name="Virtual reaction/potential definition" reversible="false" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S647"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2483"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1254C" name="RE1254" reversible="true" compartment="C25">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2711"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2889"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

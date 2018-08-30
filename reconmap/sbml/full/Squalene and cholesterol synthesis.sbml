@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C6" name="Squalene and cholesterol synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S5037" name="5dpmev[c]"/>
+      <species id="S5044" name="5pmev[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S937" name="chsterol[r]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S1257" name="dmpp[c]"/>
+      <species id="S1187" name="dsmsterol[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2119" name="hmgcoa[c]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S2873" name="mev_R[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S40" name="pi[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="DPMVDc" name="diphosphomevalonate decarboxylase, cytosol" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S5037"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DSREDUCr" name="Desmosterol reductase" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1187"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S937"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGCOARc" name="Hydroxymethylglutaryl CoA reductase (ir) in cytosol" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S937"/>
+          <speciesReference id="SpeciesReference" species="S937"/>
+          <speciesReference id="SpeciesReference" species="S2119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2119"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2873"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IPDDI" name="isopentenyl-diphosphate D-isomerase" reversible="true" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1257"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MEVK1c" name="mevalonate kinase (atp) cytosol" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2873"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S5044"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMEVKc" name="phosphomevalonate kinase, cytosol" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S5044"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S5037"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C7" name="Vitamin B2 metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S1756" name="fe2[c]"/>
+      <species id="S5042" name="fe3[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S752" name="amp[e]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S1190" name="fad[c]"/>
+      <species id="S2778" name="fad[e]"/>
+      <species id="S1191" name="fadh2[c]"/>
+      <species id="S414" name="fmn[c]"/>
+      <species id="S5039" name="fmn[e]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S415" name="ribflv[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACP1_FMN_" name="acid phosphatase (FMN)" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S414"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S415"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FADDP" name="FAD diphosphatase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S414"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FMNAT" name="FMN adenylyltransferase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S414"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RBFK" name="riboflavin kinase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S415"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S414"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3347C" name="RE3347" reversible="true" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1191"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FADDPle" name="FAD diphosphatase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2778"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2778"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+          <speciesReference id="SpeciesReference" species="S5039"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FERO" name="ferroxidase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="Vitamin B12 metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S662" name="aqcobal[c]"/>
+      <species id="S901" name="cbl2[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S3840" name="C06453[c]"/>
+      <species id="S904" name="adocbl[m]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S903" name="cbl1[m]"/>
+      <species id="S901" name="cbl2[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S905" name="pppi[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="CBL2OR" name="NADH:cob(III)alamine oxidoreductase" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CBLATm" name="cob(I)alamin adenosyltransferase, mitochondrial" reversible="true" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S903"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S904"/>
+          <speciesReference id="SpeciesReference" species="S905"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2493C" name="RE2493" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S901"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S901"/>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S3840"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

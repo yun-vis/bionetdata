@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C15" name="Cytochrome metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S20" name="o2[c]"/>
+      <species id="S53" name="24nph[c]"/>
+      <species id="S167" name="4hdebrisoquine[c]"/>
+      <species id="S179" name="4mtolbutamide[c]"/>
+      <species id="S182" name="4nph[c]"/>
+      <species id="S181" name="4nphsf[c]"/>
+      <species id="S204" name="5homeprazole[c]"/>
+      <species id="S476" name="aflatoxin[c]"/>
+      <species id="S639" name="antipyrene[c]"/>
+      <species id="S1015" name="coumarin[c]"/>
+      <species id="S1674" name="ddca[c]"/>
+      <species id="S1154" name="debrisoquine[c]"/>
+      <species id="S1256" name="dmantipyrine[c]"/>
+      <species id="S1350" name="eaflatoxin[c]"/>
+      <species id="S1356" name="ebastine[r]"/>
+      <species id="S1353" name="ebastineoh[r]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2104" name="hcoumarin[c]"/>
+      <species id="S1680" name="hdca[c]"/>
+      <species id="S2454" name="hnifedipine[c]"/>
+      <species id="S2160" name="htaxol[c]"/>
+      <species id="S586" name="meoh[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S2388" name="nifedipine[c]"/>
+      <species id="S2399" name="npthl[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S2432" name="omeprazole[c]"/>
+      <species id="S2434" name="onpthl[c]"/>
+      <species id="S64" name="pap[c]"/>
+      <species id="S61" name="paps[c]"/>
+      <species id="S2449" name="taxol[c]"/>
+      <species id="S2450" name="tolbutamide[c]"/>
+      <species id="S1676" name="ttdca[c]"/>
+      <species id="S1714" name="whddca[c]"/>
+      <species id="S1716" name="whhdca[c]"/>
+      <species id="S1715" name="whttdca[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="4-Nitrophenol Sulfotransferase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S61"/>
+          <speciesReference id="SpeciesReference" species="S182"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S64"/>
+          <speciesReference id="SpeciesReference" species="S181"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FAH1" name="Fatty acid omega-hydroxylase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1674"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1714"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FAH2" name="Fatty acid omega-hydroxylase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1676"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1715"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FAH3" name="Fatty acid omega-hydroxylase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1680"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1716"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502A6" name="cytochrome P450 2A6" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1015"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C18" name="cytochrome P450 2C18" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2104"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S639"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S586"/>
+          <speciesReference id="SpeciesReference" species="S1256"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C19" name="cytochrome P450 2C19" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2432"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S204"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C8" name="cytochrome P450 2C8" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2449"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2160"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C9" name="cytochrome P450 2C9" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2450"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S179"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502D6" name="cytochrome P450 2D6" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1154"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S167"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502E1" name="cytochrome P450 2E1" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S182"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S53"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502F1" name="cytochrome P450 2F1" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2399"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2434"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4503A4" name="cytochrome P450 3A4" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2388"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2454"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4503A5" name="cytochrome P450 3A5" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1350"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4504F123r" name="cytochrome p450 4F12/4F2" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1356"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S1353"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="Cysteine Metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2822" name="HC00250[c]"/>
+      <species id="S2890" name="HC01501[c]"/>
+      <species id="S573" name="cys_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S1080" name="mercppyr[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S581" name="ser_L[c]"/>
+      <species id="S154" name="so3[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0060" name="L-serine ammonia-lyase Glycine, serine and threonine metabolism EC:4.3.1.17" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0193" name="L-Cysteine L-homocysteine-lyase (deaminating) Cysteine metabolism EC:4.4.1.1" reversible="true" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S573"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S2822"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0595" name="3-Mercaptopyruvate:cyanide sulfurtransferase Cysteine metabolism EC:2.8.1.2" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S154"/>
+          <speciesReference id="SpeciesReference" species="S1080"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S2890"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

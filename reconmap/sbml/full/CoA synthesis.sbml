@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C20" name="CoA synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S2564" name="3hpcoa[m]"/>
+      <species id="S2839" name="3hpp[m]"/>
+      <species id="S2541" name="4ppan[c]"/>
+      <species id="S2543" name="4ppan[m]"/>
+      <species id="S2545" name="4ppcys[c]"/>
+      <species id="S2895" name="4ppcys[m]"/>
+      <species id="S400" name="ACP[c]"/>
+      <species id="S2840" name="HC01161[c]"/>
+      <species id="S2888" name="HC01231[c]"/>
+      <species id="S3048" name="HC02222[m]"/>
+      <species id="S3130" name="HC02223[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S752" name="amp[e]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S516" name="cmp[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S573" name="cys_L[c]"/>
+      <species id="S1329" name="dpcoa[c]"/>
+      <species id="S5035" name="dpcoa[e]"/>
+      <species id="S2806" name="dpcoa[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S2477" name="pan4p[c]"/>
+      <species id="S5036" name="pan4p[e]"/>
+      <species id="S2887" name="pan4p[m]"/>
+      <species id="S64" name="pap[c]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S2540" name="pnto_R[c]"/>
+      <species id="S2542" name="pnto_R[m]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S2478" name="ptth[c]"/>
+      <species id="S5040" name="ptth[e]"/>
+      <species id="S2886" name="ptth[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="DPCOAK" name="dephospho-CoA kinase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PNTK" name="pantothenate kinase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2540"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2541"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PNTKm" name="pantothenate kinase (mitochondrial)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2542"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2543"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPCDC" name="phosphopantothenoylcysteine decarboxylase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2545"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPNCL3" name="phosphopantothenate-cysteine ligase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S573"/>
+          <speciesReference id="SpeciesReference" species="S2541"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2545"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PTPAT" name="Phosphopantetheine adenylyltransferase (EC 2.7.7.3)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0033" name="ATP:dephospho-CoA 3-phosphotransferase Pantothenate and CoA biosynthesis EC:2.7.1.24" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2806"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0366" name="[Acyl-carrier-protein] 4-pantetheine-phosphohydrolase Pantothenate and CoA biosynthesis EC:3.1.4.14" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S400"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+          <speciesReference id="SpeciesReference" species="S2840"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0368" name="CoA:apo-[acyl-carrier-protein] pantetheinephosphotransferase Pantothenate and CoA biosynthesis EC:2.7.8.7" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2840"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S64"/>
+          <speciesReference id="SpeciesReference" species="S400"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0578" name="ATP:pantothenate 4-phosphotransferase Pantothenate and CoA biosynthesis EC:2.7.1.33" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2478"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0579" name="ATP:pantothenate 4-phosphotransferase Pantothenate and CoA biosynthesis EC:2.7.1.33" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2886"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2887"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0580" name="N-((R)-Pantothenoyl)-L-cysteine carboxy-lyase Pantothenate and CoA biosynthesis EC:4.1.1.30" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2888"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S2478"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0590" name="ATP:pantetheine-4-phosphate adenylyltransferase Pantothenate and CoA biosynthesis EC:2.7.7.3" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2887"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S326"/>
+          <speciesReference id="SpeciesReference" species="S2806"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0591" name="Dephospho-CoA nucleotidohydrolase Pantothenate and CoA biosynthesis EC:3.6.1.9" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0596" name="3-hydroxyisobutyryl-CoA hydrolase beta-Alanine metabolism / Propanoate metabolism EC:3.1.2.4" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2564"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2839"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0614" name="N-[(R)-4-Phosphopantothenoyl]-L-cysteine carboxy-lyase Pantothenate and CoA biosynthesis EC:4.1.1.36" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S2895"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S2887"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0671" name="(R)-4-Phosphopantothenate:L-cysteine ligase EC:6.3.2.5" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S573"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S2541"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S2545"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1430" name="[Acyl-carrier-protein] 4-pantetheine-phosphohydrolase Pantothenate and CoA biosynthesis EC:3.1.4.14" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2887"/>
+          <speciesReference id="SpeciesReference" species="S3048"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S3130"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPCOAPPe" name="Pyrophasphatase (dephospho-CoA, extracellular)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S5035"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5035"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+          <speciesReference id="SpeciesReference" species="S5036"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAN4PPe" name="PAN4PPe" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S5036"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S5040"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

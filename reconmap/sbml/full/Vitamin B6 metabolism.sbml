@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C11" name="Vitamin B6 metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S184" name="4pyrdx[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2488" name="pdx5p[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S2164" name="pyam5p[c]"/>
+      <species id="S2165" name="pydam[c]"/>
+      <species id="S2489" name="pydx5p[c]"/>
+      <species id="S2581" name="pydx[c]"/>
+      <species id="S2490" name="pydxn[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="HYPOE" name="hypothetical enyme" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2164"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2165"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDX5PO" name="pyridoxine 5&apos;-phosphate oxidase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2488"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S2489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDXPP" name="Pyridoxine 5-phosphate phosphatase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2488"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2490"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYAM5POr" name="pyridoxamine 5&apos;-phosphate oxidase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2164"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYDAMK" name="pyridoxamine kinase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2165"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYDXDH" name="pyridoxal dehydrogenase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S184"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYDXK" name="pyridoxal kinase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYDXNK" name="pyridoxine kinase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2490"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2488"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYDXPP" name="Pyridoxal 5-phosphate phosphatase" reversible="false" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2489"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2581"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0388" name="Pyridoxamine:oxygen oxidoreductase (deaminating) Vitamin B6 metabolism EC:1.4.3.5" reversible="true" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2165"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2581"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0389" name="Pyridoxine:oxygen oxidoreductase (deaminating) Vitamin B6 metabolism EC:1.1.3.12" reversible="true" compartment="C11">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2490"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S2581"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

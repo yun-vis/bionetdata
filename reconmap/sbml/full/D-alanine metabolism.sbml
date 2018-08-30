@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="D-alanine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S577" name="ala_D[c]"/>
+      <species id="S1127" name="ala_D[x]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S1128" name="nh4[x]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S541" name="pyr[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="DALAOXx" name="D-Alanine Oxidase (x)" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S1127"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S541"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DALAxt" name="D-Alanine transport to perixosome" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S577"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1127"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYRt2p" name="pyruvate peroxisomal transport via proton symport" reversible="true" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S541"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

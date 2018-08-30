@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C7" name="ROS detoxification"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S900" name="h2o2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S731" name="o2s[c]"/>
+      <species id="S1549" name="o2s[e]"/>
+      <species id="S2427" name="o2s[m]"/>
+      <species id="S2428" name="o2s[n]"/>
+      <species id="S2429" name="o2s[x]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S1488" name="h2o2[e]"/>
+      <species id="S900" name="h2o2[m]"/>
+      <species id="S2094" name="h2o2[n]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S1548" name="o2[e]"/>
+      <species id="S27" name="o2[m]"/>
+      <species id="S2430" name="o2[n]"/>
+      <species id="S397" name="o2[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="CATm" name="catalase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S77813200"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPODM" name="superoxide dismutase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S22"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPODMe" name="superoxide dismutase, extracellular" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S22"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+          <speciesReference id="SpeciesReference" species="S1548"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPODMm" name="superoxide dismutase" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1548"/>
+          <speciesReference id="SpeciesReference" species="S1548"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S900"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPODMn" name="superoxide dismutase, nuclear" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S900"/>
+          <speciesReference id="SpeciesReference" species="S900"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2094"/>
+          <speciesReference id="SpeciesReference" species="S2430"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPODMx" name="superoxide dismutase, peroxisome" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2430"/>
+          <speciesReference id="SpeciesReference" species="S2430"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0010" name="hydrogen-peroxide:hydrogen-peroxide oxidoreductase EC:1.11.1.6" reversible="false" compartment="C7">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S398"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="Nucleotide salvage pathway"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S432" name="ade[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S1963" name="gmp[c]"/>
+      <species id="S2086" name="gua[c]"/>
+      <species id="S2162" name="hxan[c]"/>
+      <species id="S474" name="imp[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S455" name="prpp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ADPT" name="adenine phosphoribosyltransferase" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S432"/>
+          <speciesReference id="SpeciesReference" species="S455"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUAPRT" name="guanine phosphoribosyltransferase" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S2086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HXPRT" name="hypoxanthine phosphoribosyltransferase (Hypoxanthine)" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

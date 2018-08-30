@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C12" name="Dietary fiber binding"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S4986" name="bglc[e]"/>
+      <species id="S5006" name="dchac[e]"/>
+      <species id="S1468" name="gchola[e]"/>
+      <species id="S4987" name="glgchlo[e]"/>
+      <species id="S4988" name="gltcho[e]"/>
+      <species id="S4990" name="gltdechol[e]"/>
+      <species id="S5005" name="gum[e]"/>
+      <species id="S5007" name="gumdchac[e]"/>
+      <species id="S5008" name="gumgchol[e]"/>
+      <species id="S5009" name="gumtchol[e]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S5015" name="pect[e]"/>
+      <species id="S5016" name="pectindchac[e]"/>
+      <species id="S5017" name="pectingchol[e]"/>
+      <species id="S5018" name="pectintchol[e]"/>
+      <species id="S5021" name="psyl[e]"/>
+      <species id="S5022" name="psylchol[e]"/>
+      <species id="S5023" name="psyltchol[e]"/>
+      <species id="S5024" name="psyltdechol[e]"/>
+      <species id="S1614" name="tchola[e]"/>
+      <species id="S4989" name="tdechola[e]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="BGLUGCHe" name="binding of betaglucans with glycocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1468"/>
+          <speciesReference id="SpeciesReference" species="S4986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4987"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BGLUTCHLe" name="binding of betaglucans with taurocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1614"/>
+          <speciesReference id="SpeciesReference" species="S4986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4988"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BGLUTDECHOe" name="binding of betaglucans with taurodeoxycholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4986"/>
+          <speciesReference id="SpeciesReference" species="S4989"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4990"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUMDCHAe" name="binding of guar gums with deoxyxholic acid in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S5005"/>
+          <speciesReference id="SpeciesReference" species="S5006"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5007"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUMGCHLe" name="Binding of guar gums with glycocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1468"/>
+          <speciesReference id="SpeciesReference" species="S5005"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5008"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUMTCHOLe" name="Binding of guar gums with taurocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1614"/>
+          <speciesReference id="SpeciesReference" species="S5005"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5009"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PECDCHe" name="binding of pectins with deoxycholic acid in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S5006"/>
+          <speciesReference id="SpeciesReference" species="S5015"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5016"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PECGCHLe" name="binding of pectins with glycocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1468"/>
+          <speciesReference id="SpeciesReference" species="S5015"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5017"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PECTCHLe" name="Binding of pectins with taurocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1614"/>
+          <speciesReference id="SpeciesReference" species="S5015"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5018"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PSYGCHe" name="binding of psyllium with glycocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1468"/>
+          <speciesReference id="SpeciesReference" species="S5021"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5022"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PSYTCHe" name="binding of psyllium with taurocholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1614"/>
+          <speciesReference id="SpeciesReference" species="S5021"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5023"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PSYTDECHe" name="binding of psyllium with taurodeoxycholate in the intestinal lumen, reducing serum cholsterol levels." reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4989"/>
+          <speciesReference id="SpeciesReference" species="S5021"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5024"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

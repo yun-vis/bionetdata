@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C8" name="C5-branched dibasic acid metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S960" name="citmcoa_L[m]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S439" name="gdp[m]"/>
+      <species id="S438" name="gtp[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S959" name="itaccoa[m]"/>
+      <species id="S2192" name="itacon[m]"/>
+      <species id="S2290" name="mescoa[m]"/>
+      <species id="S2289" name="mescon[m]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S155" name="pyr[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="CITMCOAHm" name="L-Citramalyl-CoA hydro-lyase, mitochondrial" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S959"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S960"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CITMCOALm" name="L-Citramalyl-CoA pyruvate-lyase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S960"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ITCOAL1m" name="Itaconate--CoA ligase (GDP-forming), mitochondrial" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S438"/>
+          <speciesReference id="SpeciesReference" species="S2192"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+          <speciesReference id="SpeciesReference" species="S959"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ITCOALm" name="Itaconate--CoA ligase (ADP-forming), mitochondrial" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2192"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S959"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MECOALm" name="mesaconate--CoA ligase (ADP-forming), mitochondrial" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2289"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2290"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MECOAS1m" name="mesaconate--CoA ligase (GDP-forming)" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S438"/>
+          <speciesReference id="SpeciesReference" species="S2289"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+          <speciesReference id="SpeciesReference" species="S2290"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MESCOALm" name="Mesaconyl-CoA pyruvate-lyase" reversible="false" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2290"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MGACONm" name="methylglutaconase, mitochondrial" reversible="true" compartment="C8">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S960"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2290"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

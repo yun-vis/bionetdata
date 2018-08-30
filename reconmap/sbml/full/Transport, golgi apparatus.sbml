@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C78" name="Transport, golgi apparatus"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1926" name="Ser_Thr[g]"/>
+      <species id="S1249" name="Ser_Thr[l]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S422" name="ac[g]"/>
+      <species id="S332" name="acgagbside_hs[c]"/>
+      <species id="S333" name="acgagbside_hs[g]"/>
+      <species id="S339" name="acgal[c]"/>
+      <species id="S343" name="acgal[g]"/>
+      <species id="S336" name="acgalfucgalacgalfuc12gal14acglcgalgluside_hs[c]"/>
+      <species id="S272" name="acgalfucgalacgalfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S338" name="acgalfucgalacgalfucgalacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S276" name="acgalfucgalacgalfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S351" name="acgbgbside_hs[c]"/>
+      <species id="S352" name="acgbgbside_hs[g]"/>
+      <species id="S365" name="acn13acngalgbside_hs[c]"/>
+      <species id="S367" name="acn13acngalgbside_hs[g]"/>
+      <species id="S368" name="acn23acngalgbside_hs[c]"/>
+      <species id="S370" name="acn23acngalgbside_hs[g]"/>
+      <species id="S372" name="acnacngal14acglcgalgluside_hs[c]"/>
+      <species id="S373" name="acnacngal14acglcgalgluside_hs[g]"/>
+      <species id="S374" name="acnacngalgbside_hs[c]"/>
+      <species id="S376" name="acnacngalgbside_hs[g]"/>
+      <species id="S386" name="acngalacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S387" name="acngalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S939" name="chol[c]"/>
+      <species id="S948" name="chol[g]"/>
+      <species id="S942" name="cholp[c]"/>
+      <species id="S946" name="cholp[g]"/>
+      <species id="S950" name="chsterol[c]"/>
+      <species id="S955" name="chsterol[g]"/>
+      <species id="S516" name="cmp[c]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S985" name="cmpacna[c]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S991" name="co2[g]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S994" name="coa[g]"/>
+      <species id="S930" name="crm_hs[c]"/>
+      <species id="S932" name="crm_hs[g]"/>
+      <species id="S1211" name="digalsgalside_hs[c]"/>
+      <species id="S1213" name="digalsgalside_hs[g]"/>
+      <species id="S1214" name="digalside_hs[c]"/>
+      <species id="S1215" name="digalside_hs[g]"/>
+      <species id="S1665" name="f1a[g]"/>
+      <species id="S1666" name="f1a[l]"/>
+      <species id="S1774" name="fuc13galacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S1775" name="fuc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1776" name="fuc14galacglcgalgluside_hs[c]"/>
+      <species id="S1777" name="fuc14galacglcgalgluside_hs[g]"/>
+      <species id="S1778" name="fucacgalfucgalacglcgalgluside_hs[c]"/>
+      <species id="S1779" name="fucacgalfucgalacglcgalgluside_hs[g]"/>
+      <species id="S1780" name="fucacngal14acglcgalgluside_hs[c]"/>
+      <species id="S1781" name="fucacngal14acglcgalgluside_hs[g]"/>
+      <species id="S1782" name="fucacngalacglcgalgluside_hs[c]"/>
+      <species id="S1783" name="fucacngalacglcgalgluside_hs[g]"/>
+      <species id="S1789" name="fucfuc12gal14acglcgalgluside_hs[c]"/>
+      <species id="S1790" name="fucfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S1791" name="fucfuc132galacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S1792" name="fucfuc132galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1793" name="fucfucfucgalacglc13galacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S1794" name="fucfucfucgalacglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1795" name="fucfucfucgalacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S1796" name="fucfucfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1797" name="fucfucgalacglcgalgluside_hs[c]"/>
+      <species id="S1798" name="fucfucgalacglcgalgluside_hs[g]"/>
+      <species id="S1799" name="fucgal14acglcgalgluside_hs[c]"/>
+      <species id="S1800" name="fucgal14acglcgalgluside_hs[g]"/>
+      <species id="S1801" name="fucgalfucgalacglcgalgluside_hs[c]"/>
+      <species id="S1802" name="fucgalfucgalacglcgalgluside_hs[g]"/>
+      <species id="S1803" name="fucgalgbside_hs[c]"/>
+      <species id="S1804" name="fucgalgbside_hs[g]"/>
+      <species id="S1868" name="galacglcgalgbside_hs[c]"/>
+      <species id="S786" name="galacglcgalgbside_hs[g]"/>
+      <species id="S1906" name="galfuc12gal14acglcgalgluside_hs[c]"/>
+      <species id="S269" name="galfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S1907" name="galfucgalacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S277" name="galfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1908" name="galgalfucfucgalacglcgalacglcgal14acglcgalgluside_hs[c]"/>
+      <species id="S279" name="galgalfucfucgalacglcgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1909" name="galgalgalthcrm_hs[c]"/>
+      <species id="S784" name="galgalgalthcrm_hs[g]"/>
+      <species id="S242" name="galgluside_hs[c]"/>
+      <species id="S246" name="galgluside_hs[g]"/>
+      <species id="S1928" name="galside_hs[c]"/>
+      <species id="S1864" name="galside_hs[g]"/>
+      <species id="S1958" name="gd1b2_hs[c]"/>
+      <species id="S1959" name="gd1b2_hs[g]"/>
+      <species id="S1960" name="gd1c_hs[c]"/>
+      <species id="S1961" name="gd1c_hs[g]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S1672" name="gdp[g]"/>
+      <species id="S1668" name="gdpfuc[c]"/>
+      <species id="S1669" name="gdpfuc[g]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S2032" name="glc_D[g]"/>
+      <species id="S934" name="gluside_hs[c]"/>
+      <species id="S790" name="gluside_hs[g]"/>
+      <species id="S1963" name="gmp[c]"/>
+      <species id="S1962" name="gmp[g]"/>
+      <species id="S2065" name="gp1c_hs[c]"/>
+      <species id="S2066" name="gp1c_hs[g]"/>
+      <species id="S2063" name="gp1calpha_hs[c]"/>
+      <species id="S2064" name="gp1calpha_hs[g]"/>
+      <species id="S2075" name="gq1b_hs[c]"/>
+      <species id="S2076" name="gq1b_hs[g]"/>
+      <species id="S2073" name="gq1balpha_hs[c]"/>
+      <species id="S2074" name="gq1balpha_hs[g]"/>
+      <species id="S2080" name="gt1a_hs[c]"/>
+      <species id="S2081" name="gt1a_hs[g]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S742" name="k[c]"/>
+      <species id="S2202" name="k[g]"/>
+      <species id="S237" name="man[c]"/>
+      <species id="S2265" name="man[g]"/>
+      <species id="S80" name="na1[c]"/>
+      <species id="S2372" name="na1[g]"/>
+      <species id="S1935" name="oagd3_hs[c]"/>
+      <species id="S1936" name="oagd3_hs[g]"/>
+      <species id="S1938" name="oagt3_hs[c]"/>
+      <species id="S1939" name="oagt3_hs[g]"/>
+      <species id="S529" name="pa_hs[c]"/>
+      <species id="S2468" name="pa_hs[g]"/>
+      <species id="S64" name="pap[c]"/>
+      <species id="S1866" name="pap[g]"/>
+      <species id="S61" name="paps[c]"/>
+      <species id="S1865" name="paps[g]"/>
+      <species id="S928" name="pchol_hs[c]"/>
+      <species id="S2481" name="pchol_hs[g]"/>
+      <species id="S929" name="pe_hs[c]"/>
+      <species id="S2491" name="pe_hs[g]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S2377" name="pi[g]"/>
+      <species id="S2567" name="ps_hs[c]"/>
+      <species id="S2569" name="ps_hs[g]"/>
+      <species id="S2647" name="sgalside_hs[c]"/>
+      <species id="S1867" name="sgalside_hs[g]"/>
+      <species id="S2659" name="sphmyln_hs[c]"/>
+      <species id="S2655" name="sphmyln_hs[g]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S2734" name="udpacgal[c]"/>
+      <species id="S265" name="udpacgal[g]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S2737" name="udpg[g]"/>
+      <species id="S243" name="udpgal[c]"/>
+      <species id="S247" name="udpgal[g]"/>
+      <species id="S2103" name="udpglcur[c]"/>
+      <species id="S2006" name="udpglcur[g]"/>
+      <species id="S2739" name="udpxyl[c]"/>
+      <species id="S2738" name="udpxyl[g]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S2378" name="ump[g]"/>
+      <species id="S1931" name="xser[g]"/>
+      <species id="S2766" name="xser[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACGAGBSIDEtg" name="acgagbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S332"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S333"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGALFUCGALACGALFUC12GAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S272"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S336"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGALFUCGALACGALFUCGALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S276"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S338"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGALtlg" name="N-acetyl-galactosamine intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S343"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGBGBSIDEtg" name="acgbgbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S351"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S352"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACN13ACNGALGBSIDEtg" name="acn13acngalgbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S365"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S367"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACN23ACNGALGBSIDEtg" name="acn23acngalgbside intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S368"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S370"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNACNGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S373"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S372"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNACNGALGBSIDEtg" name="acnacngalgbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S374"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S376"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNGALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S387"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S386"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACtg" name="acetate transport, Golgi apparatus" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S422"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CERT1gt" name="ceramide transport protein" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S932"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CERT2gt" name="ceramide transport protein" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S934"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S790"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLPtg" name="choline phosphate intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S942"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S946"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLtg" name="choline intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S948"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S939"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHSTEROLtg" name="cholesterol efflux (ATP depedent), golgi" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S955"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CMPACNAtg" name="CMP-Sia Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S985"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CO2tg" name="CO2 Golgi transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S991"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="COAtg" name="CoA transport in Golgi via diffusion" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S994"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DIGALSGALSIDEtg" name="digalsgalside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1211"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1213"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DIGALSIDEtg" name="digalside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1214"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1215"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="F1Atg" name="F1alpha transport (from golgi to lysosome)" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1665"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1666"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUC13GALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1775"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1774"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUC14GALACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1777"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1776"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCACGALFUCGALACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1779"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1778"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCACNGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1781"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1780"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCACNGALACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1783"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1782"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCFUC12GAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1790"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1789"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCFUC132GALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1792"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1791"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCFUCFUCGALACGLC13GALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1794"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1793"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCFUCFUCGALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1796"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1795"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCFUCGALACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1798"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1797"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1800"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1799"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCGALFUCGALACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1802"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1801"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCGALGBSIDEtg" name="fucgalgbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1803"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1804"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALACGLCGALGBSIDEtg" name="galacglcgalgbside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1868"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S786"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALFUC12GAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S269"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1906"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALFUCGALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S277"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1907"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGALFUCFUCGALACGLCGALACGLCGAL14ACGLCGALGLUSIDEtg" name="blood group intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S279"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1908"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGALGALTHCRMtg" name="galgalgalthcrm hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1909"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S784"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGLUSIDEtg" name="galgluside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S242"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S246"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALSIDEtg" name="galactocerebroside intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1928"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1864"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GD1B2tg" name="gd1b2 hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1958"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1959"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GD1Ctg" name="gd1c hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1960"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1961"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GDPFUCtg" name="GDPFuc Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1668"/>
+          <speciesReference id="SpeciesReference" species="S1962"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GDPtg" name="GDP intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCtg" name="glucose transport, Golgi apparatus" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2032"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GMPtg" name="GMP transport (Golgi)" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1962"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GP1CALPHAtg" name="gp1calpha hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2063"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2064"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GP1Ctg" name="gp1c hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2065"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2066"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GQ1BALPHAtg" name="gq1balpha hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2073"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2074"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GQ1Btg" name="gq1b hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2075"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2076"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GT1Atg" name="gt1a hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2080"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2081"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2Otg" name="H2O transport, Golgi apparatus" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S787"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Htg" name="proton diffusion (Golgi)" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S248"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Kt3g" name="potassium transport via proton antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S742"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2202"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MANtg" name="mannose efflux from Golgi apparatus" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2265"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S237"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NAt3_1g" name="sodium proton antiporter (H:NA is 1:1)" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S80"/>
+          <speciesReference id="SpeciesReference" species="S248"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2372"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OAGD3tg" name="oagd3 hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1935"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1936"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OAGT3tg" name="oagt3 hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1938"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1939"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PA_HStg" name="phosphatidate scramblase" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2468"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAPStg" name="3&apos;-Phosphoadenylyl sufate Golgi transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S61"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAPtg" name="adenosine 3&apos;,5&apos;-bisphosphate Golgi transport" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S64"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PCHOL_HStg" name="phosphatidylcholine scramblase" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S928"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2481"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PE_HStg" name="phosphatidylethanolamine scramblase" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S929"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2491"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PItg" name="phosphate transport, Golgi apparatus" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2377"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PS_HStg" name="phosphatidylserine scramblase" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2567"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2569"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Ser_Thrtg" name="Ser/Thr transport (from golgi to lysosome)" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1926"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1249"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SGALSIDEtg" name="sgalside hs intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2647"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1867"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHMYLNtg" name="sphingomyelin intracellular transport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2659"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2655"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGALt2g" name="UDPgalactose transport (Golgi)" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S243"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S247"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGALtg" name="UDP-Gal Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S243"/>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGLCAtg" name="UDPGlcA Golgi transport via UMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2006"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGLCtg" name="UDP-Glc Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2737"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPXYLtg" name="UDP-Xyl Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+          <speciesReference id="SpeciesReference" species="S2739"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+          <speciesReference id="SpeciesReference" species="S2738"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGALNACtg" name="UDP-GalNAc Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+          <speciesReference id="SpeciesReference" species="S2734"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGLCNACtg" name="UDP-GlcNAc Golgi transport via CMP antiport" reversible="true" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XSERtg" name="Xyl-L-Ser (protein) transport from endoplasmic reticulum to Golgi apparatus" reversible="false" compartment="C78">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2766"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1931"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

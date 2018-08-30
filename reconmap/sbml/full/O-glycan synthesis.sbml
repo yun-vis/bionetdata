@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C15" name="O-glycan synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1926" name="Ser_Thr[g]"/>
+      <species id="S251" name="T_antigen[g]"/>
+      <species id="S1004" name="Tn_antigen[g]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S254" name="core2[g]"/>
+      <species id="S1005" name="core3[g]"/>
+      <species id="S1006" name="core4[g]"/>
+      <species id="S1007" name="core5[g]"/>
+      <species id="S1008" name="core6[g]"/>
+      <species id="S1009" name="core7[g]"/>
+      <species id="S1010" name="core8[g]"/>
+      <species id="S1236" name="dsT_antigen[g]"/>
+      <species id="S1665" name="f1a[g]"/>
+      <species id="S253" name="gncore1[g]"/>
+      <species id="S255" name="gncore2[g]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S2404" name="sT_antigen[g]"/>
+      <species id="S1252" name="sTn_antigen[g]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S265" name="udpacgal[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="A4GNT1g" name="alpha 1,4-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S251"/>
+          <speciesReference id="SpeciesReference" species="S252"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S253"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="A4GNT2g" name="alpha 1,4-N-acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S254"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S255"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE2GTg" name="Core 2 acetylglucosaminyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S251"/>
+          <speciesReference id="SpeciesReference" species="S252"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S254"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE3GTg" name="Core 3 beta-GlcNAc-transferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1005"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE4GTg" name="Core 4 beta6-GalNAc-transferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S1005"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1006"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE5GTg" name="Core 5 alpha-GalNAc-transferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1007"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE6GTg" name="Core 6 beta-GlcNAc-transferase A, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1008"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE7GTg" name="Core 7 alpha-GalNAc-transferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1009"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CORE8GTg" name="N-acetylgalactosamine 3-alpha-galactosyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1010"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALNTg" name="GalNAc transferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1926"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="N3Tg" name="N-acetylgalactosamine 3-beta-galactosyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S251"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="N4Tg" name="N-acetylgalactosamine 4-beta-galactosyltransferase, Golgi apparatus" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S1008"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S1665"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NS26T2g" name="alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2404"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1236"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NS26Tg" name="alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1004"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1252"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S23Tg" name="beta-galactoside alpha-2,3-sialyltransferase (T antigen)" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S251"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2404"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

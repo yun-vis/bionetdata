@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C16" name="Glutathione metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S1485" name="gthrd[e]"/>
+      <species id="S2054" name="gthrd[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S1967" name="5oxpro[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S623" name="cgly[c]"/>
+      <species id="S624" name="cgly[e]"/>
+      <species id="S573" name="cys_L[c]"/>
+      <species id="S574" name="cys_L[e]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1085" name="glu_L[e]"/>
+      <species id="S1472" name="gluala[e]"/>
+      <species id="S2041" name="glucys[c]"/>
+      <species id="S579" name="gly[c]"/>
+      <species id="S580" name="gly[e]"/>
+      <species id="S1078" name="gthox[c]"/>
+      <species id="S1484" name="gthox[e]"/>
+      <species id="S2082" name="gthox[m]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S1485" name="gthrd[e]"/>
+      <species id="S2054" name="gthrd[m]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S1488" name="h2o2[e]"/>
+      <species id="S900" name="h2o2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S40" name="pi[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="AMPTASECG" name="alanyl aminopeptidase (cys-gly)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S623"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S573"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMPTASECGe" name="alanyl aminopeptidase (cys-gly) (e)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S624"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S574"/>
+          <speciesReference id="SpeciesReference" species="S580"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGLUCT" name="gamma-glutamylcyclotransferase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S1967"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUCYS" name="Gamma-glutamylcysteine synthetase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S573"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2041"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHP" name="glutathione peroxidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S22"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S1078"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHPe" name="glutathione peroxidase (e)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1078"/>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+          <speciesReference id="SpeciesReference" species="S1484"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHPm" name="glutathione peroxidase, mitochondria" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S900"/>
+          <speciesReference id="SpeciesReference" species="S900"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S900"/>
+          <speciesReference id="SpeciesReference" species="S2082"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHRDt" name="Glutathione transport into mitochondria" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHS" name="glutathione synthetase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+          <speciesReference id="SpeciesReference" species="S2041"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTMLTe" name="g-glutamyltransferase (e)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S624"/>
+          <speciesReference id="SpeciesReference" species="S1472"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OPAHir" name="5-Oxoproline amidohydrolase (ATP-hydrolysing) (ir)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1472"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1967"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0021" name="glutathione:NAD+ oxidoreductase Glutamate metabolism EC:1.8.1.7" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1078"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0022" name="glutathione:NAD+ oxidoreductase Glutamate metabolism EC:1.8.1.7" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2082"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0129" name="gamma-glutamyltranspeptidase Glutathione metabolism EC:3.4.11.4" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S623"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0130" name="gamma-glutamyltranspeptidase Glutathione metabolism EC:3.4.11.4" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1485"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S624"/>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0568" name="(5-L-Glutamyl)-L-amino-acid 5-glutamyltransferase (cyclizing) Glutathione metabolism EC:2.3.2.4" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2041"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S573"/>
+          <speciesReference id="SpeciesReference" species="S1967"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

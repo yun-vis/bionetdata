@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C27" name="Tetrahydrobiopterin metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S2667" name="nadp[n]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S2666" name="nadph[n]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S201" name="5htrp[c]"/>
+      <species id="S215" name="5mthf[c]"/>
+      <species id="S2577" name="6pthp[c]"/>
+      <species id="S2578" name="6pthp[n]"/>
+      <species id="S3284" name="CE2705[c]"/>
+      <species id="S3286" name="CE2705[n]"/>
+      <species id="S3516" name="CE5236[c]"/>
+      <species id="S3517" name="CE5236[n]"/>
+      <species id="S2846" name="HC01254[c]"/>
+      <species id="S2816" name="HC01651[c]"/>
+      <species id="S2817" name="HC01651[n]"/>
+      <species id="S2977" name="HC01652[c]"/>
+      <species id="S2978" name="HC01652[n]"/>
+      <species id="S2941" name="HC01710[c]"/>
+      <species id="S2942" name="HC01710[n]"/>
+      <species id="S2084" name="ahdt[c]"/>
+      <species id="S2085" name="ahdt[n]"/>
+      <species id="S1206" name="dhbpt[c]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S1764" name="for[n]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S1115" name="gtp[n]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S1208" name="mlthf[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2508" name="phe_L[c]"/>
+      <species id="S2544" name="pppi[c]"/>
+      <species id="S2549" name="pppi[n]"/>
+      <species id="S2512" name="thbpt4acam[c]"/>
+      <species id="S3285" name="thbpt4acam[n]"/>
+      <species id="S1207" name="thbpt[c]"/>
+      <species id="S2668" name="thbpt[n]"/>
+      <species id="S2256" name="trp_L[c]"/>
+      <species id="S2173" name="tyr_L[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="DHPR" name="6,7-dihydropteridine reductase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHPR2" name="6,7-dihydropteridine reduction" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S215"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTPCI" name="GTP cyclohydrolase I" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S969"/>
+          <speciesReference id="SpeciesReference" species="S2084"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTPCIn" name="GTP cyclohydrolase I, nuclear" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1764"/>
+          <speciesReference id="SpeciesReference" species="S2085"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PTHPS" name="6-pyruvoyltetrahydropterin synthase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2084"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2544"/>
+          <speciesReference id="SpeciesReference" species="S2577"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PTHPSn" name="6-pyruvoyltetrahydropterin synthase, nuclear" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2085"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2549"/>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPR" name="sepiapterin reductase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+          <speciesReference id="SpeciesReference" species="S2577"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2577"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPRn" name="sepiapterin reductase, nuclear" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2578"/>
+          <speciesReference id="SpeciesReference" species="S2668"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THBPT4ACAMDASE" name="Tetrahydrobiopterin-4a-carbinolamine dehydratase" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2512"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0120" name="GTP 7,8-8,9-dihydrolase Folate biosynthesis EC:3.5.4.16" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2816"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0121" name="r0121" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2817"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0398" name="NADPH:6,7-dihydropteridine oxidoreductase Folate biosynthesis EC:1.5.1.34" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0399" name="L-Phenylalanine,tetrahydrobiopterin:oxygen oxidoreductase (4-hydroxylating) Phenylalanine, tyrosine and tryptophan biosynthesis EC:1.14.16.1" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+          <speciesReference id="SpeciesReference" species="S2508"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+          <speciesReference id="SpeciesReference" species="S2173"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0402" name="Tetrahydrobiopterin:NADP+ oxidoreductase Folate biosynthesis EC:1.1.1.153" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2846"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0403" name="L-Tryptophan,tetrahydrobiopterin:oxygen oxidoreductase (5-hydroxylating) Tryptophan metabolism EC:1.14.16.4" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S1207"/>
+          <speciesReference id="SpeciesReference" species="S2256"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S201"/>
+          <speciesReference id="SpeciesReference" species="S1206"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0673" name="6-Lactoyl-5,6,7,8-tetrahydropterin:NADP+ 2-oxidoreductase Folate biosynthesis EC:1.1.1.220" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2577"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2846"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0708" name="2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate 7,8-8,9-dihydrolase Folate biosynthesis EC:3.5.4.16" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2084"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2941"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0709" name="r0709" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2085"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2942"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0776" name="r0776" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2817"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2817"/>
+          <speciesReference id="SpeciesReference" species="S1764"/>
+          <speciesReference id="SpeciesReference" species="S2978"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0777" name="GTP 7,8-8,9-dihydrolase Folate biosynthesis EC:3.5.4.16" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2978"/>
+          <speciesReference id="SpeciesReference" species="S2977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2941"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0778" name="r0778" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2941"/>
+          <speciesReference id="SpeciesReference" species="S2978"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2942"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0830C" name="RE0830" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2512"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3284"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0830N" name="RE0830" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3285"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S3286"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1709C" name="RE1709" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2512"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3516"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1709N" name="RE1709" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3285"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S3517"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2660C" name="RE2660" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3284"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2660N" name="RE2660" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3517"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3286"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

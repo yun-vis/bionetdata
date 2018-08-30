@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C32" name="Pyruvate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S588" name="12ppd_R[c]"/>
+      <species id="S590" name="12ppd_S[c]"/>
+      <species id="S1074" name="ficytC[m]"/>
+      <species id="S1073" name="focytC[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S418" name="ac[m]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S423" name="acetol[c]"/>
+      <species id="S330" name="acetone[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S1139" name="dump[c]"/>
+      <species id="S1346" name="dump[m]"/>
+      <species id="S1339" name="g3p[c]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S2054" name="gthrd[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S317" name="hco3[m]"/>
+      <species id="S1222" name="lac_D[c]"/>
+      <species id="S1223" name="lac_D[m]"/>
+      <species id="S2207" name="lac_L[c]"/>
+      <species id="S2210" name="lac_L[m]"/>
+      <species id="S589" name="lald_D[c]"/>
+      <species id="S2208" name="lald_D[m]"/>
+      <species id="S591" name="lald_L[c]"/>
+      <species id="S2209" name="lald_L[m]"/>
+      <species id="S2052" name="lgt_S[c]"/>
+      <species id="S2053" name="lgt_S[m]"/>
+      <species id="S557" name="mal_L[c]"/>
+      <species id="S558" name="mal_L[m]"/>
+      <species id="S261" name="mthgxl[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S748" name="oaa[m]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S155" name="pyr[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACOAHi" name="acetyl-CoA hydrolase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S290"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACTLMO" name="acetol monooxygenase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S423"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S423"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACTNMO" name="acetone monooxygenase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S330"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S423"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD21_D" name="alcohol dehydrogenase (D-1,2-propanediol)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S588"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD21_L" name="alcohol dehydrogenase (L-1,2-propanediol)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S590"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S591"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD22_D" name="alcohol dehydrogenase (D-lactaldehyde)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD22_L" name="alcohol dehydrogenase (L-lactaldehyde)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S591"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALR2" name="aldose reductase (methylglyoxal)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S423"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALR3" name="aldose reductase (acetol)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S423"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S590"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYOX" name="hydroxyacylglutathione hydrolase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2052"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+          <speciesReference id="SpeciesReference" species="S1222"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYOXm" name="hydroxyacylglutathione hydrolase, mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2053"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S1223"/>
+          <speciesReference id="SpeciesReference" species="S2054"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LALDO" name="D-Lactaldehyde:NAD+ oxidoreductase (glutathione-formylating)" reversible="true" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2052"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LALDO2x" name="D-Lactaldehyde:NAD+ 1-oxidoreductase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCADi" name="lactaldehyde dehydrogenase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S591"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S591"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2207"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCADi_D" name="lactaldehyde dehydrogenase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S589"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1222"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCADi_Dm" name="lactaldehyde dehydrogenase, mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2208"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1223"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCADim" name="lactaldehyde dehydrogenase, mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2209"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2209"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2210"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LDH_D" name="D-lactate dehydrogenase" reversible="true" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1222"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LDH_Lm" name="L-lactate dehydrogenase" reversible="true" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2210"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S155"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LGTHL" name="lactoylglutathione lyase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S261"/>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2052"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="L_LACDcm" name="L-Lactate dehydrogenase, cytosolic/mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2052"/>
+          <speciesReference id="SpeciesReference" species="S2207"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2207"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ME1m" name="malic enzyme (NAD), mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S558"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S155"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ME2" name="malic enzyme (NADP)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S557"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ME2m" name="malic enzyme (NADP), mitochondrial" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S558"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S155"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MGSA" name="methylglyoxal synthase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MGSA2" name="methyglyoxylate synthase 2 (from g3p)" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1339"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PCm" name="pyruvate carboxylase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S317"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPDOx" name="Propane-1,2-diol:NAD+ 1-oxidoreductase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S588"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPDOy" name="Propane-1,2-diol:NADP+ 1-oxidoreductase" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S589"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S588"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0055" name="2-Oxopropanal:NADP+ oxidoreductase Pyruvate metabolism EC:1.2.1.49" reversible="true" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S261"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0062" name="Acetyl-CoA hydrolase Pyruvate metabolism EC:3.1.2.1" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0818" name="Transport reaction" reversible="false" compartment="C32">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

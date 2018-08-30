@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C13" name="Purine synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S9" name="10fthf[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S472" name="25aics[c]"/>
+      <species id="S553" name="5aizc[c]"/>
+      <species id="S426" name="adn[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S473" name="aicar[c]"/>
+      <species id="S552" name="air[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S1098" name="dgdp[c]"/>
+      <species id="S1097" name="dgtp[c]"/>
+      <species id="S1941" name="fgam[c]"/>
+      <species id="S2550" name="fpram[c]"/>
+      <species id="S550" name="fprica[c]"/>
+      <species id="S471" name="fum[c]"/>
+      <species id="S1940" name="gar[c]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S579" name="gly[c]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S474" name="imp[c]"/>
+      <species id="S427" name="ins[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2043" name="pram[c]"/>
+      <species id="S455" name="prpp[c]"/>
+      <species id="S551" name="thf[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ADSL2" name="adenylosuccinate lyase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S471"/>
+          <speciesReference id="SpeciesReference" species="S473"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AICART" name="phosphoribosylaminoimidazolecarboxamide formyltransferase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S550"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AIRCr" name="phosphoribosylaminoimidazole carboxylase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S552"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S553"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GARFT" name="phosphoribosylglycinamide formyltransferase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S1940"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S1941"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUPRT" name="glutamine phosphoribosyldiphosphate amidotransferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2043"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IMPC" name="IMP cyclohydrolase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S550"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRAGSr" name="phosphoribosylglycinamide synthase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+          <speciesReference id="SpeciesReference" species="S2043"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1940"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRASCS" name="phosphoribosylaminoimidazolesuccinocarboxamide synthase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S553"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S472"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRFGS" name="phosphoribosylformylglycinamidine synthase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S1941"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S2550"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0666" name="2-(Formamido)-N1-(5-phosphoribosyl)acetamidine cyclo-ligase (ADP-forming) Purine metabolism EC:6.3.3.1" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2550"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S552"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNK3" name="adenosine kinase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S426"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNK4" name="adenosine kinase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S426"/>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="INSK" name="insosine kinase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S427"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

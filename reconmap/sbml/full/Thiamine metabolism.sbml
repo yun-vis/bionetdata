@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C6" name="Thiamine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S38" name="adp[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S2708" name="thm[c]"/>
+      <species id="S2692" name="thmmp[c]"/>
+      <species id="S2697" name="thmmp[m]"/>
+      <species id="S2691" name="thmpp[c]"/>
+      <species id="S2696" name="thmpp[m]"/>
+      <species id="S2710" name="thmtp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="TDP" name="thiamin pyrophosphatase" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2691"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2692"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TDPm" name="thiamin pyrophosphatase, mitochondrial" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2696"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2697"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THMP" name="thiamin phosphatase" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2692"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2708"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THMTP" name="thiamine-triphosphatase" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2710"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2691"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDPK" name="Thiamin pyrophosphokinase (EC 2.7.6.2)" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2708"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S2691"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDPPK" name="thiamine-diphosphate kinase" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2691"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S2710"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

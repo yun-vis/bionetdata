@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C35" name="Pyrimidine catabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S69" name="2dr1p[c]"/>
+      <species id="S110" name="2mop[m]"/>
+      <species id="S848" name="3aib_D[c]"/>
+      <species id="S1118" name="3aib_D[m]"/>
+      <species id="S847" name="3uib[c]"/>
+      <species id="S1205" name="56dthm[c]"/>
+      <species id="S2836" name="56dthm[m]"/>
+      <species id="S1203" name="56dura[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S738" name="ala_B[c]"/>
+      <species id="S535" name="ala_L[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S1204" name="cala[c]"/>
+      <species id="S2818" name="cdp[e]"/>
+      <species id="S516" name="cmp[c]"/>
+      <species id="S1440" name="cmp[e]"/>
+      <species id="S2413" name="cmp[l]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S1056" name="csn[c]"/>
+      <species id="S2773" name="ctp[e]"/>
+      <species id="S1086" name="cytd[c]"/>
+      <species id="S1095" name="cytd[l]"/>
+      <species id="S1103" name="dcmp[c]"/>
+      <species id="S2411" name="dcmp[l]"/>
+      <species id="S1148" name="dcyt[c]"/>
+      <species id="S2412" name="dcyt[l]"/>
+      <species id="S2774" name="dgmp[e]"/>
+      <species id="S1235" name="dgtp[e]"/>
+      <species id="S70" name="drib[c]"/>
+      <species id="S2874" name="dtdp[e]"/>
+      <species id="S1341" name="dtmp[c]"/>
+      <species id="S2777" name="dtmp[e]"/>
+      <species id="S2415" name="dtmp[l]"/>
+      <species id="S1238" name="dttp[e]"/>
+      <species id="S1139" name="dump[c]"/>
+      <species id="S1149" name="duri[c]"/>
+      <species id="S1286" name="dutp[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S146" name="pi[l]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2807" name="ppi[e]"/>
+      <species id="S155" name="pyr[m]"/>
+      <species id="S2398" name="r1p[c]"/>
+      <species id="S1344" name="thym[c]"/>
+      <species id="S2835" name="thym[m]"/>
+      <species id="S2414" name="thymd[c]"/>
+      <species id="S2416" name="thymd[l]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S1644" name="ump[e]"/>
+      <species id="S2407" name="ump[l]"/>
+      <species id="S1057" name="ura[c]"/>
+      <species id="S1087" name="uri[c]"/>
+      <species id="S2408" name="uri[l]"/>
+      <species id="S1649" name="utp[e]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="2-deoxy-D-ribose 1-phosphate phosphorylase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S69"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S70"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BUP2" name="beta-ureidopropionase (D-3-amino-isobutanoate forming)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S847"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S848"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSND" name="Cytosine deaminase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1056"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTD" name="cytidine deaminase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="D3AIBTm" name="D-3-Amino-isobutanoate:pyruvate aminotransferase, mitochondrial" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S1118"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S110"/>
+          <speciesReference id="SpeciesReference" species="S535"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCMPDA" name="dCMP deaminase" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCYTD" name="deoxycytidine deaminase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHPM1" name="dihydropyrimidinase (5,6-dihydrouracil)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1203"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1204"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHPM2" name="dihydropyrimidinase (dihydrothymine)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1205"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S847"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURAD" name="dihydrouracil dehydrogenase (NADP)" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1203"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURAD2" name="dihydrothymin dehydrogenase (NADP)" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1205"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1344"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD1" name="5&apos;-nucleotidase (dUMP)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD2" name="5&apos;-nucleotidase (UMP)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD2l" name="5&apos;-nucleotidase (UMP), lysosome" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2407"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2408"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD3" name="5&apos;-nucleotidase (dCMP)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1148"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD3l" name="5&apos;-nucleotidase (dCMP), lysosomal" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2411"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2412"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD4" name="5&apos;-nucleotidase (CMP)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD4l" name="5&apos;-nucleotidase (CMP), lysosome" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2413"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S1095"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD5" name="5&apos;-nucleotidase (dTMP)" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2414"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD5l" name="5&apos;-nucleotidase (dTMP), lysosomal" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2415"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2416"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYNP2r" name="pyrimidine-nucleoside phosphorylase (uracil)" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1057"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDPP" name="thymidine phosphorylase" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2414"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S69"/>
+          <speciesReference id="SpeciesReference" species="S1344"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UPPN" name="b-ureidopropionase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1204"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S738"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0139" name="CDP diphosphohydrolase Pyrimidine metabolism EC:3.6.1.5" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2818"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1440"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0149" name="CTP diphosphohydrolase Pyrimidine metabolism EC:3.6.1.5" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2773"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S2818"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0166" name="Uridine triphosphate pyrophosphohydrolase Pyrimidine metabolism EC:3.6.1.19" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1649"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1644"/>
+          <speciesReference id="SpeciesReference" species="S2807"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0236" name="5,6-Dihydrouracil:NAD+ oxidoreductase Pyrimidine metabolism EC:1.3.1.1" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1203"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0330" name="5,6-Dihydrothymine:NAD+ oxidoreductase Pyrimidine metabolism EC:1.3.1.1" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1344"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1205"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0331" name="5,6-Dihydrothymine:NAD+ oxidoreductase Pyrimidine metabolism EC:1.3.1.1" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2835"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2836"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0377" name="ATP:deoxycitidine 5-phosphotransferase Pyrimidine metabolism EC:2.7.1.74" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0410" name="2-Deoxyguanosine 5-triphosphate pyrophosphohydrolase Purine metabolism EC:3.6.1.19" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1235"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S2774"/>
+          <speciesReference id="SpeciesReference" species="S2807"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0483" name="(R)-3-Amino-2-methylpropanoate:2-oxoglutarate aminotransferase EC:2.6.1.22" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S1118"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S110"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0494" name="dTDP diphosphohydrolase Pyrimidine metabolism EC:3.6.1.5" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2874"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S2777"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0497" name="dTTP nucleotidohydrolase Pyrimidine metabolism EC:3.6.1.39" reversible="true" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1238"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S2874"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DUTPDP" name="dUTP diphosphatase" reversible="false" compartment="C35">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1286"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C9" name="Limonene and pinene degradation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S883" name="3h26dm5coa[m]"/>
+      <species id="S885" name="3h26dm5coa[x]"/>
+      <species id="S645" name="apnnox[c]"/>
+      <species id="S657" name="appnn[c]"/>
+      <species id="S882" name="c2m26dcoa[m]"/>
+      <species id="S884" name="c2m26dcoa[x]"/>
+      <species id="S898" name="carveol[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S2227" name="limnen[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2583" name="peracd[c]"/>
+      <species id="S2585" name="peracd[m]"/>
+      <species id="S2451" name="perillyl[c]"/>
+      <species id="S2582" name="pylald[c]"/>
+      <species id="S2584" name="pylald[m]"/>
+      <species id="S2681" name="t2m26dcoa[m]"/>
+      <species id="S2682" name="t2m26dcoa[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="C2M26DCOAHLm" name="cis-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase (m)" reversible="true" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S882"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S883"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C2M26DCOAHLx" name="cis-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase (x)" reversible="true" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S884"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S885"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C92" name="cytochrome P450 2C9" reversible="false" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2227"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S898"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C93" name="cytochrome P450 2C9" reversible="false" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2227"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2451"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P4502C94" name="cytochrome P450 2C9" reversible="false" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S657"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S645"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYLALDOX" name="Perillyl aldehyde:NAD+ oxidoreductase" reversible="false" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2582"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2582"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2583"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYLALDOXm" name="Perillyl aldehyde:NAD+ oxidoreductase (m)" reversible="false" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2584"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2584"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2585"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="T2M26DCOAHLm" name="trans-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase (m)" reversible="true" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2681"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S883"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="T2M26DCOAHLx" name="trans-2-Methyl-5-isopropylhexa-2,5-dienoyl-CoA hydro-lyase (x)" reversible="true" compartment="C9">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2682"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S885"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

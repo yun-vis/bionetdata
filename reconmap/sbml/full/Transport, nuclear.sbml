@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C65" name="Transport, nuclear"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2438" name="13_cis_oretn[c]"/>
+      <species id="S1229" name="13_cis_oretn[n]"/>
+      <species id="S2437" name="13_cis_retn[c]"/>
+      <species id="S1230" name="13_cis_retn[n]"/>
+      <species id="S5026" name="1a25dhvitd3[c]"/>
+      <species id="S5027" name="1a25dhvitd3[n]"/>
+      <species id="S106" name="35cgmp[c]"/>
+      <species id="S107" name="35cgmp[n]"/>
+      <species id="S160" name="4abut[c]"/>
+      <species id="S5028" name="4abut[n]"/>
+      <species id="S2261" name="Ntmelys[n]"/>
+      <species id="S2425" name="Ntmelys[r]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S327" name="accoa[n]"/>
+      <species id="S362" name="ach[c]"/>
+      <species id="S361" name="ach[n]"/>
+      <species id="S382" name="acnam[c]"/>
+      <species id="S384" name="acnam[n]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S546" name="ahcys[n]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S622" name="amet[n]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S755" name="atp[n]"/>
+      <species id="S653" name="biocyt[c]"/>
+      <species id="S834" name="biocyt[n]"/>
+      <species id="S798" name="btn[c]"/>
+      <species id="S843" name="btn[n]"/>
+      <species id="S939" name="chol[c]"/>
+      <species id="S940" name="chol[n]"/>
+      <species id="S985" name="cmpacna[c]"/>
+      <species id="S987" name="cmpacna[n]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S992" name="co2[n]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S941" name="coa[n]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S988" name="ctp[n]"/>
+      <species id="S1086" name="cytd[c]"/>
+      <species id="S1090" name="cytd[n]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S1109" name="datp[n]"/>
+      <species id="S1107" name="dctp[c]"/>
+      <species id="S1108" name="dctp[n]"/>
+      <species id="S1097" name="dgtp[c]"/>
+      <species id="S1100" name="dgtp[n]"/>
+      <species id="S1209" name="didp[c]"/>
+      <species id="S1210" name="didp[n]"/>
+      <species id="S1217" name="ditp[c]"/>
+      <species id="S1218" name="ditp[n]"/>
+      <species id="S1275" name="dnad[c]"/>
+      <species id="S1276" name="dnad[n]"/>
+      <species id="S1284" name="dtdp[c]"/>
+      <species id="S1340" name="dtdp[n]"/>
+      <species id="S1288" name="dttp[c]"/>
+      <species id="S1239" name="dttp[n]"/>
+      <species id="S1283" name="dudp[c]"/>
+      <species id="S1342" name="dudp[n]"/>
+      <species id="S1139" name="dump[c]"/>
+      <species id="S1343" name="dump[n]"/>
+      <species id="S1149" name="duri[c]"/>
+      <species id="S1150" name="duri[n]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S1764" name="for[n]"/>
+      <species id="S1963" name="gmp[c]"/>
+      <species id="S2057" name="gmp[n]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S1115" name="gtp[n]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S2094" name="h2o2[n]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S2131" name="hretn[c]"/>
+      <species id="S1242" name="hretn[n]"/>
+      <species id="S342" name="idp[c]"/>
+      <species id="S2182" name="idp[n]"/>
+      <species id="S341" name="itp[c]"/>
+      <species id="S2193" name="itp[n]"/>
+      <species id="S647" name="lys_L[c]"/>
+      <species id="S844" name="lys_L[n]"/>
+      <species id="S2298" name="mi13456p[c]"/>
+      <species id="S2300" name="mi13456p[n]"/>
+      <species id="S2305" name="mi1346p[c]"/>
+      <species id="S2304" name="mi1346p[n]"/>
+      <species id="S2312" name="mi14p[c]"/>
+      <species id="S2314" name="mi14p[n]"/>
+      <species id="S2308" name="mi1p_D[c]"/>
+      <species id="S2315" name="mi1p_D[n]"/>
+      <species id="S2299" name="minohp[c]"/>
+      <species id="S2320" name="minohp[n]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S2368" name="nad[n]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S1092" name="nh4[n]"/>
+      <species id="S2386" name="nicrnt[c]"/>
+      <species id="S2387" name="nicrnt[n]"/>
+      <species id="S2391" name="nmn[c]"/>
+      <species id="S2390" name="nmn[n]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2430" name="o2[n]"/>
+      <species id="S731" name="o2s[c]"/>
+      <species id="S2428" name="o2s[n]"/>
+      <species id="S2436" name="oretn[c]"/>
+      <species id="S1248" name="oretn[n]"/>
+      <species id="S529" name="pa_hs[c]"/>
+      <species id="S1125" name="pa_hs[n]"/>
+      <species id="S2473" name="pail45p_hs[c]"/>
+      <species id="S2474" name="pail45p_hs[n]"/>
+      <species id="S2475" name="pail4p_hs[c]"/>
+      <species id="S2476" name="pail4p_hs[n]"/>
+      <species id="S922" name="pail_hs[c]"/>
+      <species id="S2472" name="pail_hs[n]"/>
+      <species id="S1561" name="peplys[e]"/>
+      <species id="S2258" name="peplys[n]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S2518" name="pi[n]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S989" name="ppi[n]"/>
+      <species id="S2534" name="ppmi12346p[c]"/>
+      <species id="S2535" name="ppmi12346p[n]"/>
+      <species id="S2536" name="ppmi1346p[c]"/>
+      <species id="S2537" name="ppmi1346p[n]"/>
+      <species id="S2544" name="pppi[c]"/>
+      <species id="S2549" name="pppi[n]"/>
+      <species id="S2435" name="retn[c]"/>
+      <species id="S2590" name="retn[n]"/>
+      <species id="S1087" name="uri[c]"/>
+      <species id="S1093" name="uri[n]"/>
+      <species id="S1069" name="utp[c]"/>
+      <species id="S1111" name="utp[n]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="35cGMP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S106"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S107"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACCOAtn" name="acetyl-CoA transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S327"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACHtn" name="Acetylcholin transport, nuclear trhough pores" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S361"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S362"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNAMtn" name="N-acetylneuraminate nuclear import" reversible="false" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S382"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S384"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AHCYStn" name="S-adenosyl-L-homocysteine nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S546"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMETtn" name="S-adenosyl-L-methionine nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S622"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATPtn" name="ATP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S755"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BIOCYTtn" name="biocytin transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S653"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S834"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTNtn" name="Biotin transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S798"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S843"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLtn" name="Choline transport, nuclear through pores" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S939"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S940"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CMPACNAtn" name="CMP-Sia nuclear export" reversible="false" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S987"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S985"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CO2tn" name="CO2 nuclear transport via diffusion" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S992"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="COAtn" name="coenzyme A transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S941"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CTPtn" name="CTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S988"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTDtn" name="cytidine transport in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1090"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DATPtn" name="dATP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCTPtn" name="dCTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DGTPtn" name="dGTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1100"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DIDPtn" name="dIDP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1209"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1210"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DITPtn" name="dITP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1217"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1218"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DNADtn" name="dNAD transport, nuclear trhough pore" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1275"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1276"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DTDPtn" name="dTDP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1340"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DTTPtn" name="dTTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1288"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1239"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DUDPtn" name="dUDP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1342"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DUMPtn" name="dUMP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1343"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURItn" name="deoxyuridine transport in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1150"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FORtrn" name="Formate transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S969"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1764"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GMPtn" name="GMP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTPtn" name="GTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2O2tn" name="hydrogen peroxide nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S22"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2094"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2Otn" name="H2O transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HRETNtn" name="4-hydroxyretinoic acid transport, Nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2131"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1242"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IDPtn" name="IDP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S342"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2182"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ITPtn" name="ITP nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2193"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LYStn" name="L-lysine transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S647"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S844"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI13456Ptn" name="inositol 1,3,4,5,6-pentakisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2298"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2300"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1346Ptn" name="1D-myo-Inositol 1,3,4,6-tetrakisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2305"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2304"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI14Ptn" name="inositol 1,4-bisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2312"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2314"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1P_Dtn" name="inositol 1-phosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2315"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MINOHPtn" name="inositol hexakisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2299"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADtn" name="NAD transport, nuclear through pores" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2368"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NH4tn" name="ammonia nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S23"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1092"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NICRNTtn" name="NICRNT transport, nuclear trhough pore" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2387"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMNtn" name="NMN transport, nuclear trhough pore" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2391"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2390"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTMELYStner" name="protein trimethyl lysine transport (nucleus to ER)" reversible="false" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2425"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="O2Stn" name="superoxide anion transport via diffusion (nucleus)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S731"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2428"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="O2tn" name="O2 nuclear transport" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2430"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ORETNtn" name="4-oxo-retinoic acid transport, Nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1248"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ORETNtn2" name="13-cis-4-oxo-retinoic acid transport, Nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2438"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PA_HStn" name="phosphatidate transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1125"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAIL_HStn" name="phosphatidylinositol nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAIL45P_HStn" name="phosphatidylinositol 4,5-bisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAIL4P_HStn" name="phosphatidylinositol 4-phosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2475"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PEPLYStn" name="peptide (lysine) nuclear transport via diffusion" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1561"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PItn" name="phosphate transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPMI12346Ptn" name="5-diphosphatidylinositol pentakisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2534"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2535"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPMI1346Ptn" name="diphosphatidylinositol tetrakisphosphate nuclear transport (diffusion)" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2536"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2537"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPPItn" name="Inorganic triphosphate transport through nuclear pore" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2544"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2549"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RAtn" name="Retinoate transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2435"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2590"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RAtn3" name="13-cis-retinoic acid transport, nuclear" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1230"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Uritn" name="uridine transport in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1093"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UTPtn" name="UTP diffusion in nucleus" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1459" name="Transport reaction" reversible="true" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S989"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="tanslocation of 1-alpha,25-Dihydroxyvitamin D3 to nucleus" reversible="false" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S5026"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5027"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="transport of GABA" reversible="false" compartment="C65">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S160"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5028"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

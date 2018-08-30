@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C107" name="Transport, lysosomal"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S0" name="10fthf5glu[c]"/>
+      <species id="S1" name="10fthf5glu[l]"/>
+      <species id="S3" name="10fthf6glu[c]"/>
+      <species id="S4" name="10fthf6glu[l]"/>
+      <species id="S6" name="10fthf7glu[c]"/>
+      <species id="S7" name="10fthf7glu[l]"/>
+      <species id="S9" name="10fthf[c]"/>
+      <species id="S10" name="10fthf[l]"/>
+      <species id="S160" name="4abut[c]"/>
+      <species id="S286" name="4abut[l]"/>
+      <species id="S196" name="5dhf[c]"/>
+      <species id="S197" name="5dhf[l]"/>
+      <species id="S216" name="5thf[c]"/>
+      <species id="S217" name="5thf[l]"/>
+      <species id="S219" name="6dhf[c]"/>
+      <species id="S220" name="6dhf[l]"/>
+      <species id="S225" name="6thf[c]"/>
+      <species id="S226" name="6thf[l]"/>
+      <species id="S230" name="7dhf[c]"/>
+      <species id="S231" name="7dhf[l]"/>
+      <species id="S233" name="7thf[c]"/>
+      <species id="S234" name="7thf[l]"/>
+      <species id="S2992" name="HC00004[e]"/>
+      <species id="S3056" name="HC00004[l]"/>
+      <species id="S3117" name="HC02100[l]"/>
+      <species id="S3118" name="HC02100[r]"/>
+      <species id="S688" name="Rtotal[c]"/>
+      <species id="S728" name="Rtotal[l]"/>
+      <species id="S332" name="acgagbside_hs[c]"/>
+      <species id="S334" name="acgagbside_hs[l]"/>
+      <species id="S339" name="acgal[c]"/>
+      <species id="S344" name="acgal[l]"/>
+      <species id="S345" name="acgam[c]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S351" name="acgbgbside_hs[c]"/>
+      <species id="S353" name="acgbgbside_hs[l]"/>
+      <species id="S382" name="acnam[c]"/>
+      <species id="S383" name="acnam[l]"/>
+      <species id="S432" name="ade[c]"/>
+      <species id="S433" name="ade[l]"/>
+      <species id="S426" name="adn[c]"/>
+      <species id="S145" name="adn[l]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S577" name="ala_D[c]"/>
+      <species id="S1129" name="ala_D[l]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S583" name="ala_L[l]"/>
+      <species id="S604" name="arachd[c]"/>
+      <species id="S3002" name="arachd[l]"/>
+      <species id="S678" name="arg_L[c]"/>
+      <species id="S3028" name="arg_L[l]"/>
+      <species id="S570" name="asn_L[c]"/>
+      <species id="S3029" name="asn_L[l]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S3030" name="asp_L[l]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S2374" name="carn[c]"/>
+      <species id="S4992" name="carn[l]"/>
+      <species id="S942" name="cholp[c]"/>
+      <species id="S947" name="cholp[l]"/>
+      <species id="S950" name="chsterol[c]"/>
+      <species id="S953" name="chsterol[l]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S995" name="coa[l]"/>
+      <species id="S1060" name="cspg_a[e]"/>
+      <species id="S1040" name="cspg_a[l]"/>
+      <species id="S1062" name="cspg_b[e]"/>
+      <species id="S1043" name="cspg_b[l]"/>
+      <species id="S1064" name="cspg_c[e]"/>
+      <species id="S1045" name="cspg_c[l]"/>
+      <species id="S1066" name="cspg_d[e]"/>
+      <species id="S1047" name="cspg_d[l]"/>
+      <species id="S1068" name="cspg_e[e]"/>
+      <species id="S1049" name="cspg_e[l]"/>
+      <species id="S573" name="cys_L[c]"/>
+      <species id="S3031" name="cys_L[l]"/>
+      <species id="S1086" name="cytd[c]"/>
+      <species id="S1095" name="cytd[l]"/>
+      <species id="S1198" name="dhf[c]"/>
+      <species id="S1199" name="dhf[l]"/>
+      <species id="S1214" name="digalside_hs[c]"/>
+      <species id="S1216" name="digalside_hs[l]"/>
+      <species id="S1228" name="dlnlcg[c]"/>
+      <species id="S1329" name="dpcoa[c]"/>
+      <species id="S1330" name="dpcoa[l]"/>
+      <species id="S587" name="fald[c]"/>
+      <species id="S1718" name="fald[l]"/>
+      <species id="S1757" name="fuc_L[c]"/>
+      <species id="S1785" name="fuc_L[l]"/>
+      <species id="S1914" name="gal[c]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S242" name="galgluside_hs[c]"/>
+      <species id="S1910" name="galgluside_hs[l]"/>
+      <species id="S1928" name="galside_hs[c]"/>
+      <species id="S685" name="galside_hs[l]"/>
+      <species id="S1945" name="gbside_hs[c]"/>
+      <species id="S1946" name="gbside_hs[l]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S1944" name="glc_D[l]"/>
+      <species id="S2033" name="glcur[c]"/>
+      <species id="S1989" name="glcur[l]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S3032" name="gln_L[l]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1965" name="glu_L[l]"/>
+      <species id="S579" name="gly[c]"/>
+      <species id="S2055" name="gly[l]"/>
+      <species id="S2078" name="gsn[c]"/>
+      <species id="S2079" name="gsn[l]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S2093" name="h2o2[l]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S287" name="h[l]"/>
+      <species id="S1489" name="ha[e]"/>
+      <species id="S1999" name="ha[l]"/>
+      <species id="S1680" name="hdca[c]"/>
+      <species id="S3003" name="hdca[l]"/>
+      <species id="S1682" name="hdcea[c]"/>
+      <species id="S3095" name="hdcea[l]"/>
+      <species id="S2111" name="his_L[c]"/>
+      <species id="S3033" name="his_L[l]"/>
+      <species id="S1500" name="hspg[e]"/>
+      <species id="S2157" name="hspg[l]"/>
+      <species id="S2162" name="hxan[c]"/>
+      <species id="S2161" name="hxan[l]"/>
+      <species id="S2181" name="idour[c]"/>
+      <species id="S2175" name="idour[l]"/>
+      <species id="S2183" name="ile_L[c]"/>
+      <species id="S2993" name="ile_L[l]"/>
+      <species id="S427" name="ins[c]"/>
+      <species id="S2190" name="ins[l]"/>
+      <species id="S1507" name="ksi[e]"/>
+      <species id="S1784" name="ksi[l]"/>
+      <species id="S1509" name="ksii_core2[e]"/>
+      <species id="S2198" name="ksii_core2[l]"/>
+      <species id="S1510" name="ksii_core4[e]"/>
+      <species id="S2200" name="ksii_core4[l]"/>
+      <species id="S2212" name="lcts[c]"/>
+      <species id="S2206" name="lcts[l]"/>
+      <species id="S2221" name="leu_L[c]"/>
+      <species id="S3034" name="leu_L[l]"/>
+      <species id="S1688" name="lnlc[c]"/>
+      <species id="S3007" name="lnlc[l]"/>
+      <species id="S3008" name="lnlc[r]"/>
+      <species id="S1699" name="lnlnca[c]"/>
+      <species id="S3116" name="lnlnca[l]"/>
+      <species id="S3085" name="lnlnca[r]"/>
+      <species id="S1698" name="lnlncg[c]"/>
+      <species id="S3094" name="lnlncg[l]"/>
+      <species id="S3086" name="lnlncg[r]"/>
+      <species id="S647" name="lys_L[c]"/>
+      <species id="S3035" name="lys_L[l]"/>
+      <species id="S237" name="man[c]"/>
+      <species id="S240" name="man[l]"/>
+      <species id="S586" name="meoh[c]"/>
+      <species id="S2293" name="meoh[l]"/>
+      <species id="S823" name="met_L[c]"/>
+      <species id="S3036" name="met_L[l]"/>
+      <species id="S1537" name="n2m2nmasn[e]"/>
+      <species id="S1942" name="n2m2nmasn[l]"/>
+      <species id="S1686" name="ocdcea[c]"/>
+      <species id="S3083" name="ocdcea[l]"/>
+      <species id="S3081" name="ocdcea[r]"/>
+      <species id="S2508" name="phe_L[c]"/>
+      <species id="S3037" name="phe_L[l]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S146" name="pi[l]"/>
+      <species id="S2558" name="pro_D[c]"/>
+      <species id="S2559" name="pro_D[l]"/>
+      <species id="S2557" name="pro_L[c]"/>
+      <species id="S2563" name="pro_L[l]"/>
+      <species id="S1596" name="s2l2fn2m2masn[e]"/>
+      <species id="S1787" name="s2l2fn2m2masn[l]"/>
+      <species id="S1597" name="s2l2n2m2masn[e]"/>
+      <species id="S1788" name="s2l2n2m2masn[l]"/>
+      <species id="S581" name="ser_L[c]"/>
+      <species id="S3038" name="ser_L[l]"/>
+      <species id="S2647" name="sgalside_hs[c]"/>
+      <species id="S684" name="sgalside_hs[l]"/>
+      <species id="S1808" name="so4[c]"/>
+      <species id="S686" name="so4[l]"/>
+      <species id="S2658" name="sphings[c]"/>
+      <species id="S729" name="sphings[l]"/>
+      <species id="S2659" name="sphmyln_hs[c]"/>
+      <species id="S2656" name="sphmyln_hs[l]"/>
+      <species id="S1700" name="strdnc[c]"/>
+      <species id="S3005" name="strdnc[l]"/>
+      <species id="S551" name="thf[c]"/>
+      <species id="S1966" name="thf[l]"/>
+      <species id="S584" name="thr_L[c]"/>
+      <species id="S3001" name="thr_L[l]"/>
+      <species id="S2414" name="thymd[c]"/>
+      <species id="S2416" name="thymd[l]"/>
+      <species id="S2256" name="trp_L[c]"/>
+      <species id="S3039" name="trp_L[l]"/>
+      <species id="S2173" name="tyr_L[c]"/>
+      <species id="S3040" name="tyr_L[l]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S2370" name="udp[l]"/>
+      <species id="S2734" name="udpacgal[c]"/>
+      <species id="S2371" name="udpacgal[l]"/>
+      <species id="S1087" name="uri[c]"/>
+      <species id="S2408" name="uri[l]"/>
+      <species id="S2749" name="val_L[c]"/>
+      <species id="S3063" name="val_L[l]"/>
+      <species id="S2767" name="xyl_D[c]"/>
+      <species id="S2228" name="xyl_D[l]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="5-glutamyl-10FTHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S0"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="6-glutamyl-10FTHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="7-glutamyl-10FTHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S6"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S7"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="10-Formyltetrahydrofolate lysosomal transport via diffusion" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S9"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S10"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="5-glutamyl-DHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S196"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S197"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="5-glutamyl-THF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S216"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S217"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="6-glutamyl-DHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S219"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S220"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="6-glutamyl-THF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S225"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S226"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="7-glutamyl-DHF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S230"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S231"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="7-glutamyl-THF transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S233"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S234"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABUTt2rL" name="4-aminobutyrate reversible transport in via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S286"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S160"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAGBSIDEtl" name="acgagbside hs intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S332"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGALtly" name="N-acetyl-galactosamine lysosomal efflux" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S344"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAMtly" name="N-acetyl-glucosamine lysosomal efflux" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S350"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S345"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGBGBSIDEtl" name="acgbgbside hs intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S351"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S353"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNAMlt" name="N-acetylneuraminate transport into lysososme" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S382"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S383"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADEtl" name="adenine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S433"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S432"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNtl" name="adenosine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S145"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S426"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALAt2rL" name="L-alanine reversible transport via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S583"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S571"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATPasel" name="V-type ATPase, H+ transporting, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLPtl" name="choline phosphate intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S942"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S947"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="COAtl" name="CoA transport in lysosome via diffusion" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S995"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSPG_Atly" name="chondroitin sulfate A transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1060"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1040"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSPG_Btly" name="chondroitin sulfate B transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1062"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1043"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSPG_Ctly" name="chondroitin sulfate C transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1064"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1045"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSPG_Dtly" name="chondroitin sulfate D transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1066"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1047"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSPG_Etly" name="chondroitin sulfate E transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1068"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1049"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTDtl" name="Cytidine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1095"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DALAt2rL" name="D-alanine transport via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S1129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S577"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHFtl" name="dihydrofolate reversible lysosomal transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1199"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DIGALSIDEtl" name="digalside hs intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1214"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1216"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPCOAtl" name="dephospho-CoA transport from lysosome via diffusion" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1330"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FALDtly" name="formaldehyde transport via diffusion (lysosomall)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1718"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S587"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCtly" name="L-fucose efflux from lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1785"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1757"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGLUSIDEtl" name="galgluside hs intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S242"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1910"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALSIDEtl" name="galactocerebroside intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1928"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S685"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALtly" name="galactose efflux from lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1914"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GBSIDEtl" name="globoside intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1945"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1946"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCtly" name="glucose efflux from lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1944"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCURtly" name="glucuronate transport into lysososme" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2033"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S1989"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUt7l" name="Glutamate transport, lysosomal" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYt2rL" name="glycine reversible transport via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2055"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GSNtl" name="guanosine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2079"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2078"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2O2tly" name="hydrogen peroxide lysosomal transport via diffusion" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S22"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2093"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2Otly" name="H2O transport, lysosomal" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S144"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HAtly" name="hyaluronan transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1489"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1999"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSPGtly" name="heparan sulfate transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1500"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2157"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HXANtl" name="hypoxanthine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2161"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IDOURtly" name="iduronate transport into lysososme" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2181"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2175"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="INStl" name="inosine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2190"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S427"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KSII_CORE2tly" name="keratan sulfate II (core 2) transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1509"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2198"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KSII_CORE4tly" name="keratan sulfate II (core 4) transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1510"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2200"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KSItly" name="keratan sulfate I transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1784"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LCTStl" name="lactose transport from cytosol to lysosome (via autophagocytosis)" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2212"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2206"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MANtly" name="mannose efflux from lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S240"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S237"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MEOHtly" name="Methanol transporter, lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S586"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2293"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="N2M2NMASNtly" name="n2m2nmasn transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1942"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRODt2rL" name="D-proline reversible transport via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2559"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2558"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PROt2rL" name="L-proline reversible transport via proton symport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2563"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2557"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Rtotaltl" name="fatty acid intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S688"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S728"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S2L2FN2M2MASNtly" name="s2l2fn2m2masn transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1596"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1787"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S2L2N2M2MASNtly" name="s2l2n2m2masn transport, extracellular to lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1597"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1788"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SGALSIDEtl" name="sgalside hs intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2647"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S684"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SO4tl" name="Sulfate transport (lysosome)" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S686"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1808"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHINGStl" name="sphingosine intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2658"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S729"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHMYLNtl" name="sphingomyelin intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2659"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2656"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THFtl" name="5,6,7,8-Tetrahydrofolate transport, diffusion, lysosomal" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1966"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THYMDtl" name="thymidine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2416"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2414"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPACGALtl" name="udpacgal intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2734"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2371"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPtl" name="udp intracellular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2370"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="Uritl" name="uridine facilated transport from lysosome" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2408"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XYLtly" name="Xylose efflux from lysosome" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2228"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2767"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0825" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2993"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2183"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0925" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3001"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S584"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0932" name="Transport reaction" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3002"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S604"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0937" name="Transport reaction" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3003"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1680"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0984" name="solute carrier family 27 (fatty acid transporter), member 5 TCDB:4.C.1.1.5 TCDB:4.C.1.1.8" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3005"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1700"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0986" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3007"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3008"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0987" name="Vesicular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3007"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1688"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1052" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S953"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1059" name="Major Facilitator(MFS) TCDB:2.A.18.6.7" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S678"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1061" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3029"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S570"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1062" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S148"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1063" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3031"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S573"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1064" name="Postulated transport reaction" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3032"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S576"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1067" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3033"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1068" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3034"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2221"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1071" name="Transport reaction" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3035"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S647"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1073" name="Transport reaction" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3036"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S823"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1074" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3037"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2508"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1076" name="Postulated transport reaction" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3038"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1077" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3039"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2256"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1080" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3040"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2173"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1130" name="Transport reaction" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2992"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3056"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1140" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3063"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2749"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1150" name="Facilitated diffusion" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S146"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1298" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3094"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3086"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1299" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1698"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3094"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1301" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3083"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3081"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1302" name="Vesicular transport" reversible="true" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3083"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1686"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1304" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1682"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3095"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1364" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3116"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3085"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1365" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1699"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1367" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3117"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3118"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1368" name="Vesicular transport" reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1228"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3117"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CARhPTtc" name="Transport of L-Carnosine by hPT3 or hPT4 peptide transporter." reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4992"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2374"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HIShPTtc" name="Transport of L-Histidine by hPT3 or hPT4 peptide transporters." reversible="false" compartment="C107">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S3033"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

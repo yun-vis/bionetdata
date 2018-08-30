@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C63" name="Phosphatidylinositol phosphate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S835" name="dolmanp_L[r]"/>
+      <species id="S840" name="dolmanp_U[r]"/>
+      <species id="S837" name="dolp_L[r]"/>
+      <species id="S841" name="dolp_U[r]"/>
+      <species id="S3429" name="CE5101[g]"/>
+      <species id="S3432" name="CE5101[m]"/>
+      <species id="S4009" name="CE5132[c]"/>
+      <species id="S4010" name="CE5132[g]"/>
+      <species id="S4011" name="CE5132[n]"/>
+      <species id="S4012" name="CE5132[r]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S354" name="acgpail_hs[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S3430" name="adp[g]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S1114" name="adp[n]"/>
+      <species id="S749" name="adp[r]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S3428" name="atp[g]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S755" name="atp[n]"/>
+      <species id="S750" name="atp[r]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S1123" name="dag_hs[r]"/>
+      <species id="S1232" name="dem2emgacpail_prot_hs[r]"/>
+      <species id="S1233" name="dgpi_prot_hs[r]"/>
+      <species id="S2098" name="em2emgacpail_hs[r]"/>
+      <species id="S2069" name="em2emgacpail_prot_hs[r]"/>
+      <species id="S2096" name="em3gacpail_hs[r]"/>
+      <species id="S2097" name="emem2gacpail_hs[r]"/>
+      <species id="S2091" name="emgacpail_hs[r]"/>
+      <species id="S1862" name="gacpail_hs[c]"/>
+      <species id="S1863" name="gacpail_hs[r]"/>
+      <species id="S356" name="gpail_hs[c]"/>
+      <species id="S2100" name="gpi_hs[r]"/>
+      <species id="S2071" name="gpi_prot_hs[r]"/>
+      <species id="S1241" name="gpi_sig[r]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2070" name="hdca[r]"/>
+      <species id="S921" name="inost[c]"/>
+      <species id="S4329" name="inost[g]"/>
+      <species id="S2994" name="inost[r]"/>
+      <species id="S5046" name="m(em)3gacpail_hs[r]"/>
+      <species id="S839" name="m2emgacpail_hs[r]"/>
+      <species id="S2092" name="m2gacpail_hs[r]"/>
+      <species id="S2099" name="m3emgacpail_hs[r]"/>
+      <species id="S2095" name="m3gacpail_hs[r]"/>
+      <species id="S5048" name="m_em_3gacpail[r]"/>
+      <species id="S5049" name="m_em_3gacpail_hs[r]"/>
+      <species id="S5050" name="m_em_3gacpail_prot_hs[r]"/>
+      <species id="S2101" name="mem2emgacpail_hs[r]"/>
+      <species id="S1246" name="mem2emgacpail_prot_hs[r]"/>
+      <species id="S836" name="memgacpail_hs[r]"/>
+      <species id="S2072" name="mgacpail_hs[r]"/>
+      <species id="S2307" name="mi34p[c]"/>
+      <species id="S529" name="pa_hs[c]"/>
+      <species id="S2468" name="pa_hs[g]"/>
+      <species id="S2467" name="pa_hs[r]"/>
+      <species id="S2516" name="pail345p_hs[c]"/>
+      <species id="S3639" name="pail345p_hs[g]"/>
+      <species id="S3640" name="pail345p_hs[r]"/>
+      <species id="S2523" name="pail35p_hs[c]"/>
+      <species id="S3638" name="pail35p_hs[g]"/>
+      <species id="S2528" name="pail35p_hs[r]"/>
+      <species id="S2522" name="pail3p_hs[c]"/>
+      <species id="S4013" name="pail3p_hs[g]"/>
+      <species id="S2521" name="pail3p_hs[n]"/>
+      <species id="S2531" name="pail3p_hs[r]"/>
+      <species id="S4007" name="pail45p_hs[g]"/>
+      <species id="S3431" name="pail45p_hs[m]"/>
+      <species id="S2474" name="pail45p_hs[n]"/>
+      <species id="S4008" name="pail45p_hs[r]"/>
+      <species id="S2476" name="pail4p_hs[n]"/>
+      <species id="S2524" name="pail5p_hs[c]"/>
+      <species id="S2529" name="pail5p_hs[n]"/>
+      <species id="S2527" name="pail5p_hs[r]"/>
+      <species id="S922" name="pail_hs[c]"/>
+      <species id="S3427" name="pail_hs[g]"/>
+      <species id="S2472" name="pail_hs[n]"/>
+      <species id="S2530" name="pail_hs[r]"/>
+      <species id="S2090" name="pe_hs[r]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S2518" name="pi[n]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S691" name="pmtcoa[c]"/>
+      <species id="S2102" name="pre_prot[r]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S245" name="udp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACGPID" name="N-acetylglucosaminylphosphatidylinositol deacetylase" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S354"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S355"/>
+          <speciesReference id="SpeciesReference" species="S356"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BMTer_L" name="B mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S356"/>
+          <speciesReference id="SpeciesReference" species="S836"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S839"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BMTer_U" name="B mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S836"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S839"/>
+          <speciesReference id="SpeciesReference" species="S839"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPIAT" name="glucosaminylphosphatidyl inositol acetyltransferase" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S356"/>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S1862"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPIDA2er" name="glycophosphatidylinositol (GPI) deacylase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1232"/>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPIDAer" name="glycophosphatidylinositol (GPI) deacylase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2071"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1233"/>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPIMTer_L" name="GlcN-acylPI mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+          <speciesReference id="SpeciesReference" species="S1863"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1863"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GPIMTer_U" name="GlcN-acylPI mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+          <speciesReference id="SpeciesReference" species="S1863"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2ETer" name="H2 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2091"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2MTer_L" name="H2 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2091"/>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H2MTer_U" name="H2 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+          <speciesReference id="SpeciesReference" species="S2072"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H3ETer" name="H3 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H3MTer_L" name="H3 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2095"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H3MTer_U" name="H3 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2095"/>
+          <speciesReference id="SpeciesReference" species="S2092"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2095"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H4ET3er" name="H4 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2095"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H4ETer" name="H4 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2095"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S839"/>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H5MTer_L" name="H5 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2091"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H5MTer_U" name="H5 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2091"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S836"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H6_ET2er" name="H6&apos; phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2097"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H6ET3er" name="H6 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S839"/>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H6_ETer" name="H6&apos; phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H6MTer_L" name="H6 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+          <speciesReference id="SpeciesReference" species="S839"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S839"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2099"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H6MTer_U" name="H6 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S839"/>
+          <speciesReference id="SpeciesReference" species="S839"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2099"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H7ET2er" name="H7 phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H7_ETer" name="H7&apos; phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2097"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H7MTer_L" name="H7 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H7MTer_U" name="H7 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H7_TAer" name="H7&apos; transamidase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2098"/>
+          <speciesReference id="SpeciesReference" species="S2102"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1241"/>
+          <speciesReference id="SpeciesReference" species="S2069"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H8MTer_L" name="H8 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2069"/>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S5048"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H8MTer_U" name="H8 mannosyltransferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S5048"/>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S5046"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="H8TAer" name="H8 transamidase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2100"/>
+          <speciesReference id="SpeciesReference" species="S2102"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1241"/>
+          <speciesReference id="SpeciesReference" species="S2071"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4ATAer" name="M4A transamidase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2102"/>
+          <speciesReference id="SpeciesReference" species="S5049"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1241"/>
+          <speciesReference id="SpeciesReference" species="S5050"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4BET2er" name="M4B phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S5049"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4BTAer" name="M4B transamidase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+          <speciesReference id="SpeciesReference" species="S2102"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1241"/>
+          <speciesReference id="SpeciesReference" species="S1246"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="M4CET3er" name="M4C phosphoethanolaminyl transferase, endoplasmic reticulum" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2090"/>
+          <speciesReference id="SpeciesReference" species="S2099"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1123"/>
+          <speciesReference id="SpeciesReference" species="S2101"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIACGT" name="phosphatidylinositol N-acetylglucosaminyltransferase" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S922"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S354"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1441G" name="RE1441" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3427"/>
+          <speciesReference id="SpeciesReference" species="S3428"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S3429"/>
+          <speciesReference id="SpeciesReference" species="S3430"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1441R" name="RE1441" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2530"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2527"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1447M" name="RE1447" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S3431"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S3432"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1447N" name="RE1447" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+          <speciesReference id="SpeciesReference" species="S2529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1448N" name="RE1448" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1448R" name="RE1448" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S2530"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1957G" name="RE1957" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3428"/>
+          <speciesReference id="SpeciesReference" species="S3638"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S3430"/>
+          <speciesReference id="SpeciesReference" species="S3639"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1957R" name="RE1957" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2528"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S3640"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2972G" name="RE2972" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3428"/>
+          <speciesReference id="SpeciesReference" species="S3429"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S3430"/>
+          <speciesReference id="SpeciesReference" species="S4007"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2972M" name="RE2972" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S3432"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S3431"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2972R" name="RE2972" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S4008"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2973C" name="RE2973" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S4009"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2973G" name="RE2973" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3428"/>
+          <speciesReference id="SpeciesReference" species="S3429"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S3430"/>
+          <speciesReference id="SpeciesReference" species="S4010"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2973N" name="RE2973" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S4011"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2973R" name="RE2973" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S4012"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2974C" name="RE2974" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2522"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S4009"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2974G" name="RE2974" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3428"/>
+          <speciesReference id="SpeciesReference" species="S4013"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S3430"/>
+          <speciesReference id="SpeciesReference" species="S4010"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2974N" name="RE2974" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2521"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S4011"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2974R" name="RE2974" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2531"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S4012"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3268C" name="RE3268" reversible="false" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2307"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3268R" name="RE3268" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S3640"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S2528"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3269C" name="RE3269" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2523"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3270C" name="RE3270" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2522"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3272N" name="RE3272" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3273C" name="RE3273" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S529"/>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3273G" name="RE3273" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S3427"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S2468"/>
+          <speciesReference id="SpeciesReference" species="S4329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3273R" name="RE3273" reversible="true" compartment="C63">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2530"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2467"/>
+          <speciesReference id="SpeciesReference" species="S2994"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

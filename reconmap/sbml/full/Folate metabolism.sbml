@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C59" name="Folate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S0" name="10fthf5glu[c]"/>
+      <species id="S1425" name="10fthf5glu[e]"/>
+      <species id="S1" name="10fthf5glu[l]"/>
+      <species id="S2" name="10fthf5glu[m]"/>
+      <species id="S3" name="10fthf6glu[c]"/>
+      <species id="S1426" name="10fthf6glu[e]"/>
+      <species id="S4" name="10fthf6glu[l]"/>
+      <species id="S5" name="10fthf6glu[m]"/>
+      <species id="S6" name="10fthf7glu[c]"/>
+      <species id="S1427" name="10fthf7glu[e]"/>
+      <species id="S7" name="10fthf7glu[l]"/>
+      <species id="S8" name="10fthf7glu[m]"/>
+      <species id="S9" name="10fthf[c]"/>
+      <species id="S1424" name="10fthf[e]"/>
+      <species id="S10" name="10fthf[l]"/>
+      <species id="S11" name="10fthf[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1085" name="glu_L[e]"/>
+      <species id="S1965" name="glu_L[l]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S196" name="5dhf[c]"/>
+      <species id="S1432" name="5dhf[e]"/>
+      <species id="S197" name="5dhf[l]"/>
+      <species id="S1765" name="5dhf[m]"/>
+      <species id="S1772" name="5forthf[c]"/>
+      <species id="S199" name="5fthf[c]"/>
+      <species id="S2876" name="5fthf[m]"/>
+      <species id="S215" name="5mthf[c]"/>
+      <species id="S216" name="5thf[c]"/>
+      <species id="S1433" name="5thf[e]"/>
+      <species id="S217" name="5thf[l]"/>
+      <species id="S218" name="5thf[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S219" name="6dhf[c]"/>
+      <species id="S1434" name="6dhf[e]"/>
+      <species id="S220" name="6dhf[l]"/>
+      <species id="S221" name="6dhf[m]"/>
+      <species id="S225" name="6thf[c]"/>
+      <species id="S1435" name="6thf[e]"/>
+      <species id="S226" name="6thf[l]"/>
+      <species id="S227" name="6thf[m]"/>
+      <species id="S230" name="7dhf[c]"/>
+      <species id="S1436" name="7dhf[e]"/>
+      <species id="S231" name="7dhf[l]"/>
+      <species id="S232" name="7dhf[m]"/>
+      <species id="S233" name="7thf[c]"/>
+      <species id="S1437" name="7thf[e]"/>
+      <species id="S234" name="7thf[l]"/>
+      <species id="S235" name="7thf[m]"/>
+      <species id="S3121" name="HC02129[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S1198" name="dhf[c]"/>
+      <species id="S1441" name="dhf[e]"/>
+      <species id="S1199" name="dhf[l]"/>
+      <species id="S1200" name="dhf[m]"/>
+      <species id="S1760" name="fol[c]"/>
+      <species id="S2875" name="fol[m]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S1762" name="for[m]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1085" name="glu_L[e]"/>
+      <species id="S1965" name="glu_L[l]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1773" name="methf[c]"/>
+      <species id="S2334" name="methf[m]"/>
+      <species id="S1208" name="mlthf[c]"/>
+      <species id="S1953" name="mlthf[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S551" name="thf[c]"/>
+      <species id="S1621" name="thf[e]"/>
+      <species id="S1966" name="thf[l]"/>
+      <species id="S1766" name="thf[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="DHFR" name="dihydrofolate reductase" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FOLR2" name="folate reductase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1760"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS" name="folylpolyglutamate synthetase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S216"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS2" name="folylpolyglutamate synthetase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S216"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S225"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS2m" name="folylpolyglutamate synthetase, mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S218"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S227"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS3" name="folylpolyglutamate synthetase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S225"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S233"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS3m" name="folylpolyglutamate synthetase, mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S227"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S235"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS4" name="folylpolyglutamate synthetase (DHF)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S196"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS4m" name="folylpolyglutamate synthetase (DHF), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S196"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1200"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S1765"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS5" name="folylpolyglutamate synthetase (DHF)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S196"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S219"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS5m" name="folylpolyglutamate synthetase (DHF), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1765"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S221"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS6" name="folylpolyglutamate synthetase (DHF)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S219"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S230"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS6m" name="folylpolyglutamate synthetase (DHF), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S221"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S232"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS7" name="folylpolyglutamate synthetase (10fthf)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S0"/>
+          <speciesReference id="SpeciesReference" species="S0"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS7m" name="folylpolyglutamate synthetase (10fthf), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S11"/>
+          <speciesReference id="SpeciesReference" species="S11"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS8" name="folylpolyglutamate synthetase (10fthf)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S0"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS8m" name="folylpolyglutamate synthetase (10fthf), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S5"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS9" name="folylpolyglutamate synthetase (10fthf)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S6"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGS9m" name="folylpolyglutamate synthetase (10fthf), mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S5"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S8"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FPGSm" name="folylpolyglutamate synthetase, mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S218"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FTCD" name="formimidoyltransferase cyclodeaminase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S1772"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1773"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FTHFCL" name="5-formethyltetrahydrofolate cyclo-ligase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S199"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1773"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FTHFDH" name="formyltetrahydrofolate dehydrogenase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FTHFL" name="Formate-tetrahydrofolate ligase" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S969"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FTHFLm" name="formate-tetrahydrofolate ligase, mitochondrial" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1762"/>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S11"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF5GLUe" name="Gamma-glutamyl hydrolase (10FTHF5GLU), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S1425"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1425"/>
+          <speciesReference id="SpeciesReference" species="S1424"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF5GLUl" name="Gamma-glutamyl hydrolase (10FTHF5GLU), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1"/>
+          <speciesReference id="SpeciesReference" species="S1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S10"/>
+          <speciesReference id="SpeciesReference" species="S10"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF6GLUe" name="Gamma-glutamyl hydrolase (10FTHF6GLU), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1426"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1425"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF6GLUl" name="Gamma-glutamyl hydrolase (10FTHF6GLU), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4"/>
+          <speciesReference id="SpeciesReference" species="S144"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF7GLUe" name="Gamma-glutamyl hydrolase (10FTHF7GLU), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1427"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1426"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_10FTHF7GLUl" name="Gamma-glutamyl hydrolase (10FTHF7GLU), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S7"/>
+          <speciesReference id="SpeciesReference" species="S144"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_5DHFe" name="Gamma-glutamyl hydrolase (5DHF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+          <speciesReference id="SpeciesReference" species="S1432"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1432"/>
+          <speciesReference id="SpeciesReference" species="S1441"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_5DHFl" name="Gamma-glutamyl hydrolase (5DHF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1441"/>
+          <speciesReference id="SpeciesReference" species="S197"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1199"/>
+          <speciesReference id="SpeciesReference" species="S1199"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_5THFe" name="Gamma-glutamyl hydrolase (5THF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1199"/>
+          <speciesReference id="SpeciesReference" species="S1433"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1433"/>
+          <speciesReference id="SpeciesReference" species="S1621"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_5THFl" name="Gamma-glutamyl hydrolase (5THF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1621"/>
+          <speciesReference id="SpeciesReference" species="S217"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S217"/>
+          <speciesReference id="SpeciesReference" species="S1966"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_6DHFe" name="Gamma-glutamyl hydrolase (6DHF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1434"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1432"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_6DHFl" name="Gamma-glutamyl hydrolase (6DHF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S220"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S197"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_6THFe" name="Gamma-glutamyl hydrolase (6THF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1435"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1433"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_6THFl" name="Gamma-glutamyl hydrolase (6THF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S226"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S217"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_7DHFe" name="Gamma-glutamyl hydrolase (7DHF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1434"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_7DHFl" name="Gamma-glutamyl hydrolase (7DHF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S231"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S220"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_7THFe" name="Gamma-glutamyl hydrolase (7THF), extracellular" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1085"/>
+          <speciesReference id="SpeciesReference" species="S1435"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGH_7THFl" name="Gamma-glutamyl hydrolase (7THF), lysosomal" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S234"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S226"/>
+          <speciesReference id="SpeciesReference" species="S1965"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFC" name="methenyltetrahydrofolate cyclohydrolase" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1773"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S9"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFCm" name="methenyltetrahydrifikate cyclohydrolase, mitochondrial" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S11"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFD" name="methylenetetrahydrofolate dehydrogenase (NADP)" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1773"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFD2" name="methylenetetrahydrofolate dehydrogenase (NAD)" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1773"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFD2m" name="methylenetetrahydrofolate dehydrogenase (NAD), mitochondrial" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFDm" name="methylenetetrahydrofolate dehydrogenase (NADP), mitochondrial" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0224" name="5,6,7,8-Tetrahydrofolate:NAD+ oxidoreductase One carbon pool by folate EC:1.5.1.3" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0226" name="5,6,7,8-Tetrahydrofolate:NADP+ oxidoreductase One carbon pool by folate / Folate biosynthesis EC:1.5.1.3" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S1200"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0512" name="Dihydrofolate:NAD+ oxidoreductase Folate biosynthesis EC:1.5.1.3" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1760"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0514" name="Dihydrofolate:NADP+ oxidoreductase One carbon pool by folate / Folate biosynthesis EC:1.5.1.3" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2875"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S1200"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0522" name="S-Aminomethyldihydrolipoylprotein:(6S)-tetrahydrofolate aminomethyltransferase (ammonia-forming) One carbon pool by folate EC:2.1.2.10" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S2876"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0523" name="5-Formyltetrahydrofolate cyclo-ligase (ADP-forming) One carbon pool by folate EC:6.3.3.2" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2876"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0792" name="5-methyltetrahydrofolate:NAD+ oxidoreductase One carbon pool by folate / Methane metabolism EC:1.5.1.20" reversible="true" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S215"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S215"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1382" name="folylpolyglutamyl synthetase EC:6.3.2.17" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S3121"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1383" name="gamma-glutamyl hydrolase EC:3.4.19.9" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3121"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3121"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTHFR3" name="5,10-methylenetetrahydrofolatereductase (NADPH)" reversible="false" compartment="C59">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S215"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

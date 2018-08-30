@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C46" name="Blood group synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1672" name="gdp[g]"/>
+      <species id="S1669" name="gdpfuc[g]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+      <species id="S270" name="acgalfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S272" name="acgalfucgalacgalfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S276" name="acgalfucgalacgalfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S274" name="acgalfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S266" name="acgalfucgalacglcgalgluside_hs[g]"/>
+      <species id="S776" name="acglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S774" name="acglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S779" name="acglcgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S771" name="acglcgalgluside_hs[g]"/>
+      <species id="S373" name="acnacngal14acglcgalgluside_hs[g]"/>
+      <species id="S1814" name="acngal14acglcgalgluside_hs[g]"/>
+      <species id="S387" name="acngalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1811" name="acngalacglcgalgluside_hs[g]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S268" name="fuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S1816" name="fuc132galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1775" name="fuc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1777" name="fuc14galacglcgalgluside_hs[g]"/>
+      <species id="S1779" name="fucacgalfucgalacglcgalgluside_hs[g]"/>
+      <species id="S1781" name="fucacngal14acglcgalgluside_hs[g]"/>
+      <species id="S1783" name="fucacngalacglcgalgluside_hs[g]"/>
+      <species id="S1790" name="fucfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S1792" name="fucfuc132galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1794" name="fucfucfucgalacglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1796" name="fucfucfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1813" name="fucfucgalacglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1815" name="fucfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S278" name="fucfucgalacglcgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1798" name="fucfucgalacglcgalgluside_hs[g]"/>
+      <species id="S1800" name="fucgal14acglcgalgluside_hs[g]"/>
+      <species id="S271" name="fucgalacgalfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S275" name="fucgalacgalfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S1812" name="fucgalacglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S273" name="fucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S264" name="fucgalacglcgalgluside_hs[g]"/>
+      <species id="S1802" name="fucgalfucgalacglcgalgluside_hs[g]"/>
+      <species id="S773" name="gal14acglcgalgluside_hs[g]"/>
+      <species id="S777" name="galacgalfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S778" name="galacgalfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S781" name="galacglc13galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S775" name="galacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S780" name="galacglcgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S772" name="galacglcgalgluside_hs[g]"/>
+      <species id="S269" name="galfuc12gal14acglcgalgluside_hs[g]"/>
+      <species id="S277" name="galfucgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S267" name="galfucgalacglcgalgluside_hs[g]"/>
+      <species id="S279" name="galgalfucfucgalacglcgalacglcgal14acglcgalgluside_hs[g]"/>
+      <species id="S246" name="galgluside_hs[g]"/>
+      <species id="S1672" name="gdp[g]"/>
+      <species id="S1669" name="gdpfuc[g]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S265" name="udpacgal[g]"/>
+      <species id="S247" name="udpgal[g]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ABO1g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S264"/>
+          <speciesReference id="SpeciesReference" species="S265"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S266"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO2g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S264"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S267"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO3g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S268"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S269"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO4g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S268"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S270"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO5g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S271"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S272"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO6g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S273"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S274"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO7g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S275"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S276"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO8g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S273"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S277"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABO9g" name="ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; transferase B, alpha 1-3-galactosyltransferase)" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S277"/>
+          <speciesReference id="SpeciesReference" species="S278"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S278"/>
+          <speciesReference id="SpeciesReference" species="S278"/>
+          <speciesReference id="SpeciesReference" species="S279"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALTg" name="Beta galactosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S771"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S772"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT11g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S773"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S774"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT12g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S775"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S776"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT310g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S771"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S773"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT311g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S270"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S777"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT312g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S774"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S775"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT313g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S274"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S778"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT314g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S779"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S780"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT315g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S776"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S781"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT51g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 5" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S246"/>
+          <speciesReference id="SpeciesReference" species="S252"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S771"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT12g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S772"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S264"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT14g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S773"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S268"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT15g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S777"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S271"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT16g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S775"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S273"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT17g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S778"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S275"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT18g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S780"/>
+          <speciesReference id="SpeciesReference" species="S780"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S780"/>
+          <speciesReference id="SpeciesReference" species="S278"/>
+          <speciesReference id="SpeciesReference" species="S278"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT31g" name="fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S772"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1777"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT32g" name="fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1811"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1783"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT33g" name="fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S266"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1779"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT34g" name="fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S264"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1798"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT35g" name="fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S267"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1802"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT910g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1812"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1813"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT911g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1813"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1794"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT91g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S773"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1800"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT92g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1814"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1781"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT93g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S268"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1790"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT94g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S273"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1815"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT95g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1815"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1796"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT96g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S775"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1816"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT97g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+          <speciesReference id="SpeciesReference" species="S1816"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1792"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT98g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S775"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1775"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT99g" name="Alpha-(1,3)-fucosyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S781"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1812"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCNTg" name="N-acetyllactosaminide beta-1,6-N-acetylglucosaminyl-transferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S775"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S779"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL31g" name="ST3 beta-galactoside alpha-2,3-sialyltransferase 3" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S772"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1811"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL61g" name="Type 2 lactosamine alpha-2,3-sialyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S773"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1814"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL62g" name="Type 2 lactosamine alpha-2,3-sialyltransferase" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S775"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S387"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA56g" name="Alpha-2,8-sialyltransferase 8E" reversible="false" compartment="C46">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1814"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S373"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

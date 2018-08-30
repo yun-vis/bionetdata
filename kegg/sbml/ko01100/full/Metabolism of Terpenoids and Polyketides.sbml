@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C4" name="Metabolism of Terpenoids and Polyketides"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1182" name="(-)-Comphene"/>
+      <species id="S316" name="(-)-Limonene"/>
+      <species id="S1183" name="(-)-alpha-Pinene"/>
+      <species id="S1357" name="(L)-alpha-Terpineol"/>
+      <species id="S479" name="2,3-Oxidosqualene"/>
+      <species id="S1512" name="2-Oxospirilloxanthin"/>
+      <species id="S1504" name="3,4-Dehydrolycopene"/>
+      <species id="S1505" name="3,4-Dehydrorhodopin"/>
+      <species id="S1482" name="3-Dehydroteasterone"/>
+      <species id="S1489" name="6-Deoxocastasterone"/>
+      <species id="S1485" name="6-Deoxocathasterone"/>
+      <species id="S1486" name="6-Deoxoteasterone"/>
+      <species id="S1488" name="6-Deoxotyphasterol"/>
+      <species id="S1479" name="6-Oxocampestanol"/>
+      <species id="S1610" name="8-Hydroxygeraniol"/>
+      <species id="S1415" name="9&apos;-cis-Neoxanthin"/>
+      <species id="S1416" name="9-cis-Violaxanthin"/>
+      <species id="S1145" name="ABA"/>
+      <species id="S1389" name="Abietadiene"/>
+      <species id="S1391" name="Abietal"/>
+      <species id="S1390" name="Abietol"/>
+      <species id="S1418" name="Abscisic_aldehyde"/>
+      <species id="S218" name="Acetoacetyl-CoA"/>
+      <species id="S19" name="Acetyl-CoA"/>
+      <species id="S1506" name="Anhydrorhodovibrin"/>
+      <species id="S1326" name="Antheraxanthin"/>
+      <species id="S629" name="Aristolochene"/>
+      <species id="S1396" name="Baccatin_III"/>
+      <species id="S1335" name="Brassinolide"/>
+      <species id="S88" name="C00118"/>
+      <species id="S95" name="C00129"/>
+      <species id="S229" name="C00353"/>
+      <species id="S497" name="C01107"/>
+      <species id="S507" name="C01143"/>
+      <species id="S741" name="C03190"/>
+      <species id="S769" name="C03427"/>
+      <species id="S770" name="C03428"/>
+      <species id="S851" name="C04432"/>
+      <species id="S971" name="C05414"/>
+      <species id="S975" name="C05430"/>
+      <species id="S976" name="C05431"/>
+      <species id="S1147" name="C06089"/>
+      <species id="S1362" name="C11434"/>
+      <species id="S1363" name="C11435"/>
+      <species id="S1364" name="C11436"/>
+      <species id="S1365" name="C11437"/>
+      <species id="S1366" name="C11453"/>
+      <species id="S1382" name="C11700"/>
+      <species id="S1383" name="C11811"/>
+      <species id="S1393" name="C11895"/>
+      <species id="S1394" name="C11897"/>
+      <species id="S1395" name="C11899"/>
+      <species id="S1477" name="C15786"/>
+      <species id="S1487" name="C15800"/>
+      <species id="S1490" name="C15803"/>
+      <species id="S1502" name="C15857"/>
+      <species id="S1503" name="C15858"/>
+      <species id="S1508" name="C15879"/>
+      <species id="S1513" name="C15885"/>
+      <species id="S1514" name="C15886"/>
+      <species id="S1515" name="C15887"/>
+      <species id="S1516" name="C15888"/>
+      <species id="S1526" name="C15970"/>
+      <species id="S1573" name="C16428"/>
+      <species id="S1627" name="C19759"/>
+      <species id="S1628" name="C19764"/>
+      <species id="S1629" name="C19765"/>
+      <species id="S1641" name="C19892"/>
+      <species id="S1476" name="Campest-4-en-3-one"/>
+      <species id="S1478" name="Campestanol"/>
+      <species id="S1341" name="Caryophyllene"/>
+      <species id="S572" name="Casbene"/>
+      <species id="S1484" name="Castasterone"/>
+      <species id="S1480" name="Cathasterone"/>
+      <species id="S1517" name="Chloroxanthin"/>
+      <species id="S1397" name="Copalyl_diphosphate"/>
+      <species id="S167" name="DMAPP"/>
+      <species id="S1519" name="Demethylspheroidene"/>
+      <species id="S284" name="Farnesyl_diphosphate"/>
+      <species id="S583" name="Geraniol"/>
+      <species id="S223" name="Geranyl_diphosphate"/>
+      <species id="S1532" name="Germacradienol"/>
+      <species id="S1386" name="Gibberellin_A12"/>
+      <species id="S232" name="HMG-CoA"/>
+      <species id="S1521" name="Hydroxyspheroidene"/>
+      <species id="S1523" name="Hydroxyspheroidenone"/>
+      <species id="S1572" name="Isopentenyl-ATP"/>
+      <species id="S1388" name="Kaurenic_acid"/>
+      <species id="S1340" name="Levomenol"/>
+      <species id="S575" name="Loganin"/>
+      <species id="S1342" name="Longifolene"/>
+      <species id="S1329" name="Lutein"/>
+      <species id="S977" name="Lycopene"/>
+      <species id="S1518" name="Methoxyneurosporene"/>
+      <species id="S267" name="Mevalonic_acid"/>
+      <species id="S1330" name="Neoxanthin"/>
+      <species id="S1343" name="Nerolidol"/>
+      <species id="S1331" name="Neurosporaxanthin"/>
+      <species id="S972" name="Phytoene"/>
+      <species id="S974" name="Phytyl_diphosphate"/>
+      <species id="S18" name="Pyruvate"/>
+      <species id="S1631" name="Rhodopin"/>
+      <species id="S1507" name="Rhodovibrin"/>
+      <species id="S1509" name="Rhodoviolascin"/>
+      <species id="S616" name="Secologanin"/>
+      <species id="S1520" name="Spheroidene"/>
+      <species id="S1522" name="Spheroidenone"/>
+      <species id="S396" name="Supraene"/>
+      <species id="S1392" name="Taxa-4,11-diene"/>
+      <species id="S1481" name="Teasterone"/>
+      <species id="S1332" name="Torulene"/>
+      <species id="S1483" name="Typhasterol"/>
+      <species id="S1333" name="Violaxanthin"/>
+      <species id="S1417" name="Xanthoxin"/>
+      <species id="S1149" name="Zeaxanthin"/>
+      <species id="S1328" name="Zeinoxanthin"/>
+      <species id="S978" name="alpha-Carotene"/>
+      <species id="S635" name="beta-Carotene"/>
+      <species id="S1150" name="d-Limonene"/>
+      <species id="S1195" name="delta-Cadinene"/>
+      <species id="S1327" name="delta-Carotene"/>
+      <species id="S1148" name="ent-Kaurene"/>
+      <species id="S1553" name="epsilon-Carotene"/>
+      <species id="S979" name="gamma-Carotene"/>
+      <species id="S1592" name="gamma-Humulene"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R05636" name="rn:R05636" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1365"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S18"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05688" name="rn:R05688" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1362"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1365"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05633" name="rn:R05633" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1363"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1362"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05634" name="rn:R05634" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1364"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1363"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05637" name="rn:R05637" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1366"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1364"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08689" name="rn:R08689 rn:R10859" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1366"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1383"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05884" name="rn:R05884" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1383"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01121" name="rn:R01121" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R03245" name="rn:R03245" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S497"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02245" name="rn:R02245" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S497"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S267"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02082" name="rn:R02082" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S267"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S232"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R00702" name="rn:R00702" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S770"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02872" name="rn:R02872" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02874" name="rn:R02874" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S479"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02063" name="rn:R02063" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S974"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01123" name="rn:R01123" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S167"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01658" name="rn:R01658" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S167"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02003" name="rn:R02003" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02061" name="rn:R02061" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02064" name="rn:R02064" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S572"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06298" name="rn:R06298" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06301" name="rn:R06301" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1397"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1389"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02068" name="rn:R02068" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1147"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06305" name="rn:R06305" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1392"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06306" name="rn:R06306" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1392"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06308" name="rn:R06308" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1393"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1394"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06311" name="rn:R06311" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1382"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05092" name="rn:R05092" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1147"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1148"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10066" name="rn:R10066" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1388"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10067" name="rn:R10067" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1388"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1386"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06310" name="rn:R06310" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1395"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1382"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05765" name="rn:R05765" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1183"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02007" name="rn:R02007" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S741"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06421" name="rn:R06421" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1357"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02013" name="rn:R02013" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06120" name="rn:R06120" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1150"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01122" name="rn:R01122" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S167"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S851"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08051" name="rn:R08051" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S167"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1572"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08053" name="rn:R08053" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1572"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1573"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02065" name="rn:R02065" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S769"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09692" name="rn:R09692" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S972"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S971"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R04787" name="rn:R04787" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S975"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S971"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R04798" name="rn:R04798" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S975"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S976"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R04800" name="rn:R04800" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S976"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R05341" name="rn:R05341" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S979"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06963" name="rn:R06963" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1327"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07840" name="rn:R07840" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1327"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1553"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06962" name="rn:R06962" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S978"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1327"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07530" name="rn:R07530" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S978"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1328"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07531" name="rn:R07531" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1328"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R03824" name="rn:R03824" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S979"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S635"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06946" name="rn:R06946 rn:R07179" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06953" name="rn:R06953" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1416"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1417"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06954" name="rn:R06954" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1418"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1417"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06957" name="rn:R06957" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1145"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07575" name="rn:R07575" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1526"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1145"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07429" name="rn:R07429" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1477"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1476"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07454" name="rn:R07454" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1478"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1485"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07448" name="rn:R07448" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1486"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1485"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07449" name="rn:R07449" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1487"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1486"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07474" name="rn:R07474" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07450" name="rn:R07450" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1490"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07451" name="rn:R07451" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1484"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1490"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07430" name="rn:R07430" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1480"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1479"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07431" name="rn:R07431" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1481"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1480"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07444" name="rn:R07444" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1482"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1481"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07470" name="rn:R07470" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1483"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1484"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07471" name="rn:R07471" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1335"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1484"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06223" name="rn:R06223" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08785" name="rn:R08785" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S583"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1610"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08396" name="rn:R08396" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S583"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06947" name="rn:R06947 rn:R07178" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1326"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1333"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R03555" name="rn:R03555" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S575"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S616"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08540" name="rn:R08540" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1592"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08542" name="rn:R08542" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1342"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08541" name="rn:R08541" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1341"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02311" name="rn:R02311" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1195"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R02307" name="rn:R02307" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S629"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07647" name="rn:R07647" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1532"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08370" name="rn:R08370" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1340"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R08374" name="rn:R08374" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1343"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07473" name="rn:R07473" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1487"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07469" name="rn:R07469" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1482"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1483"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06354" name="rn:R06354" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1390"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01978" name="rn:R01978" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S232"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S218"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R04218" name="rn:R04218" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S769"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S972"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09653" name="rn:R09653" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S972"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1629"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09654" name="rn:R09654" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1629"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1628"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09655" name="rn:R09655" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1628"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1502"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09656" name="rn:R09656" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1502"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1627"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09658" name="rn:R09658" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1627"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1503"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07512" name="rn:R07512" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1503"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06948" name="rn:R06948" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1333"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1330"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06951" name="rn:R06951" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1416"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1415"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07518" name="rn:R07518" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1504"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10508" name="rn:R10508" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1504"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1332"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09782" name="rn:R09782" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1332"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1641"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09783" name="rn:R09783" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1641"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1331"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07519" name="rn:R07519" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S977"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1631"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07527" name="rn:R07527" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1514"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07528" name="rn:R07528" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1514"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1515"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07529" name="rn:R07529" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1515"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1516"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07520" name="rn:R07520" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1505"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07521" name="rn:R07521" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1505"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1506"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07522" name="rn:R07522" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1506"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1507"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07523" name="rn:R07523" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1508"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07524" name="rn:R07524" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1508"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1509"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07525" name="rn:R07525" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1509"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1512"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07526" name="rn:R07526" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1512"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1513"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07532" name="rn:R07532" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S976"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1517"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07534" name="rn:R07534" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1517"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1519"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07535" name="rn:R07535" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1519"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1520"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07537" name="rn:R07537" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1520"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1522"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07539" name="rn:R07539" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1522"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1523"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07538" name="rn:R07538" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1521"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1523"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07536" name="rn:R07536" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1520"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1521"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R07533" name="rn:R07533" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1517"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R06952" name="rn:R06952" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1415"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1417"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R09972" name="rn:R09972" reversible="false" compartment="C4">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S223"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1182"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

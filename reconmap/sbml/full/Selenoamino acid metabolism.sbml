@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C16" name="Selenoamino acid metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S73" name="2obut[c]"/>
+      <species id="S468" name="3padsel[c]"/>
+      <species id="S4675" name="5mthf[n]"/>
+      <species id="S4679" name="5mthf[r]"/>
+      <species id="S4672" name="C05708[c]"/>
+      <species id="S4674" name="C05708[r]"/>
+      <species id="S426" name="adn[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S467" name="adsel[c]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S1278" name="dna5mtc[n]"/>
+      <species id="S1277" name="dna[n]"/>
+      <species id="S2640" name="dttOX[c]"/>
+      <species id="S2638" name="dtt[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S2488" name="pdx5p[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2489" name="pydx5p[c]"/>
+      <species id="S2634" name="seahcys[c]"/>
+      <species id="S1280" name="seahcys[n]"/>
+      <species id="S2636" name="seasmet[c]"/>
+      <species id="S1279" name="seasmet[n]"/>
+      <species id="S2637" name="sel[c]"/>
+      <species id="S2639" name="selcys[c]"/>
+      <species id="S2642" name="selcyst[c]"/>
+      <species id="S2635" name="selhcys[c]"/>
+      <species id="S4676" name="selhcys[n]"/>
+      <species id="S4680" name="selhcys[r]"/>
+      <species id="S2643" name="selmeth[c]"/>
+      <species id="S4678" name="selmeth[n]"/>
+      <species id="S4673" name="selmeth[r]"/>
+      <species id="S2641" name="seln[c]"/>
+      <species id="S2644" name="selnp[c]"/>
+      <species id="S581" name="ser_L[c]"/>
+      <species id="S4677" name="thf[n]"/>
+      <species id="S4681" name="thf[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ADSELK" name="adenylyl-selenate kinase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S467"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S468"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DNAMTSEn" name="DNA (cytosine-5-)-methyltransferase, nucleus" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1277"/>
+          <speciesReference id="SpeciesReference" species="S1279"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1278"/>
+          <speciesReference id="SpeciesReference" species="S1280"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SEAHCYSHYD" name="Se-Adenosylselenohomocysteine hydrolase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2634"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S426"/>
+          <speciesReference id="SpeciesReference" species="S2635"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SEAHCYStn" name="Se-adenosyl-seleno-L-homocysteine nuclear transport" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2634"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1280"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SEASMETtn" name="Se-adenosyl-seleno-L-methionine nuclear transport" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2636"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1279"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELADT" name="selenate adenylyltransferase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2637"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S467"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELCYSLY" name="selenocysteine lyase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2638"/>
+          <speciesReference id="SpeciesReference" species="S2639"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S2640"/>
+          <speciesReference id="SpeciesReference" species="S2641"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELCYSLY2" name="selenocysteine lyase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2488"/>
+          <speciesReference id="SpeciesReference" species="S2639"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S2489"/>
+          <speciesReference id="SpeciesReference" species="S2641"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELCYSTGL" name="selanocystathionine g-lyase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2642"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S73"/>
+          <speciesReference id="SpeciesReference" species="S2639"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELCYSTS" name="selanocystathionine beta-synthase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S581"/>
+          <speciesReference id="SpeciesReference" species="S2635"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2642"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELMETAT" name="selenomethionine adenosyltransferase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2643"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2636"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SELNPS" name="Selenophosphate synthase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2641"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S2644"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RN0001C" name="RN0001" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2643"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S4672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RN0001R" name="RN0001" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S4673"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S4674"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RN0002N" name="RN0002" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4675"/>
+          <speciesReference id="SpeciesReference" species="S4676"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S4677"/>
+          <speciesReference id="SpeciesReference" species="S4678"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RN0002R" name="RN0002" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4679"/>
+          <speciesReference id="SpeciesReference" species="S4680"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S4673"/>
+          <speciesReference id="SpeciesReference" species="S4681"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

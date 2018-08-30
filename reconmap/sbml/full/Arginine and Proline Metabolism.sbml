@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C41" name="Arginine and Proline Metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1336" name="1p2cbxl[x]"/>
+      <species id="S2897" name="1p3h5c[c]"/>
+      <species id="S2507" name="1p3h5c[m]"/>
+      <species id="S1856" name="1pyr5c[c]"/>
+      <species id="S1854" name="1pyr5c[m]"/>
+      <species id="S683" name="citr_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S2397" name="no[c]"/>
+      <species id="S2396" name="nwharg[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S1220" name="2kmb[c]"/>
+      <species id="S2335" name="4aabutn[c]"/>
+      <species id="S2337" name="4aabutn[m]"/>
+      <species id="S284" name="4abutn[c]"/>
+      <species id="S1365" name="4h2oglt[c]"/>
+      <species id="S1152" name="4h2oglt[m]"/>
+      <species id="S168" name="4hglusa[m]"/>
+      <species id="S2896" name="4hpro_LT[c]"/>
+      <species id="S2898" name="4hpro_LT[m]"/>
+      <species id="S2555" name="4hpro_LT[r]"/>
+      <species id="S1328" name="5a2opntn[x]"/>
+      <species id="S1131" name="5g2oxpt[x]"/>
+      <species id="S2333" name="5mdr1p[c]"/>
+      <species id="S2288" name="5mdru1p[c]"/>
+      <species id="S2332" name="5mta[c]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S432" name="ade[c]"/>
+      <species id="S524" name="agm[m]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S2553" name="akg[r]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S443" name="ametam[c]"/>
+      <species id="S659" name="aprut[c]"/>
+      <species id="S1130" name="arg_D[x]"/>
+      <species id="S678" name="arg_L[c]"/>
+      <species id="S676" name="arg_L[m]"/>
+      <species id="S150" name="asp_L[m]"/>
+      <species id="S683" name="citr_L[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S888" name="co2[r]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S1219" name="dkmpp[c]"/>
+      <species id="S1364" name="e4hglu[c]"/>
+      <species id="S169" name="e4hglu[m]"/>
+      <species id="S1190" name="fad[c]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S1191" name="fadh2[c]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S1853" name="glu5sa[m]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S536" name="glx[m]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S823" name="met_L[c]"/>
+      <species id="S660" name="n4abutn[c]"/>
+      <species id="S2336" name="n4abutn[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S1128" name="nh4[x]"/>
+      <species id="S2397" name="no[c]"/>
+      <species id="S2396" name="nwharg[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S748" name="oaa[m]"/>
+      <species id="S1327" name="orn_D[x]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S1335" name="pro_D[x]"/>
+      <species id="S2557" name="pro_L[c]"/>
+      <species id="S2466" name="pro_L[m]"/>
+      <species id="S2554" name="pro_L[r]"/>
+      <species id="S2439" name="ptrc[c]"/>
+      <species id="S525" name="ptrc[m]"/>
+      <species id="S155" name="pyr[m]"/>
+      <species id="S2556" name="succ[r]"/>
+      <species id="S526" name="urea[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="L-4-hydroxyglutamate semialdehyde dehydrogenase, mitochondrial" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S168"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S168"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S169"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADMDC" name="adenosylmethionine decarboxylase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S94"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S443"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AGMTm" name="agmatinase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S524"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S525"/>
+          <speciesReference id="SpeciesReference" species="S526"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="APRTO2" name="N-acetylputrescine: oxygen oxireductase (deaminating)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S659"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S660"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARGDCm" name="arginine decarboxylase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S676"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S524"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DARGOp" name="D-arginine oxidase, perixosomal" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S1130"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+          <speciesReference id="SpeciesReference" species="S1131"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DDPGAm" name="2-dehydro-3-deoxy-phosphogluconate aldolase, mitochondrial" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1152"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S155"/>
+          <speciesReference id="SpeciesReference" species="S536"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DKMPPD" name="2,3-diketo-5-methylthio-1-phosphopentane degradation reaction" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S1219"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1219"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S969"/>
+          <speciesReference id="SpeciesReference" species="S1220"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DORNOp" name="D-ornithine oxidase, perixosomal" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S1327"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+          <speciesReference id="SpeciesReference" species="S1328"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPROOp" name="D-proline oxidase, perixosomal" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S1335"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S1336"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EHGLAT" name="L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S1364"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S1365"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EHGLAT2m" name="L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase 2, mitochondrial" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S169"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S150"/>
+          <speciesReference id="SpeciesReference" species="S1152"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EHGLATm" name="L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase, mitochondrial" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S169"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S1152"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G5SADrm" name="L-glutamate 5-semialdehyde dehydratase, reversible, mitochondrial" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1853"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MDRPD" name="5-Methylthio-5-deoxy-D-ribulose 1-phosphate dehydratase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2288"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1219"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTAP" name="5&apos;-methylthioadenosine phosphorylase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2332"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S432"/>
+          <speciesReference id="SpeciesReference" species="S2333"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MTRI" name="5-methylthioribose-1-phosphate isomerase" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2333"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NABTNO" name="N4-Acetylaminobutanal:NAD+ oxidoreductase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S660"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S660"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2335"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NABTNOm" name="N4-Acetylaminobutanal:NAD+ oxidoreductase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2336"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2336"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2337"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NOS1" name="Nitric Oxide Synthase (intermediate forming)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S678"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NOS2" name="Nitric Oxide Synthase (NO forming)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2396"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S683"/>
+          <speciesReference id="SpeciesReference" species="S2397"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P5CRm" name="pyrroline-5-carboxylate reductase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2397"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P5CRxm" name="pyrroline-5-carboxylate reductase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PHCDm" name="L-1-pyrroline-3-hydroxy-5-carboxylate dehydrogenase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S169"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PHCHGSm" name="L-1-Pyrroline-3-hydroxy-5-carboxylate spontaneous conversion to L-4-Hydroxyglutamate semialdehyde, mitochondrial" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S168"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRO1xm" name="proline oxidase (NAD), mitochondrial" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PROAKGOX1r" name="L-Proline,2-oxoglutarate:oxygen oxidoreductase (4-hydroxylating) (ER)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S2553"/>
+          <speciesReference id="SpeciesReference" species="S2554"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S888"/>
+          <speciesReference id="SpeciesReference" species="S2555"/>
+          <speciesReference id="SpeciesReference" species="S2556"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PROD2" name="Proline dehydrogenase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+          <speciesReference id="SpeciesReference" species="S2557"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1191"/>
+          <speciesReference id="SpeciesReference" species="S1856"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PROD2m" name="Proline dehydrogenase (m)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S2466"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PTRCAT1" name="Putrescine acetyltransferase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2439"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S659"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PTRCOX1" name="Putrescine:oxygen oxidoreductase (deaminating)" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2439"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UNK2" name="2-keto-4-methylthiobutyrate transamination" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S284"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S1220"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S823"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UNK3" name="2-keto-4-methylthiobutyrate transamination" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S1220"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S823"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0024" name="N-(omega)-Hydroxyarginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming) Arginine and proline metabolism EC:1.14.13.39" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0145" name="L-Arginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming) Arginine and proline metabolism EC:1.14.13.39" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S678"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S678"/>
+          <speciesReference id="SpeciesReference" species="S678"/>
+          <speciesReference id="SpeciesReference" species="S683"/>
+          <speciesReference id="SpeciesReference" species="S2397"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0615" name="trans-4-Hydroxy-L-proline:NAD+ 5-oxidoreductase Arginine and proline metabolism EC:1.5.1.2" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2896"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2896"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2897"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0616" name="trans-4-Hydroxy-L-proline:NAD+ 5-oxidoreductase Arginine and proline metabolism EC:1.5.1.2" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2898"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2898"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0617" name="trans-4-Hydroxy-L-proline:NADP+ 5-oxidoreductase Arginine and proline metabolism EC:1.5.1.2" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2896"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2896"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2897"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0618" name="trans-4-Hydroxy-L-proline:NADP+ 5-oxidoreductase Arginine and proline metabolism EC:1.5.1.2" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2898"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2898"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0686" name="L-1-Pyrroline-3-hydroxy-5-carboxylate:NADP+ oxidoreductase Arginine and proline metabolism EC:1.5.1.12" reversible="true" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2507"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S169"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P5CR" name="pyrroline-5-carboxylate reductase" reversible="false" compartment="C41">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S169"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1856"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2557"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

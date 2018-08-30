@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C13" name="Propanoate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S71" name="2hb[c]"/>
+      <species id="S2318" name="2mcacn[c]"/>
+      <species id="S81" name="2mcit[c]"/>
+      <species id="S73" name="2obut[c]"/>
+      <species id="S3064" name="2obut[m]"/>
+      <species id="S128" name="3hpp[c]"/>
+      <species id="S2839" name="3hpp[m]"/>
+      <species id="S257" name="aacoa[c]"/>
+      <species id="S256" name="acac[c]"/>
+      <species id="S296" name="acac[m]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S331" name="acetone[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S2319" name="micit[c]"/>
+      <species id="S130" name="msa[c]"/>
+      <species id="S643" name="msa[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S364" name="oaa[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S322" name="ppa[c]"/>
+      <species id="S324" name="ppa[m]"/>
+      <species id="S323" name="ppcoa[c]"/>
+      <species id="S289" name="ppcoa[m]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S2546" name="prpncoa[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="2-Hydroxybutyrate:NAD+ oxidoreductase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S71"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S73"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="3-hydroxypropionate dehydrogenase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S128"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S130"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AACOAT" name="Acetoacetyl-CoA:acetate CoA-transferase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S256"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S257"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACCOAL" name="acetate-CoA ligase (ADP-forming)" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S322"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACCOALm" name="acetate-CoA ligase (AMP-forming)" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S324"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S289"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACS2" name="acetyl-CoA synthase (propionate)" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S322"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADCim" name="Acetoacetate decarboxylation (irreversible), mitochondrial" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S296"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S331"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MCITS" name="2-methylcitrate synthase" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S323"/>
+          <speciesReference id="SpeciesReference" species="S364"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S81"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MICITDr" name="2-methylisocitrate dehydratase" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2318"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2319"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMSAD3m" name="methylmalonate-semialdehyde dehydrogenase (malonic semialdehyde), mitochondrial" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S643"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPCOAOm" name="Propanoyl-CoA:FAD 2,3-oxidoreductase, mitochondrial" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S289"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S2546"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0365" name="3-hydroxypropanoate:NAD+ oxidoreductase beta-Alanine metabolism / Propanoate metabolism EC:1.1.1.59" reversible="false" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2839"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S643"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1154" name="EC:1.2.7.2" reversible="true" compartment="C13">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S3064"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S289"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

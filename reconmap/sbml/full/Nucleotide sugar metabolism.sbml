@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C5" name="Nucleotide sugar metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S991" name="co2[g]"/>
+      <species id="S2693" name="dtdp4d6dg[c]"/>
+      <species id="S2694" name="dtdp4d6dm[c]"/>
+      <species id="S1850" name="dtdpglu[c]"/>
+      <species id="S2695" name="dtdprmn[c]"/>
+      <species id="S1288" name="dttp[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2006" name="udpglcur[g]"/>
+      <species id="S2738" name="udpxyl[g]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="G1PTT" name="glucose-1-phosphate thymidylyltransferase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S447"/>
+          <speciesReference id="SpeciesReference" species="S1288"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1850"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TDPDRE" name="dTDP-4-dehydrorhamnose 3,5-epimerase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2693"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2694"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TDPDRR" name="dTDP-4-dehydrorhamnose reductase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2694"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2695"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TDPGDH" name="dTDPglucose 4,6-dehydratase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1850"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2693"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGLDCg" name="UDP-D-glucuronate decarboxylase, Golgi apparatus" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S2006"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S991"/>
+          <speciesReference id="SpeciesReference" species="S2738"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

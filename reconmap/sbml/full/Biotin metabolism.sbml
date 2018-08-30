@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C12" name="Biotin metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S258" name="amp[c]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S646" name="apoC[c]"/>
+      <species id="S649" name="apoC[m]"/>
+      <species id="S648" name="apoC_Lys[c]"/>
+      <species id="S651" name="apoC_Lys[m]"/>
+      <species id="S652" name="apoC_Lys_btn[c]"/>
+      <species id="S654" name="apoC_Lys_btn[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S653" name="biocyt[c]"/>
+      <species id="S845" name="biocyt[e]"/>
+      <species id="S655" name="biocyt[m]"/>
+      <species id="S834" name="biocyt[n]"/>
+      <species id="S799" name="btamp[c]"/>
+      <species id="S801" name="btamp[m]"/>
+      <species id="S798" name="btn[c]"/>
+      <species id="S846" name="btn[e]"/>
+      <species id="S800" name="btn[m]"/>
+      <species id="S843" name="btn[n]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S647" name="lys_L[c]"/>
+      <species id="S679" name="lys_L[e]"/>
+      <species id="S650" name="lys_L[m]"/>
+      <species id="S844" name="lys_L[n]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="APOCF" name="Apocarboxylase formation" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S646"/>
+          <speciesReference id="SpeciesReference" species="S647"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S648"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="APOCFm" name="Apocarboxylase formation, mitochondrial" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S649"/>
+          <speciesReference id="SpeciesReference" species="S650"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S651"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="APOC_LYS_BTNP" name="proteolysis of apoC-Lys-btn" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S652"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S646"/>
+          <speciesReference id="SpeciesReference" species="S653"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="APOC_LYS_BTNPm" name="proteolysis of apoC-Lys-btn, mitochondrial" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S654"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S649"/>
+          <speciesReference id="SpeciesReference" species="S655"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BACCL" name="biotin-[acetyl-CoA-carboxylase] ligase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S798"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S799"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BACCLm" name="biotin-[acetyl-CoA-carboxylase] ligase, mitochondrial" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S800"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S326"/>
+          <speciesReference id="SpeciesReference" species="S801"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTND1" name="biotinidase (biotin)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S653"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S647"/>
+          <speciesReference id="SpeciesReference" species="S798"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTND1n" name="biotinidase (biotin), nuclear" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S834"/>
+          <speciesReference id="SpeciesReference" species="S842"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S843"/>
+          <speciesReference id="SpeciesReference" species="S844"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTNDe" name="biotinidase (biotin), extracellular" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S845"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S679"/>
+          <speciesReference id="SpeciesReference" species="S846"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTNDm" name="biotinidase (biotin), mitochondrial" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S655"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S650"/>
+          <speciesReference id="SpeciesReference" species="S800"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTNPL" name="holocarboxylase synthestase (biotin protein ligase)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S648"/>
+          <speciesReference id="SpeciesReference" species="S799"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S652"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BTNPLm" name="holocarboxylase synthestase (biotin protein ligase), mitochondrial" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S651"/>
+          <speciesReference id="SpeciesReference" species="S801"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S654"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

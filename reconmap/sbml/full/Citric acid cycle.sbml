@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C20" name="Citric acid cycle"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S355" name="ac[c]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S560" name="akg[x]"/>
+      <species id="S535" name="ala_L[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S363" name="cit[c]"/>
+      <species id="S405" name="cit[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S993" name="co2[x]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S471" name="fum[c]"/>
+      <species id="S1806" name="fum[m]"/>
+      <species id="S439" name="gdp[m]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S438" name="gtp[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S404" name="icit[c]"/>
+      <species id="S406" name="icit[m]"/>
+      <species id="S2167" name="icit[x]"/>
+      <species id="S557" name="mal_L[c]"/>
+      <species id="S558" name="mal_L[m]"/>
+      <species id="S5043" name="mal_L[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S45" name="nad[x]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S43" name="nadh[x]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S2144" name="nadp[x]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S2143" name="nadph[x]"/>
+      <species id="S364" name="oaa[c]"/>
+      <species id="S748" name="oaa[m]"/>
+      <species id="S1133" name="oaa[x]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S155" name="pyr[m]"/>
+      <species id="S1000" name="q10[m]"/>
+      <species id="S1075" name="q10h2[m]"/>
+      <species id="S2431" name="succ[m]"/>
+      <species id="S556" name="succoa[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACITL" name="ATP-Citrate lyase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S363"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S364"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACONT" name="aconitase" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S363"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S404"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACONTm" name="Aconitate hydratase" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S405"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S406"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AKGDm" name="2-oxoglutarate dehydrogenase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CITL" name="Citrate lyase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S363"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S355"/>
+          <speciesReference id="SpeciesReference" species="S364"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CSm" name="citrate synthase" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S405"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUM" name="fumarase" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S471"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S557"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUMm" name="fumarase, mitochondrial" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S1806"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S558"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ICDHxm" name="Isocitrate dehydrogenase (NAD+)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S406"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ICDHy" name="isocitrate dehydrogenase (NADP)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S404"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ICDHyp" name="Isocitrate dehydrogenase (NADP+)" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2144"/>
+          <speciesReference id="SpeciesReference" species="S2167"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S560"/>
+          <speciesReference id="SpeciesReference" species="S993"/>
+          <speciesReference id="SpeciesReference" species="S2143"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ICDHyrm" name="Isocitrate dehydrogenase (NADP+)" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S406"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S86"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MDH" name="malate dehydrogenase" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S557"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S364"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MDHm" name="malate dehydrogenase, mitochondrial" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S558"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SUCD1m" name="succinate dehydrogenase" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S1806"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SUCOAS1m" name="Succinate--CoA ligase (GDP-forming)" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S438"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SUCOASm" name="Succinate--CoA ligase (ADP-forming)" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0081" name="L-Alanine:2-oxoglutarate aminotransferase Glutamate metabolism / Alanine and aspartate metabolism EC:2.6.1.2" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S535"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S155"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0509" name="Succinate:ubiquinone oxidoreductase Citrate cycle (TCA cycle) EC:1.3.5.1" reversible="false" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+          <speciesReference id="SpeciesReference" species="S1806"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MDHx" name="malate dehydrogenase, peroxisomal" reversible="true" compartment="C20">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S45"/>
+          <speciesReference id="SpeciesReference" species="S5043"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S43"/>
+          <speciesReference id="SpeciesReference" species="S1133"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

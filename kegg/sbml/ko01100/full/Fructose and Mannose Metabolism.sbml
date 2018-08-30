@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C5" name="Fructose and Mannose Metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S182" name="L-Arabinose"/>
+      <species id="S501" name="L-Arabonolactone"/>
+      <species id="S171" name="Lactose"/>
+      <species id="S409" name="Sorbitol"/>
+      <species id="S40" name="UDP-galactose"/>
+      <species id="S186" name="alpha-D-Glucose"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R01787" name="rn:R01787" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S409"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S186"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R00503" name="rn:R00503" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S171"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R01757" name="rn:R01757 rn:R10787" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S182"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S501"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

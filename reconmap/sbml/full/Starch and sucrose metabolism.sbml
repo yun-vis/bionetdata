@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C33" name="Starch and sucrose metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S628" name="glc_D[e]"/>
+      <species id="S1944" name="glc_D[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S628" name="glc_D[e]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S3361" name="CE2838[c]"/>
+      <species id="S3363" name="CE2838[e]"/>
+      <species id="S3360" name="CE2839[c]"/>
+      <species id="S3362" name="CE2839[e]"/>
+      <species id="S1968" name="Tyr_ggn[c]"/>
+      <species id="S1641" name="Tyr_ggn[e]"/>
+      <species id="S2035" name="dxtrn[c]"/>
+      <species id="S1770" name="fru[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S2780" name="g1p[e]"/>
+      <species id="S1969" name="ggn[c]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S628" name="glc_D[e]"/>
+      <species id="S1944" name="glc_D[l]"/>
+      <species id="S1986" name="glygn1[c]"/>
+      <species id="S1987" name="glygn2[c]"/>
+      <species id="S630" name="glygn2[e]"/>
+      <species id="S2036" name="glygn3[c]"/>
+      <species id="S631" name="glygn4[e]"/>
+      <species id="S1476" name="glygn5[e]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S2276" name="malt[c]"/>
+      <species id="S1529" name="malt[e]"/>
+      <species id="S2277" name="malt[l]"/>
+      <species id="S3358" name="malthp[c]"/>
+      <species id="S3359" name="malthp[e]"/>
+      <species id="S3344" name="malthx[c]"/>
+      <species id="S3345" name="malthx[e]"/>
+      <species id="S3334" name="maltpt[c]"/>
+      <species id="S3335" name="maltpt[e]"/>
+      <species id="S2321" name="malttr[c]"/>
+      <species id="S1530" name="malttr[e]"/>
+      <species id="S2322" name="malttr[l]"/>
+      <species id="S3298" name="maltttr[c]"/>
+      <species id="S3299" name="maltttr[e]"/>
+      <species id="S627" name="strch1[e]"/>
+      <species id="S629" name="strch2[e]"/>
+      <species id="S2720" name="tre[c]"/>
+      <species id="S1630" name="tre[e]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S2801" name="udpg[e]"/>
+      <species id="S2103" name="udpglcur[c]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S1644" name="ump[e]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="AMY1e" name="alpha-amylase, extracellular (strch1 -&gt; strch2)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S80503904"/>
+          <speciesReference id="SpeciesReference" species="S627"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S627"/>
+          <speciesReference id="SpeciesReference" species="S629"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMY2e" name="alpha-amylase, extracellular (glygn2 -&gt; glygn4)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S629"/>
+          <speciesReference id="SpeciesReference" species="S630"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S630"/>
+          <speciesReference id="SpeciesReference" species="S631"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAMYe" name="glucoamylase, extracellular (glygn5 -&gt; malt)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1529"/>
+          <speciesReference id="SpeciesReference" species="S1641"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GGNG" name="glycogenin self-glucosylation" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1641"/>
+          <speciesReference id="SpeciesReference" species="S1968"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1968"/>
+          <speciesReference id="SpeciesReference" species="S1968"/>
+          <speciesReference id="SpeciesReference" species="S1969"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLBRAN" name="1,4-alpha-glucan branching enzyme (glygn1 -&gt; glygn2)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1987"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLDBRAN" name="glycogen debranching enzyme" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2035"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S810"/>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLGNS1" name="glycogen synthase (ggn -&gt; glygn1)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+          <speciesReference id="SpeciesReference" species="S1969"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1969"/>
+          <speciesReference id="SpeciesReference" species="S1969"/>
+          <speciesReference id="SpeciesReference" species="S1986"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLPASE1" name="glycogen phosphorylase (glygn2 -&gt; dxtrn)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1986"/>
+          <speciesReference id="SpeciesReference" species="S1987"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1987"/>
+          <speciesReference id="SpeciesReference" species="S2035"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLPASE2" name="glycogen phosphorylase (amyls -&gt; glc-D)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2035"/>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+          <speciesReference id="SpeciesReference" species="S1968"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MALT" name="alpha-glucosidase" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2276"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2276"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MALTe" name="alpha-glucosidase, extracellular" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MALTly" name="alpha-glucosidase, lysosomal" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2277"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2277"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MLTG1" name="Maltodextrin glucosidase (maltotriose)" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2321"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S810"/>
+          <speciesReference id="SpeciesReference" species="S2276"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MLTG1e" name="Maltodextrin glucosidase (maltotriose), extracellular" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1530"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MLTG1ly" name="Maltodextrin glucosidase (maltotriose), lysosome" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2322"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1944"/>
+          <speciesReference id="SpeciesReference" species="S2277"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="O16G1e" name="oligo-1,6-glucosidase (glygn4 -&gt; glygn5), extracellular" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1476"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="O16G2e" name="oligo-1,6-glucosidase (strch2 -&gt;strch3), extracellular" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S629"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TREH" name="alpha,alpha-trehalase" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2720"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2720"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TREHe" name="alpha,alpha-trehalase" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1630"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1630"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGD" name="UDPglucose 6-dehydrogenase" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPGP" name="UDPglucose pyrophosphohydrolase" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+          <speciesReference id="SpeciesReference" species="S447"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0093" name="UDPglucose pyrophosphohydrolase Pyrimidine metabolism / Starch and sucrose metabolism EC:3.6.1.45" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2801"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2801"/>
+          <speciesReference id="SpeciesReference" species="S1644"/>
+          <speciesReference id="SpeciesReference" species="S2780"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1393" name="EC:2.4.1.1" reversible="false" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2780"/>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2036"/>
+          <speciesReference id="SpeciesReference" species="S1969"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0915C" name="RE0915" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3298"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+          <speciesReference id="SpeciesReference" species="S2321"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0915E" name="RE0915" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3299"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1530"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0926C" name="RE0926" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+          <speciesReference id="SpeciesReference" species="S3298"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0926E" name="RE0926" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3335"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S3299"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0935C" name="RE0935" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3344"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+          <speciesReference id="SpeciesReference" species="S3334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0935E" name="RE0935" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S3335"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0944C" name="RE0944" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3358"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+          <speciesReference id="SpeciesReference" species="S3344"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0944E" name="RE0944" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3359"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S3345"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0958C" name="RE0958" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3360"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1770"/>
+          <speciesReference id="SpeciesReference" species="S3361"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0958E" name="RE0958" reversible="true" compartment="C33">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3362"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S3363"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

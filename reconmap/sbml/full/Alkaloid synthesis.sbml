@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C5" name="Alkaloid synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2393" name="1mpyr[c]"/>
+      <species id="S626" name="amp[r]"/>
+      <species id="S750" name="atp[r]"/>
+      <species id="S856" name="bz[r]"/>
+      <species id="S996" name="coa[r]"/>
+      <species id="S997" name="coke[r]"/>
+      <species id="S1357" name="ecgon[r]"/>
+      <species id="S998" name="egme[r]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S1363" name="meoh[r]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S2392" name="nmptrc[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S1358" name="pecgon[r]"/>
+      <species id="S2495" name="pecgoncoa[r]"/>
+      <species id="S912" name="ppi[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="COKECBESr" name="Carboxylesterase (cocaine) (er)" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S997"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S856"/>
+          <speciesReference id="SpeciesReference" species="S998"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ECGISOr" name="Ecgonine isomerase (ER)" reversible="true" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1357"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1358"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EGMESTr" name="ecgonine methyl esterase (ER)" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S998"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1357"/>
+          <speciesReference id="SpeciesReference" species="S1363"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMPTRCOX" name="N-Methylputrescine:oxygen oxidoreductase (deaminating)" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2392"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2393"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PECGONCOATr" name="Pseudoecgonine CoA transferase (ER)" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S996"/>
+          <speciesReference id="SpeciesReference" species="S1358"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S626"/>
+          <speciesReference id="SpeciesReference" species="S912"/>
+          <speciesReference id="SpeciesReference" species="S2495"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

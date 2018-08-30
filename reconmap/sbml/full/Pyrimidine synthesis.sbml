@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C19" name="Pyrimidine synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S740" name="cbasp[c]"/>
+      <species id="S739" name="cbp[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S1171" name="dadp[m]"/>
+      <species id="S1110" name="dadp[n]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S1169" name="datp[m]"/>
+      <species id="S1109" name="datp[n]"/>
+      <species id="S1098" name="dgdp[c]"/>
+      <species id="S1172" name="dgdp[m]"/>
+      <species id="S1097" name="dgtp[c]"/>
+      <species id="S1234" name="dgtp[m]"/>
+      <species id="S1201" name="dhor_S[c]"/>
+      <species id="S1284" name="dtdp[c]"/>
+      <species id="S1282" name="dtdp[m]"/>
+      <species id="S1340" name="dtdp[n]"/>
+      <species id="S2417" name="dtmp[m]"/>
+      <species id="S3209" name="dtmp[n]"/>
+      <species id="S1288" name="dttp[c]"/>
+      <species id="S1237" name="dttp[m]"/>
+      <species id="S1239" name="dttp[n]"/>
+      <species id="S1139" name="dump[c]"/>
+      <species id="S1346" name="dump[m]"/>
+      <species id="S1149" name="duri[c]"/>
+      <species id="S1345" name="duri[m]"/>
+      <species id="S1287" name="dutp[m]"/>
+      <species id="S1348" name="dutp[n]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S79" name="hco3[c]"/>
+      <species id="S2433" name="orot5p[c]"/>
+      <species id="S1202" name="orot[c]"/>
+      <species id="S378" name="pep[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S455" name="prpp[c]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S1000" name="q10[m]"/>
+      <species id="S1075" name="q10h2[m]"/>
+      <species id="S2718" name="trdox[m]"/>
+      <species id="S3211" name="trdox[n]"/>
+      <species id="S2719" name="trdrd[m]"/>
+      <species id="S3210" name="trdrd[n]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S1087" name="uri[c]"/>
+      <species id="S1069" name="utp[c]"/>
+      <species id="S2382" name="utp[m]"/>
+      <species id="S1111" name="utp[n]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ASPCTr" name="aspartate carbamoyltransferase (reversible)" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S739"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S740"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CBPS" name="carbamoyl-phosphate synthase (glutamine-hydrolysing)" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S79"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S739"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CTPS2" name="CTP synthase (glutamine)" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHORD9" name="dihydoorotic acid dehydrogenase (quinone10)" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+          <speciesReference id="SpeciesReference" species="S1201"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+          <speciesReference id="SpeciesReference" species="S1202"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHORTS" name="dihydroorotase" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1201"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S740"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OMPDC" name="orotidine-5&apos;-phosphate decarboxylase" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2433"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ORPT" name="orotate phosphoribosyltransferase" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2433"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S1202"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="URIK1" name="uridine kinase (ATP:Uridine)" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0452M" name="RE0452" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1169"/>
+          <speciesReference id="SpeciesReference" species="S2417"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1171"/>
+          <speciesReference id="SpeciesReference" species="S1282"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0452N" name="RE0452" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+          <speciesReference id="SpeciesReference" species="S3209"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+          <speciesReference id="SpeciesReference" species="S1340"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0453C" name="RE0453" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S1284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S1288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0453M" name="RE0453" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1169"/>
+          <speciesReference id="SpeciesReference" species="S1282"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1171"/>
+          <speciesReference id="SpeciesReference" species="S1237"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0453N" name="RE0453" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+          <speciesReference id="SpeciesReference" species="S1340"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+          <speciesReference id="SpeciesReference" species="S1239"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0456M" name="RE0456" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2382"/>
+          <speciesReference id="SpeciesReference" species="S2719"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S1287"/>
+          <speciesReference id="SpeciesReference" species="S2718"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE0456N" name="RE0456" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+          <speciesReference id="SpeciesReference" species="S3210"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1348"/>
+          <speciesReference id="SpeciesReference" species="S3211"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1530C" name="RE1530" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1530M" name="RE1530" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1234"/>
+          <speciesReference id="SpeciesReference" species="S1345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S1172"/>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2954C" name="RE2954" reversible="true" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S1284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S1288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DTMPKm" name="dTMP kinase in mitochondria" reversible="false" compartment="C19">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2417"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1282"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

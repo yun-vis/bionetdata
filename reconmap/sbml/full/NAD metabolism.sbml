@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C23" name="NAD metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S35" name="1mncam[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S2367" name="adprbp[c]"/>
+      <species id="S1439" name="adprbp[e]"/>
+      <species id="S450" name="adprib[c]"/>
+      <species id="S454" name="adprib[e]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S755" name="atp[n]"/>
+      <species id="S1275" name="dnad[c]"/>
+      <species id="S2395" name="dnad[m]"/>
+      <species id="S1276" name="dnad[n]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S2365" name="nac[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S1539" name="nad[e]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S2368" name="nad[n]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S1540" name="nadp[e]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S2366" name="ncam[c]"/>
+      <species id="S1541" name="ncam[e]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S2385" name="nicrns[c]"/>
+      <species id="S2386" name="nicrnt[c]"/>
+      <species id="S2394" name="nicrnt[m]"/>
+      <species id="S2387" name="nicrnt[n]"/>
+      <species id="S2391" name="nmn[c]"/>
+      <species id="S2389" name="nmn[m]"/>
+      <species id="S2390" name="nmn[n]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S989" name="ppi[n]"/>
+      <species id="S455" name="prpp[c]"/>
+      <species id="S2398" name="r1p[c]"/>
+      <species id="S2538" name="rnam[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="NADK" name="NAD kinase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADN" name="NAD nucleosidase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S450"/>
+          <speciesReference id="SpeciesReference" species="S2366"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADNe" name="NAD nucleosidase,extracellular" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1539"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S454"/>
+          <speciesReference id="SpeciesReference" species="S1541"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADPN" name="NADP nucleosidase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2366"/>
+          <speciesReference id="SpeciesReference" species="S2367"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADPNe" name="NADP nucleosidase,extracellular" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1540"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1439"/>
+          <speciesReference id="SpeciesReference" species="S1541"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NADS2" name="NAD synthase (glutamine-hydrolysing)" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S1275"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NICRNS" name="NICRNS" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2385"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMNATm" name="nicotinamide-nucleotide adenylyltransferase, mitochondrial" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2389"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMNATn" name="nicotinamide-nucleotide adenylyltransferase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2390"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S989"/>
+          <speciesReference id="SpeciesReference" species="S2368"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMNATr" name="nicotinamide-nucleotide adenylyltransferase" reversible="true" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2391"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NMNS" name="NMN synthetase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S2366"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NNATm" name="nicotinate-nucleotide adenylyltransferase, mitochondrial" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2394"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S326"/>
+          <speciesReference id="SpeciesReference" species="S2395"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NNATn" name="nicotinate-nucleotide adenylyltransferase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2387"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S989"/>
+          <speciesReference id="SpeciesReference" species="S1276"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NNATr" name="nicotinate-nucleotide adenylyltransferase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1275"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NNMT" name="Nicotinamide N-methyltransferase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S2366"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S35"/>
+          <speciesReference id="SpeciesReference" species="S95"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NP1" name="nucleotide phosphatase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2365"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2385"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NT5C" name="Nicotinate D-ribonucleotide phosphohydrolase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2385"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PNP" name="purine-nucleoside phosphorylase" reversible="true" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2538"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2366"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RNMK" name="ribosylnicotinamide kinase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2538"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THD1m" name="NAD(P) transhydrogenase" reversible="false" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0391" name="Nicotinate D-ribonucleotide:pyrophosphate phosphoribosyltransferase Nicotinate and nicotinamide metabolism EC:2.4.2.11" reversible="true" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S455"/>
+          <speciesReference id="SpeciesReference" species="S2365"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0527" name="Nicotinamide-D-ribonucleotide amidohydrolase Nicotinate and nicotinamide metabolism EC:3.5.1.42" reversible="true" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2391"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0584" name="Deamino-NAD+ nucleotidohydrolase Nicotinate and nicotinamide metabolism EC:3.6.1.9" reversible="true" compartment="C23">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1275"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1275"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S2386"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

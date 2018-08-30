@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C5" name="Hyaluronan metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S1989" name="glcur[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S1489" name="ha[e]"/>
+      <species id="S1999" name="ha[l]"/>
+      <species id="S2000" name="ha_deg1[l]"/>
+      <species id="S1490" name="ha_pre1[e]"/>
+      <species id="S2001" name="ha_pre1[l]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S2103" name="udpglcur[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="GLCAASE8ly" name="beta-glucuronidase, lysosomal" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1999"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1989"/>
+          <speciesReference id="SpeciesReference" species="S2000"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCAASE9ly" name="beta-glucuronidase, lysosomal" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2000"/>
+          <speciesReference id="SpeciesReference" species="S2001"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1989"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HAS1" name="hyaluronan synthase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S1490"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HAS2" name="hyaluronan synthase" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1490"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S2103"/>
+          <speciesReference id="SpeciesReference" species="S1489"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NACHEX27ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C5">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2001"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

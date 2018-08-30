@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C12" name="Galactose metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S1445" name="fru[e]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S1915" name="gal1p[c]"/>
+      <species id="S1914" name="gal[c]"/>
+      <species id="S1460" name="gal[e]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S1927" name="galt[c]"/>
+      <species id="S628" name="glc_D[e]"/>
+      <species id="S2032" name="glc_D[g]"/>
+      <species id="S1944" name="glc_D[l]"/>
+      <species id="S1746" name="glyald[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S1512" name="lcts[e]"/>
+      <species id="S2211" name="lcts[g]"/>
+      <species id="S2206" name="lcts[l]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S1609" name="sucr[e]"/>
+      <species id="S1749" name="tag1p_D[c]"/>
+      <species id="S2196" name="tagat_D[c]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S1932" name="udpg[c]"/>
+      <species id="S243" name="udpgal[c]"/>
+      <species id="S247" name="udpgal[g]"/>
+      <species id="S1069" name="utp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="FBA5" name="D-Tagatose 1-phosphate D-glyceraldehyde-3-phosphate-lyase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1749"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S602"/>
+          <speciesReference id="SpeciesReference" species="S1746"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALK" name="galactokinase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1914"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1915"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALOR" name="D-Galactose:NADP+ 1-oxidoreductase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1914"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1927"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALT" name="galactose-1-phosphate uridylyltransferase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+          <speciesReference id="SpeciesReference" species="S1915"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S243"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALU" name="UTP-glucose-1-phosphate uridylyltransferase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S447"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KHK3" name="ketohexokinase (D-tagatose)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2196"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1749"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LACZe" name="b-galactosidase, extracellular" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1512"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1460"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LACZly" name="b-galactosidase,lysosomal" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2206"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1944"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SUCRe" name="sucrose hydrolyzing enxyme, extracellular" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1609"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S628"/>
+          <speciesReference id="SpeciesReference" species="S1445"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UDPG4E" name="UDPglucose 4-epimerase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S243"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGALGTg" name="UDPgalactose:D-glucose 4-beta-D-galactosyltransferase, Golgi apparatus" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S2032"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S2211"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGLT" name="UDPglucose--hexose-1-phosphate uridylyltransferase" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1915"/>
+          <speciesReference id="SpeciesReference" species="S1932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S243"/>
+          <speciesReference id="SpeciesReference" species="S447"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

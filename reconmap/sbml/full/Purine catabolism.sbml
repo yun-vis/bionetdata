@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C38" name="Purine catabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S1333" name="pi[x]"/>
+      <species id="S69" name="2dr1p[c]"/>
+      <species id="S143" name="3amp[l]"/>
+      <species id="S3882" name="C01041[c]"/>
+      <species id="S4395" name="C11821[c]"/>
+      <species id="S3966" name="CE0074[c]"/>
+      <species id="S3967" name="CE0074[e]"/>
+      <species id="S3970" name="CE0074[n]"/>
+      <species id="S3878" name="CE6252[c]"/>
+      <species id="S432" name="ade[c]"/>
+      <species id="S431" name="ade[e]"/>
+      <species id="S426" name="adn[c]"/>
+      <species id="S428" name="adn[e]"/>
+      <species id="S145" name="adn[l]"/>
+      <species id="S445" name="adn[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S2997" name="adp[l]"/>
+      <species id="S456" name="adp[x]"/>
+      <species id="S3932" name="alltn[c]"/>
+      <species id="S3933" name="alltt[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S752" name="amp[e]"/>
+      <species id="S2421" name="amp[l]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S625" name="amp[x]"/>
+      <species id="S730" name="ascb_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S2998" name="atp[l]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S756" name="atp[x]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S1119" name="dad_2[c]"/>
+      <species id="S2420" name="dad_2[l]"/>
+      <species id="S2419" name="damp[l]"/>
+      <species id="S2422" name="dgmp[l]"/>
+      <species id="S1175" name="dgsn[c]"/>
+      <species id="S2423" name="dgsn[l]"/>
+      <species id="S1120" name="din[c]"/>
+      <species id="S1963" name="gmp[c]"/>
+      <species id="S2424" name="gmp[l]"/>
+      <species id="S2078" name="gsn[c]"/>
+      <species id="S2079" name="gsn[l]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S2086" name="gua[c]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S1488" name="h2o2[e]"/>
+      <species id="S2094" name="h2o2[n]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S2162" name="hxan[c]"/>
+      <species id="S2163" name="hxan[x]"/>
+      <species id="S1503" name="idp[e]"/>
+      <species id="S474" name="imp[c]"/>
+      <species id="S427" name="ins[c]"/>
+      <species id="S429" name="ins[e]"/>
+      <species id="S2795" name="itp[e]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S45" name="nad[x]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S43" name="nadh[x]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S430" name="nh4[e]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S146" name="pi[l]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2807" name="ppi[e]"/>
+      <species id="S1263" name="ppi[x]"/>
+      <species id="S2797" name="prpp[e]"/>
+      <species id="S2398" name="r1p[c]"/>
+      <species id="S2745" name="urate[c]"/>
+      <species id="S1646" name="urate[e]"/>
+      <species id="S3968" name="urate[n]"/>
+      <species id="S2746" name="urate[x]"/>
+      <species id="S680" name="urea[c]"/>
+      <species id="S1647" name="urea[e]"/>
+      <species id="S3969" name="urea[n]"/>
+      <species id="S2087" name="xan[c]"/>
+      <species id="S2758" name="xan[x]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="3&apos;-nucleotidase (AMP), lysosome" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S143"/>
+          <speciesReference id="SpeciesReference" species="S144"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S145"/>
+          <speciesReference id="SpeciesReference" species="S146"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADA" name="Adenosine deaminase" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S426"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S427"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADAe" name="Adenosine deaminase, extracellular" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S428"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S429"/>
+          <speciesReference id="SpeciesReference" species="S430"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUAD" name="guanine deaminase" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD11" name="5&apos;-nucleotidase (IMP)" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S427"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD6l" name="5&apos;-nucleotidase (dAMP), lysosome" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2419"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2420"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD7l" name="5&apos;-nucleotidase (AMP), lysosome" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2421"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S145"/>
+          <speciesReference id="SpeciesReference" species="S146"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD8l" name="5&apos;-nucleotidase (dGMP), lysosomal" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2422"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2423"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD9l" name="5&apos;-nucleotidase (GMP), lysosome" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2424"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S2079"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP2" name="purine-nucleoside phosphorylase (Deoxyadenosine)" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S69"/>
+          <speciesReference id="SpeciesReference" species="S432"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP3" name="purine-nucleoside phosphorylase (Guanosine)" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2078"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2086"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP4" name="purine-nucleoside phosphorylase (Deoxyguanosine)" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1175"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S69"/>
+          <speciesReference id="SpeciesReference" species="S2086"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP5" name="purine-nucleoside phosphorylase (Inosine)" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S427"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP6" name="purine-nucleoside phosphorylase (Deoxyinosine)" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1120"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S69"/>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XANDp" name="xanthine dehydrogenase, peroxisomal" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S45"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2758"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S43"/>
+          <speciesReference id="SpeciesReference" species="S2746"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XAO2x" name="xanthine oxidase" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2163"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S2758"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="XAOx" name="xanthine oxidase,peroxisomal" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2758"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S2746"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0009" name="Pyrophosphate phosphohydrolase EC:3.6.1.1" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S1263"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S42"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0028" name="ATP pyrophosphohydrolase Purine metabolism EC:3.6.1.5" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0047" name="Adenosine 5-monophosphate phosphohydrolase Purine metabolism EC:3.1.3.5" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S445"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0051" name="AMP:pyrophosphate phosphoribosyltransferase Purine metabolism EC:2.4.2.7" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S752"/>
+          <speciesReference id="SpeciesReference" species="S2807"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S431"/>
+          <speciesReference id="SpeciesReference" species="S2797"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0119" name="Guanosine 5-triphosphate pyrophosphohydrolase Purine metabolism EC:3.6.1.19" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0181" name="ITP diphosphohydrolase Purine metabolism EC:3.6.1.5" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S2795"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1503"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0276" name="NADH:guanosine-5-phosphate oxidoreductase(deaminating) Purine metabolism EC:1.7.1.7" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S474"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0502" name="xanthine:NAD+ oxidoreductase Purine metabolism EC:1.17.1.4" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2745"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0504" name="Xanthine:oxygen oxidoreductase Purine metabolism EC:1.17.3.2" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S2745"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0809" name="Facilitated diffusion" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S426"/>
+          <speciesReference id="SpeciesReference" species="S429"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S427"/>
+          <speciesReference id="SpeciesReference" species="S428"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0812" name="Mitochondrial Carrier (MC) TCDB:2.A.29.20.1" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S625"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S756"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0853" name="Facilitated diffusion" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0859" name="Postulated transport reaction" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2997"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S2998"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0860" name="Utilized transport" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S756"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S456"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2591C" name="RE2591" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2745"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3878"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2605C" name="RE2605" reversible="false" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S730"/>
+          <speciesReference id="SpeciesReference" species="S3878"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2745"/>
+          <speciesReference id="SpeciesReference" species="S3882"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2813C" name="RE2813" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S3932"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S3933"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2888C" name="RE2888" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S2745"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S680"/>
+          <speciesReference id="SpeciesReference" species="S3966"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2888E" name="RE2888" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1488"/>
+          <speciesReference id="SpeciesReference" species="S1646"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1647"/>
+          <speciesReference id="SpeciesReference" species="S3967"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2888N" name="RE2888" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2094"/>
+          <speciesReference id="SpeciesReference" species="S3968"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S3969"/>
+          <speciesReference id="SpeciesReference" species="S3970"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3352C" name="RE3352" reversible="true" compartment="C38">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S4395"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S3932"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

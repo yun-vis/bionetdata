@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C16" name="N-glycan degradation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S382" name="acnam[c]"/>
+      <species id="S383" name="acnam[l]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S237" name="man[c]"/>
+      <species id="S240" name="man[l]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S737" name="Asn_X_Ser_Thr[l]"/>
+      <species id="S345" name="acgam[c]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S1459" name="fuc_L[e]"/>
+      <species id="S1785" name="fuc_L[l]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S2649" name="l2n2m2mn[c]"/>
+      <species id="S1889" name="l2n2m2mn[l]"/>
+      <species id="S236" name="m2mn[c]"/>
+      <species id="S239" name="m2mn[l]"/>
+      <species id="S240" name="man[l]"/>
+      <species id="S238" name="mn[c]"/>
+      <species id="S241" name="mn[l]"/>
+      <species id="S549" name="n2m2mn[l]"/>
+      <species id="S1378" name="n2m2nm[c]"/>
+      <species id="S1380" name="n2m2nm[l]"/>
+      <species id="S1942" name="n2m2nmasn[l]"/>
+      <species id="S1379" name="n2m2nmn[c]"/>
+      <species id="S548" name="n2m2nmn[l]"/>
+      <species id="S1596" name="s2l2fn2m2masn[e]"/>
+      <species id="S1787" name="s2l2fn2m2masn[l]"/>
+      <species id="S1376" name="s2l2n2m2m[c]"/>
+      <species id="S1383" name="s2l2n2m2m[l]"/>
+      <species id="S1597" name="s2l2n2m2masn[e]"/>
+      <species id="S1788" name="s2l2n2m2masn[l]"/>
+      <species id="S1377" name="s2l2n2m2mn[c]"/>
+      <species id="S1384" name="s2l2n2m2mn[l]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="A_MANASE" name="alpha-mannosidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S67865248"/>
+          <speciesReference id="SpeciesReference" species="S236"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S236"/>
+          <speciesReference id="SpeciesReference" species="S238"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="A_MANASEly" name="alpha-mannosidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S238"/>
+          <speciesReference id="SpeciesReference" species="S239"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S239"/>
+          <speciesReference id="SpeciesReference" species="S241"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AHEXASE2ly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S241"/>
+          <speciesReference id="SpeciesReference" species="S548"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S239"/>
+          <speciesReference id="SpeciesReference" species="S239"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AHEXASEly" name="beta-N-acetylhexosaminidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S239"/>
+          <speciesReference id="SpeciesReference" species="S549"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S239"/>
+          <speciesReference id="SpeciesReference" species="S239"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B_MANNASEly" name="beta-mannosidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S241"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S240"/>
+          <speciesReference id="SpeciesReference" species="S350"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENGASE" name="endo-beta-N-acetylglucosaminidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1376"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S345"/>
+          <speciesReference id="SpeciesReference" species="S1377"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENGASE2" name="endo-beta-N-acetylglucosaminidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S345"/>
+          <speciesReference id="SpeciesReference" species="S1379"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENGASE2ly" name="endo-beta-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1380"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S548"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENGASEly" name="endo-beta-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1383"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1384"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCASEe" name="alpha-fucosidase, extracellular" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1596"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1459"/>
+          <speciesReference id="SpeciesReference" species="S1597"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUCASEly" name="alpha-fucosidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1787"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1785"/>
+          <speciesReference id="SpeciesReference" species="S1788"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALASE1ly" name="beta-galactosidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1788"/>
+          <speciesReference id="SpeciesReference" species="S1889"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S549"/>
+          <speciesReference id="SpeciesReference" species="S549"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GASNASE2ly" name="glycosylasparaginase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1942"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S737"/>
+          <speciesReference id="SpeciesReference" species="S1380"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GASNASEly" name="glycosylasparaginase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1788"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S737"/>
+          <speciesReference id="SpeciesReference" species="S1383"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAASE" name="sialidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1383"/>
+          <speciesReference id="SpeciesReference" species="S1377"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1377"/>
+          <speciesReference id="SpeciesReference" species="S2649"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAASEly" name="sialidase, lysosomal" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2649"/>
+          <speciesReference id="SpeciesReference" species="S1384"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1384"/>
+          <speciesReference id="SpeciesReference" species="S1889"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

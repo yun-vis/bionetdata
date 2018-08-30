@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C29" name="Vitamin D metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S28" name="1a2425thvitd2[m]"/>
+      <species id="S32" name="1a2425thvitd3[m]"/>
+      <species id="S33" name="1a25dhvitd2[m]"/>
+      <species id="S5026" name="1a25dhvitd3[c]"/>
+      <species id="S34" name="1a25dhvitd3[m]"/>
+      <species id="S24" name="2425dhvitd2[m]"/>
+      <species id="S48" name="2425dhvitd3[c]"/>
+      <species id="S31" name="2425dhvitd3[m]"/>
+      <species id="S50" name="25hvitd2[m]"/>
+      <species id="S56" name="25hvitd3[c]"/>
+      <species id="S51" name="25hvitd3[m]"/>
+      <species id="S229" name="7dhchsterol[c]"/>
+      <species id="S3417" name="CE2201[c]"/>
+      <species id="S3418" name="CE2201[m]"/>
+      <species id="S3419" name="CE2202[c]"/>
+      <species id="S3420" name="CE2202[m]"/>
+      <species id="S3421" name="CE2203[c]"/>
+      <species id="S3422" name="CE2203[m]"/>
+      <species id="S3423" name="CE2204[c]"/>
+      <species id="S3424" name="CE2204[m]"/>
+      <species id="S4014" name="CE2206[c]"/>
+      <species id="S4016" name="CE2206[m]"/>
+      <species id="S4015" name="CE2207[c]"/>
+      <species id="S4017" name="CE2207[m]"/>
+      <species id="S4165" name="CE5079[c]"/>
+      <species id="S4167" name="CE5079[m]"/>
+      <species id="S4164" name="CE6027[c]"/>
+      <species id="S4166" name="CE6027[m]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S900" name="h2o2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S2255" name="lum3[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S27" name="o2[m]"/>
+      <species id="S2254" name="pd3[c]"/>
+      <species id="S2722" name="ts3[c]"/>
+      <species id="S2752" name="vitd2[m]"/>
+      <species id="S2751" name="vitd3[c]"/>
+      <species id="S2754" name="vitd3[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="1-alpha-Vitamin D-24,25-hydroxylase (D2)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S24"/>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S28"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha-Vitamin D-24,25-hydroxylase (D3)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S31"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S32"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha,24R,25-Vitamin D-hydroxylase (D2)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S33"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S28"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha,24R,25-Vitamin D-hydroxylase (D3)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S34"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S32"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="24R-Vitamin D-25-hydroxylase (D2)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S50"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S24"/>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="24R-Vitamin D-25-hydroxylase (D3)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S51"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S31"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha-Vitamin D-25-hydroxylase (D2)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S50"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S33"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha-Vitamin D-25-hydroxylase (D3)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S51"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S34"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LS3" name="Lumisterol 3 formation" reversible="true" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2254"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2255"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PVD3" name="Previtamin D3 formation" reversible="true" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2254"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TS3" name="Tachysterol 3 formation" reversible="true" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2254"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2722"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="VD3" name="Vitamin D3 formation" reversible="true" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2254"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2751"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="VITD2Hm" name="Vitamin D-25-hydroxylase (D2)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S2752"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S50"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="VITD3Hm" name="Vitamin D-25-hydroxylase (D3)" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S2754"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S51"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1303C" name="RE1303" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2751"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S56"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1308C" name="RE1308" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S56"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S3417"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1308M" name="RE1308" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S51"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S3418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1309C" name="RE1309" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S3417"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S3419"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1309M" name="RE1309" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S31"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S3420"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1310C" name="RE1310" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S3419"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S3421"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1310M" name="RE1310" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S3420"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S900"/>
+          <speciesReference id="SpeciesReference" species="S3422"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1311C" name="RE1311" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S3421"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S3423"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1311M" name="RE1311" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S3422"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S900"/>
+          <speciesReference id="SpeciesReference" species="S3424"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2240C" name="RE2240" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S56"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S48"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2975C" name="RE2975" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S4014"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S4015"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2975M" name="RE2975" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S4016"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S4017"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3144C" name="RE3144" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S4164"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S4165"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3144M" name="RE3144" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S4166"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S4167"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="1-alpha hydroxylation of 25-hydroxy vitamin D" reversible="false" compartment="C29">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S56"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S5026"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C16" name="Histidine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S134" name="3mlda[c]"/>
+      <species id="S2275" name="3mldz[c]"/>
+      <species id="S2194" name="4izp[c]"/>
+      <species id="S1772" name="5forthf[c]"/>
+      <species id="S3674" name="CE2065[c]"/>
+      <species id="S4668" name="CE2088[c]"/>
+      <species id="S4667" name="CE2089[c]"/>
+      <species id="S4670" name="CE7218[c]"/>
+      <species id="S4669" name="CE7220[c]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S2374" name="carn[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S2042" name="forglu[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S2111" name="his_L[c]"/>
+      <species id="S2113" name="hista[c]"/>
+      <species id="S2185" name="im4ac[c]"/>
+      <species id="S2187" name="im4ac[m]"/>
+      <species id="S2114" name="im4act[c]"/>
+      <species id="S2186" name="im4act[m]"/>
+      <species id="S2297" name="mhista[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S551" name="thf[c]"/>
+      <species id="S2112" name="urcan[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="GluForTx" name="Glutamate formimidoyltransferase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S2042"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S1772"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HISD" name="histidase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HISDC" name="histidine decarboxylase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S2113"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HISTASE" name="Histaminase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2113"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IMACTD" name="Imidazole acetaldeyde dehydrogenase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2114"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2114"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2185"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IMACTD_m" name="Imidazole acetaldeyde dehydrogenase (mito)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2186"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2186"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2187"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IZPN" name="Imidazolonepropionase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2194"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2042"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MACOXO" name="3-Methylimidazole acetaldehyde:NAD+ oxidoreductase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2275"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2275"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S134"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MHISOR" name="N-Methylhistamine:oxygen oxidoreductase (deaminating)" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2297"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2275"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SAMHISTA" name="S-Adenosyl-L-methionine:histamine N-tele-methyltransferase" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S2113"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S2297"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="URCN" name="URCN" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2112"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2194"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2081C" name="RE2081" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2374"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S3674"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3629C" name="RE3629" reversible="false" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S4667"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S4668"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3630C" name="RE3630" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S4668"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S355"/>
+          <speciesReference id="SpeciesReference" species="S4667"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3631C" name="RE3631" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1077"/>
+          <speciesReference id="SpeciesReference" species="S2112"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4669"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3633C" name="RE3633" reversible="true" compartment="C16">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S4667"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S4670"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

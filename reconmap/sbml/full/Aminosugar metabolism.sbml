@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C31" name="Aminosugar metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S957" name="chtn[e]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S3119" name="HC00822[e]"/>
+      <species id="S345" name="acgam[c]"/>
+      <species id="S958" name="acgam[e]"/>
+      <species id="S3119" name="HC00822[e]"/>
+      <species id="S2803" name="HC00822[l]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S340" name="acgal1p[c]"/>
+      <species id="S339" name="acgal[c]"/>
+      <species id="S349" name="acgam1p[c]"/>
+      <species id="S348" name="acgam6p[c]"/>
+      <species id="S345" name="acgam[c]"/>
+      <species id="S346" name="acmana[c]"/>
+      <species id="S2815" name="acmana[r]"/>
+      <species id="S377" name="acmanap[c]"/>
+      <species id="S382" name="acnam[c]"/>
+      <species id="S384" name="acnam[n]"/>
+      <species id="S379" name="acnamp[c]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S956" name="chtn[c]"/>
+      <species id="S957" name="chtn[e]"/>
+      <species id="S985" name="cmpacna[c]"/>
+      <species id="S987" name="cmpacna[n]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S988" name="ctp[n]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S1750" name="f6p[c]"/>
+      <species id="S347" name="gam6p[c]"/>
+      <species id="S1933" name="gam[c]"/>
+      <species id="S1964" name="gdpddman[c]"/>
+      <species id="S1668" name="gdpfuc[c]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S342" name="idp[c]"/>
+      <species id="S341" name="itp[c]"/>
+      <species id="S1243" name="kdn[c]"/>
+      <species id="S381" name="kdnp[c]"/>
+      <species id="S380" name="man6p[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S378" name="pep[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S989" name="ppi[n]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S2028" name="uacgam[c]"/>
+      <species id="S2814" name="uacgam[r]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S2375" name="udp[r]"/>
+      <species id="S2734" name="udpacgal[c]"/>
+      <species id="S1069" name="utp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACGALK" name="N-acetylgalactosamine kinase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S339"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S340"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGALK2" name="N-acetylgalactosamine kinase (ITP)" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S339"/>
+          <speciesReference id="SpeciesReference" species="S341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S340"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAM2E" name="N-acetylglucosamine 2-epimerase" reversible="true" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAM6PSi" name="N-acetylglucosamine-6-phosphate synthase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S348"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAMK" name="N-acetylglucosamine kinase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S348"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACGAMPM" name="phosphoacetylglucosamine mutase" reversible="true" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S348"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S349"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNAM9PL" name="N-Acetylneuraminate 9-phosphate pyruvate-lyase (pyruvate-phosphorylating)" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S377"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S379"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNAM9PL2" name="N-Acetylneuraminate 9-phosphate pyruvate-lyase (pyruvate-phosphorylating)" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S380"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S381"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNAMPH" name="N-Acetylneuraminate 9-phosphate phosphohydrolase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S379"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S382"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACNMLr" name="N-Acetylneuraminate lyase (reversible)" reversible="true" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S382"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AGDC" name="N-acetylglucosamine-6-phosphate deacetylase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S348"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S347"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMANK" name="N-acetyl-D-mannosamine kinase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S346"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S377"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHTNASE" name="chitinase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S377"/>
+          <speciesReference id="SpeciesReference" species="S956"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S956"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHTNASEe" name="chitinase, extracellular" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S956"/>
+          <speciesReference id="SpeciesReference" species="S957"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S957"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CMPSAS" name="CMP sialic acid synthase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S382"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S985"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CMPSASn" name="CMP sialic acid synthase, nuclear" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S384"/>
+          <speciesReference id="SpeciesReference" species="S988"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S987"/>
+          <speciesReference id="SpeciesReference" species="S989"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G6PDA" name="glucosamine-6-phosphate deaminase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GF6PTA" name="glutamine-fructose-6-phosphate transaminase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HEX10" name="hexokinase (D-glucosamine:ATP)" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1933"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="KDNH" name="2-keto-3deoxy-D-glycero-D-galactononic acid phosphohydrolase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S381"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1243"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UAG2EMAi" name="UDP-N-acetyl-D-glucosamine 2-epimerase (Hydrolysis)" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UAG4E" name="UDP-N-acetylglucosamine 4-epimerase" reversible="true" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2734"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UAGALDP" name="UDP-N-acetylgalactosamine diphosphorylase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S340"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2734"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UAGDP" name="UDP-N-acetylglucosamine diphosphorylase" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S349"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2028"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0013" name="beta-N-acetylhexosaminidase Aminosugars metabolism EC:3.2.1.52" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2803"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2803"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0113" name="UDP-N-acetyl-D-glucosamine 2-epimerase Aminosugars metabolism EC:5.1.3.14" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2814"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2375"/>
+          <speciesReference id="SpeciesReference" species="S2815"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0363" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S341"/>
+          <speciesReference id="SpeciesReference" species="S1933"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0364" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S1933"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S347"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0782" name="GDP-L-fucose:NADP+ 4-oxidoreductase (3,5-epimerizing) Fructose and mannose metabolism EC:1.1.1.271" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1964"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1668"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1374" name="EC:3.2.1.14" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S200"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S200"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1375" name="Transport reaction" reversible="false" compartment="C31">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S3119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2803"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

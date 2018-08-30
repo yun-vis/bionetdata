@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C177" name="Nucleotide interconversion"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S1096" name="cdp[c]"/>
+      <species id="S1101" name="cdp[n]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S1104" name="dcdp[c]"/>
+      <species id="S1106" name="dcdp[n]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1112" name="udp[n]"/>
+      <species id="S69" name="2dr1p[c]"/>
+      <species id="S106" name="35cgmp[c]"/>
+      <species id="S2487" name="35cgmp[g]"/>
+      <species id="S107" name="35cgmp[n]"/>
+      <species id="S432" name="ade[c]"/>
+      <species id="S426" name="adn[c]"/>
+      <species id="S428" name="adn[e]"/>
+      <species id="S445" name="adn[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S754" name="adp[e]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S1114" name="adp[n]"/>
+      <species id="S446" name="adpglc[c]"/>
+      <species id="S448" name="adpman[c]"/>
+      <species id="S450" name="adprib[c]"/>
+      <species id="S452" name="adprib[m]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S752" name="amp[e]"/>
+      <species id="S2486" name="amp[g]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S641" name="ap4a[c]"/>
+      <species id="S469" name="aps[c]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S751" name="atp[e]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S755" name="atp[n]"/>
+      <species id="S444" name="camp[c]"/>
+      <species id="S2485" name="camp[g]"/>
+      <species id="S1096" name="cdp[c]"/>
+      <species id="S1113" name="cdp[m]"/>
+      <species id="S1101" name="cdp[n]"/>
+      <species id="S516" name="cmp[c]"/>
+      <species id="S1440" name="cmp[e]"/>
+      <species id="S1089" name="cmp[m]"/>
+      <species id="S1099" name="cmp[n]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S925" name="ctp[m]"/>
+      <species id="S988" name="ctp[n]"/>
+      <species id="S1086" name="cytd[c]"/>
+      <species id="S1094" name="cytd[e]"/>
+      <species id="S1088" name="cytd[m]"/>
+      <species id="S1090" name="cytd[n]"/>
+      <species id="S1119" name="dad_2[c]"/>
+      <species id="S1121" name="dad_2[e]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S1171" name="dadp[m]"/>
+      <species id="S1110" name="dadp[n]"/>
+      <species id="S440" name="damp[c]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S1169" name="datp[m]"/>
+      <species id="S1109" name="datp[n]"/>
+      <species id="S470" name="dcamp[c]"/>
+      <species id="S1104" name="dcdp[c]"/>
+      <species id="S1281" name="dcdp[m]"/>
+      <species id="S1106" name="dcdp[n]"/>
+      <species id="S1103" name="dcmp[c]"/>
+      <species id="S1137" name="dcmp[m]"/>
+      <species id="S1105" name="dcmp[n]"/>
+      <species id="S1107" name="dctp[c]"/>
+      <species id="S1231" name="dctp[m]"/>
+      <species id="S1108" name="dctp[n]"/>
+      <species id="S1136" name="dcyt[m]"/>
+      <species id="S1138" name="dcyt[n]"/>
+      <species id="S1098" name="dgdp[c]"/>
+      <species id="S1172" name="dgdp[m]"/>
+      <species id="S1102" name="dgdp[n]"/>
+      <species id="S1168" name="dgmp[c]"/>
+      <species id="S1170" name="dgmp[m]"/>
+      <species id="S1175" name="dgsn[c]"/>
+      <species id="S1173" name="dgsn[m]"/>
+      <species id="S1097" name="dgtp[c]"/>
+      <species id="S1234" name="dgtp[m]"/>
+      <species id="S1100" name="dgtp[n]"/>
+      <species id="S1198" name="dhf[c]"/>
+      <species id="S1209" name="didp[c]"/>
+      <species id="S2379" name="didp[m]"/>
+      <species id="S1210" name="didp[n]"/>
+      <species id="S2406" name="dimp[c]"/>
+      <species id="S1120" name="din[c]"/>
+      <species id="S1122" name="din[e]"/>
+      <species id="S1217" name="ditp[c]"/>
+      <species id="S2380" name="ditp[m]"/>
+      <species id="S1218" name="ditp[n]"/>
+      <species id="S1284" name="dtdp[c]"/>
+      <species id="S1282" name="dtdp[m]"/>
+      <species id="S1340" name="dtdp[n]"/>
+      <species id="S1341" name="dtmp[c]"/>
+      <species id="S2417" name="dtmp[m]"/>
+      <species id="S1288" name="dttp[c]"/>
+      <species id="S1237" name="dttp[m]"/>
+      <species id="S1239" name="dttp[n]"/>
+      <species id="S1283" name="dudp[c]"/>
+      <species id="S1285" name="dudp[m]"/>
+      <species id="S1342" name="dudp[n]"/>
+      <species id="S1139" name="dump[c]"/>
+      <species id="S1346" name="dump[m]"/>
+      <species id="S1343" name="dump[n]"/>
+      <species id="S1149" name="duri[c]"/>
+      <species id="S1345" name="duri[m]"/>
+      <species id="S1150" name="duri[n]"/>
+      <species id="S1286" name="dutp[c]"/>
+      <species id="S1287" name="dutp[m]"/>
+      <species id="S1348" name="dutp[n]"/>
+      <species id="S471" name="fum[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S1471" name="gdp[e]"/>
+      <species id="S439" name="gdp[m]"/>
+      <species id="S1116" name="gdp[n]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S1963" name="gmp[c]"/>
+      <species id="S1477" name="gmp[e]"/>
+      <species id="S1962" name="gmp[g]"/>
+      <species id="S1980" name="gmp[m]"/>
+      <species id="S2057" name="gmp[n]"/>
+      <species id="S2078" name="gsn[c]"/>
+      <species id="S1482" name="gsn[e]"/>
+      <species id="S2077" name="gsn[m]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S1486" name="gtp[e]"/>
+      <species id="S438" name="gtp[m]"/>
+      <species id="S1115" name="gtp[n]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2162" name="hxan[c]"/>
+      <species id="S342" name="idp[c]"/>
+      <species id="S1503" name="idp[e]"/>
+      <species id="S2383" name="idp[m]"/>
+      <species id="S2182" name="idp[n]"/>
+      <species id="S474" name="imp[c]"/>
+      <species id="S1505" name="imp[e]"/>
+      <species id="S2189" name="imp[m]"/>
+      <species id="S2188" name="ins[m]"/>
+      <species id="S341" name="itp[c]"/>
+      <species id="S2384" name="itp[m]"/>
+      <species id="S2193" name="itp[n]"/>
+      <species id="S449" name="man1p[c]"/>
+      <species id="S1208" name="mlthf[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S430" name="nh4[e]"/>
+      <species id="S1092" name="nh4[n]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S64" name="pap[c]"/>
+      <species id="S61" name="paps[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S2377" name="pi[g]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S989" name="ppi[n]"/>
+      <species id="S2398" name="r1p[c]"/>
+      <species id="S451" name="r5p[c]"/>
+      <species id="S453" name="r5p[m]"/>
+      <species id="S1808" name="so4[c]"/>
+      <species id="S2414" name="thymd[c]"/>
+      <species id="S2418" name="thymd[m]"/>
+      <species id="S2603" name="trdox[c]"/>
+      <species id="S2718" name="trdox[m]"/>
+      <species id="S2602" name="trdrd[c]"/>
+      <species id="S2719" name="trdrd[m]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1643" name="udp[e]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S2381" name="udp[m]"/>
+      <species id="S1112" name="udp[n]"/>
+      <species id="S2375" name="udp[r]"/>
+      <species id="S2030" name="ump[c]"/>
+      <species id="S1644" name="ump[e]"/>
+      <species id="S2378" name="ump[g]"/>
+      <species id="S2409" name="ump[m]"/>
+      <species id="S2743" name="ump[n]"/>
+      <species id="S2376" name="ump[r]"/>
+      <species id="S1057" name="ura[c]"/>
+      <species id="S1087" name="uri[c]"/>
+      <species id="S1648" name="uri[e]"/>
+      <species id="S2410" name="uri[m]"/>
+      <species id="S1093" name="uri[n]"/>
+      <species id="S1069" name="utp[c]"/>
+      <species id="S1649" name="utp[e]"/>
+      <species id="S2382" name="utp[m]"/>
+      <species id="S1111" name="utp[n]"/>
+      <species id="S2087" name="xan[c]"/>
+      <species id="S2056" name="xmp[c]"/>
+      <species id="S2426" name="xtp[c]"/>
+      <species id="S2405" name="xtsn[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ADK1" name="adenylate kinase" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADK1m" name="adenylate kinase, mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S325"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADK3" name="adentylate kinase (GTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADK3m" name="adentylate kinase (GTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S438"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADKd" name="adenylate kinase (d form)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S440"/>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNCYC" name="adenylate cyclase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S444"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNK1" name="adenosine kinase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S426"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADNK1m" name="adenosine kinase, mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S445"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADPGLC" name="ADPglucose diphosphatase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S446"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S446"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S447"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADPMAN" name="ADPmannose diphosphatase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S448"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S448"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S449"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADPRDP" name="ADPribose diphosphatase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S450"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S450"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S451"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADPRDPm" name="ADPribose diphosphatase (mitochondrial)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S452"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S452"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S453"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADSK" name="adenylyl-sulfate kinase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S469"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S61"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADSL1" name="adenylosuccinate lyase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S470"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S471"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ADSS" name="adenylosuccinate synthase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S148"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S474"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S470"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AMPDA" name="Adenosine monophosphate deaminase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AP4AH1" name="Ap4A hydrolase, asymmetrically" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S641"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATPH1e" name="ATP diphosphohydrolase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S751"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S751"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ATPH2e" name="ATP diphosphohydrolase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S754"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BPNT" name="3&apos;,5&apos;-bisphosphate nucleotidase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S64"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BPNT2" name="3&apos;,5&apos;-bisphosphate nucleotidase (paps)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S61"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S469"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CTPS1" name="CTP synthase (NH3)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTDK1" name="ATPcytidine 5-phosphotransferase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTDK2m" name="cytidine kinase (ATP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1088"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1089"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTDn" name="cytidine deaminase, nuclear" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1090"/>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1092"/>
+          <speciesReference id="SpeciesReference" species="S1093"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK1" name="cytidylate kinase (CMP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK10" name="cytidylate kinase (CMP,dGTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK10n" name="cytidylate kinase (CMP,dGTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+          <speciesReference id="SpeciesReference" species="S1100"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1102"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK11" name="cytidylate kinase (dCMP,dGTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK11n" name="cytidylate kinase (dCMP,dGTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1100"/>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1102"/>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK12" name="cytidylate kinase (dCMP,dCTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK12n" name="cytidylate kinase (dCMP,dCTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK13" name="cytidylate kinase (dCMP,dATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK13n" name="cytidylate kinase (dCMP,dATP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK14" name="cytidylate kinase (dCMP,UTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK14n" name="cytidylate kinase (dCMP,CTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK1m" name="cytidylate kinase (CMP),mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1089"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1113"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK1n" name="cytidylate kinase (CMP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK2" name="cytidylate kinase (dCMP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK2n" name="cytidylate kinase (dCMP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK3" name="cytidylate kinase (CMP)(GTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK3n" name="cytidylate kinase (dCMP,CTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S988"/>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK4" name="cytidylate kinase (dCMP)(GTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK4n" name="cytidylate kinase (dCMP,GTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+          <speciesReference id="SpeciesReference" species="S1116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK5" name="cytidylate kinase (dCMP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK5n" name="cytidylate kinase (CMP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK6" name="cytidylate kinase (CMP,CTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK6n" name="cytidylate kinase (CMP,CTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S988"/>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK7" name="cytidylate kinase (CMP,UTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK7n" name="cytidylate kinase (CMP,UTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK8" name="cytidylate kinase (CMP,dATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK8n" name="cytidylate kinase (CMP,dATP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK9" name="cytidylate kinase (CMP,dCTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CYTK9n" name="cytidylate kinase (CMP,dCTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1099"/>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DADA" name="Deoxyadenosine deaminase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S1120"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DADAe" name="Deoxyadenosine deaminase, extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1121"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S430"/>
+          <speciesReference id="SpeciesReference" species="S1122"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DADNK" name="deoxyadenosine kinase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S440"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCK1m" name="Deoxycytidine kinase, mitochondrial (ATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1136"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1137"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCK1n" name="Deoxycytidine kinase, nuclear (ATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1138"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCK2n" name="Deoxycytidine kinase, nuclear (UTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+          <speciesReference id="SpeciesReference" species="S1138"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1105"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DCYTDn" name="deoxycytidine deaminase, nuclear" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1138"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1092"/>
+          <speciesReference id="SpeciesReference" species="S1150"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DGK1" name="deoxyguanylate kinase (dGMP:ATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1168"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DGK2m" name="deoxyguanylate kinase (dGMP:dATP) (mitochondrial)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1169"/>
+          <speciesReference id="SpeciesReference" species="S1170"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1171"/>
+          <speciesReference id="SpeciesReference" species="S1172"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DGNSKm" name="deoxyguanosine kinase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1173"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1170"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DTMPK" name="dTMP kinase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1284"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURIK1" name="deoxyuridine kinase (ATP:Deoxyuridine)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURIK1m" name="deoxyuridine kinase (ATP:Deoxyuridine), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DURIPP" name="deoxyuridine phosphorylase" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1149"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S69"/>
+          <speciesReference id="SpeciesReference" species="S1057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DUTPDPm" name="dUTP diphosphatase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S1287"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DUTPDPn" name="dUTP diphosphatase, nuclear" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S1348"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S989"/>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1343"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GK1" name="guanylate kinase (GMP:ATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GK1m" name="guanylate kinase (GMP:ATP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1980"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GMPR" name="GMP reductase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S439"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GMPS2" name="GMP synthase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+          <speciesReference id="SpeciesReference" species="S2056"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2056"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GSNKm" name="guanosine kinase (mitochondrial)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2077"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1980"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GUACYC" name="guanylate cyclase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S106"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IMPD" name="IMP dehydrogenase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2056"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="INSKm" name="insosine kinase, mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2188"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2189"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP10ex" name="nucleoside-diphosphatase (IDP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1503"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1505"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP3ex" name="nucleoside-diphosphatase (GDP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1471"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1477"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP6" name="nucleoside-diphosphatase (dCDP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1103"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP7er" name="nucleoside-diphosphatase (UDP), endoplasmic reticulum" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2375"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S2376"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP7ex" name="nucleoside-diphosphatase (UDP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1643"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1644"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP7g" name="nucleoside-diphosphatase (UDP), Golgi apparatus" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S787"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S2377"/>
+          <speciesReference id="SpeciesReference" species="S2378"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP8" name="nucleoside-diphosphatase (dUDP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDP8ex" name="nucleoside-diphosphatase (UTP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1649"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1643"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK1" name="nucleoside-diphosphate kinase (ATP:GDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK10" name="nucleoside-diphosphate kinase (ATP:dIDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1209"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1217"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK10m" name="nucleoside-diphosphate kinase (ATP:dIDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2379"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2380"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK10n" name="nucleoside-diphosphate kinase (ATP:dIDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1210"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S1218"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK1m" name="nucleoside-diphosphate kinase (ATP:GDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S438"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK1n" name="nucleoside-diphosphate kinase (ATP:GDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1116"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK2" name="nucleoside-diphosphate kinase (ATP:UDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK2m" name="nucleoside-diphosphate kinase (ATP:UDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2381"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2382"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK2n" name="nucleoside-diphosphate kinase (ATP:UDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK3" name="nucleoside-diphosphate kinase (ATP:CDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK3m" name="nucleoside-diphosphate kinase (ATP:CDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1113"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S925"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK3n" name="nucleoside-diphosphate kinase (ATP:CDP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S988"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK4" name="nucleoside-diphosphate kinase (ATP:dTDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK4m" name="nucleoside-diphosphate kinase (ATP:dTDP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1282"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1237"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK4n" name="nucleoside-diphosphate kinase (ATP:dTDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1340"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S1239"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK5" name="Nucleoside-diphosphate kinase (ATP:dGDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK5m" name="nucleoside-diphosphate kinase (ATP:dGDP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1172"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1234"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK5n" name="nucleoside-diphosphate kinase (ATP:dGDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1102"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1100"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK6" name="Nucleoside-diphosphate kinase (ATP:dUDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1286"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK6m" name="nucleoside-diphosphate kinase (ATP:dUDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1285"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1287"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK6n" name="nucleoside-diphosphate kinase (ATP:dUDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1342"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S1348"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK7" name="nucleoside-diphosphate kinase (ATP:dCDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK7m" name="nucleoside-diphosphate kinase (ATP:dCDP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1281"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1231"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK7n" name="nucleoside-diphosphate kinase (ATP:dCDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK8" name="Nucleoside-diphosphate kinase (ATP:dADP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK8m" name="nucleoside-diphosphate kinase (ATP:dADP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1171"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1169"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK8n" name="nucleoside-diphosphate kinase (ATP:dADP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK9" name="nucleoside-diphosphate kinase (ATP:IDP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S341"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK9m" name="nucleoside-diphosphate kinase (ATP:IDP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2383"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2384"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NDPK9n" name="nucleoside-diphosphate kinase (ATP:IDP), nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2182"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2193"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD10" name="5&apos;-nucleotidase (XMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2056"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2405"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD12" name="5&apos;-nucleotidase (dIMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2406"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1120"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD1m" name="5&apos;-nucleotidase (dUMP),mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S1345"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD2e" name="5&apos;-nucleotidase (UMP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1644"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1648"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD2m" name="5&apos;-nucleotidase (UMP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2409"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2410"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD4e" name="5&apos;-nucleotidase (CMP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1440"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1094"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD5m" name="5&apos;-nucleotidase (dTMP), mitochondrial" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2417"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD6" name="5&apos;-nucleotidase (dAMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S440"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1119"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD7" name="5&apos;-nucleotidase (AMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S426"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD7e" name="5&apos;-nucleotidase (AMP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S752"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S428"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD8" name="5&apos;-nucleotidase (dGMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1168"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1175"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD9" name="5&apos;-nucleotidase (GMP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2078"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTD9e" name="5&apos;-nucleotidase (GMP), extracellular" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1477"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1482"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTP3e" name="nucleoside-triphosphatase (GTP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S1486"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S1471"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTPP10" name="Nucleoside triphosphate pyrophosphorylase (ditp)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1217"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2406"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTPP11" name="Nucleoside triphosphate pyrophosphorylase (xtp)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2426"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2056"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NTPP9" name="Nucleoside triphosphate pyrophosphorylase (itp)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S341"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDE1" name="3&apos;,5&apos;-cyclic-nucleotide phosphodiesterase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S444"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDE1g" name="3&apos;,5&apos;-cyclic-nucleotide phosphodiesterase,Golgi" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2485"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S2486"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDE4" name="3&apos;,5&apos;-cyclic-nucleotide phosphodiesterase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S106"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDE4g" name="3&apos;,5&apos;-cyclic-nucleotide phosphodiesterase, Golgi" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2487"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1962"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDE4n" name="3&apos;,5&apos;-cyclic-nucleotide phosphodiesterase, Nucleus" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S107"/>
+          <speciesReference id="SpeciesReference" species="S842"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2057"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP1" name="purine-nucleoside phosphorylase (Adenosine)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S426"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S432"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PUNP7" name="purine-nucleoside phosphorylase (Xanthosine)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2405"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+          <speciesReference id="SpeciesReference" species="S2398"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RNDR1" name="ribonucleoside-diphosphate reductase (ADP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RNDR2" name="ribonucleoside-diphosphate reductase (GDP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S437"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RNDR3" name="ribonucleoside-diphosphate reductase (CDP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RNDR4" name="ribonucleoside-diphosphate reductase (UDP)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SADT" name="sulfate adenylyltransferase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1808"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S469"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDK1" name="thymidine kinase (ATP:thymidine)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2414"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1341"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDK1m" name="thymidine kinase (ATP:thymidine)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2418"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2417"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TMDS" name="thymidylate synthase" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1139"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1198"/>
+          <speciesReference id="SpeciesReference" species="S1341"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TRDR" name="thioredoxin reductase (NADPH)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TRDRm" name="thioredoxin reductase (NADPH)" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2718"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2719"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK" name="UMP kinase" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK2" name="UMP kinase (CTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK2n" name="UMP kinase (CTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S988"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1101"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK3" name="UMP kinase (UTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK3n" name="UMP kinase (UTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1111"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK4" name="UMP kinase (GTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK4n" name="UMP kinase (GTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1115"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+          <speciesReference id="SpeciesReference" species="S1116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK5" name="UMP kinase (dATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK5n" name="UMP kinase (dATP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1109"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1110"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK6" name="UMP kinase (dCTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK6n" name="UMP kinase (dCTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1108"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1106"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK7" name="UMP kinase (dGTP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPK7n" name="UMP kinase (dGTP),nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1100"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1102"/>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPKm" name="UMP kinase (mitochondrial, ATP)" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2409"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2381"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UMPKn" name="UMP kinase, nuclear" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2743"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1112"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="URIDK2m" name="uridylate kinase (dUMP), mitochondrial" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S1346"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S1285"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0345" name="ATP:AMP phosphotransferase Purine metabolism EC:2.7.4.11" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S440"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0394" name="Xanthine:NAD+ oxidoreductase Purine metabolism EC:1.17.1.4" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0395" name="Hypoxanthine:oxygen oxidoreductase Purine metabolism EC:1.17.3.2" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2162"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S2087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0456" name="ATP:deoxyguanosine 5-phosphotransferase Purine metabolism EC:2.7.1.113" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1175"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1168"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0470" name="2-Deoxyadenosine 5-diphosphate:oxidized-thioredoxin 2-oxidoreductase Purine metabolism EC:1.17.4.1" reversible="false" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0472" name="2-Deoxyadenosine 5-diphosphate:oxidized-thioredoxin 2-oxidoreductase Purine metabolism EC:1.17.4.1" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S436"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0474" name="2-Deoxyadenosine 5-diphosphate:oxidized-thioredoxin 2-oxidoreductase Purine metabolism EC:1.17.4.1" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1107"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S924"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0475" name="2-Deoxyadenosine 5-diphosphate:oxidized-thioredoxin 2-oxidoreductase Purine metabolism EC:1.17.4.1" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1286"/>
+          <speciesReference id="SpeciesReference" species="S2603"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+          <speciesReference id="SpeciesReference" species="S2602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0531" name="dUTP:cytidine 5-phosphotransferase Pyrimidine metabolism EC:2.7.1.48" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1086"/>
+          <speciesReference id="SpeciesReference" species="S1286"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S516"/>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1156" name="dUTP:uridine 5-phosphotransferase Pyrimidine metabolism EC:2.7.1.48" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1087"/>
+          <speciesReference id="SpeciesReference" species="S1286"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1283"/>
+          <speciesReference id="SpeciesReference" species="S2030"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1384" name="Guanosine aminohydrolase EC:3.5.4.15" reversible="true" compartment="C177">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2078"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S2405"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

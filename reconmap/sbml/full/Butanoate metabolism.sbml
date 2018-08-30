@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="Butanoate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S120" name="3hbcoa_R[m]"/>
+      <species id="S296" name="acac[m]"/>
+      <species id="S119" name="b2coa[m]"/>
+      <species id="S811" name="bhb[m]"/>
+      <species id="S392" name="btcoa[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S88" name="nadh[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="3-hydroxybutyryl-CoA dehydratase, mitochondrial" reversible="true" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S119"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S120"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACOAD1fm" name="acyl-CoA dehydrogenase (butanoyl-CoA), mitochondrial" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S392"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S119"/>
+          <speciesReference id="SpeciesReference" species="S391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BDHm" name="(R)-3-Hydroxybutanoate:NAD+ oxidoreductase" reversible="true" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S811"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S296"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

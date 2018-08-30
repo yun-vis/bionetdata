@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C42" name="Valine, leucine, and isoleucine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S25" name="h[m]"/>
+      <species id="S288" name="2maacoa[m]"/>
+      <species id="S390" name="2mb2coa[m]"/>
+      <species id="S388" name="2mbcoa[m]"/>
+      <species id="S110" name="2mop[m]"/>
+      <species id="S396" name="2mp2coa[m]"/>
+      <species id="S2843" name="2mpdhl[m]"/>
+      <species id="S112" name="3aib[m]"/>
+      <species id="S121" name="3hibutcoa[m]"/>
+      <species id="S1362" name="3hmbcoa[m]"/>
+      <species id="S122" name="3hmp[m]"/>
+      <species id="S394" name="3mb2coa[m]"/>
+      <species id="S2280" name="3mgcoa[m]"/>
+      <species id="S136" name="3mob[c]"/>
+      <species id="S137" name="3mob[m]"/>
+      <species id="S138" name="3mop[c]"/>
+      <species id="S139" name="3mop[m]"/>
+      <species id="S172" name="4mop[c]"/>
+      <species id="S173" name="4mop[m]"/>
+      <species id="S3416" name="CE2028[c]"/>
+      <species id="S3830" name="CE5068[m]"/>
+      <species id="S3750" name="CE5456[c]"/>
+      <species id="S3829" name="CE5875[m]"/>
+      <species id="S2883" name="HC00900[m]"/>
+      <species id="S2922" name="HC01223[m]"/>
+      <species id="S291" name="aacoa[m]"/>
+      <species id="S296" name="acac[m]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S993" name="co2[x]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S1952" name="dhlam[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S317" name="hco3[m]"/>
+      <species id="S2120" name="hmgcoa[m]"/>
+      <species id="S395" name="ibcoa[m]"/>
+      <species id="S2183" name="ile_L[c]"/>
+      <species id="S2184" name="ile_L[m]"/>
+      <species id="S393" name="ivcoa[m]"/>
+      <species id="S2221" name="leu_L[c]"/>
+      <species id="S2222" name="leu_L[m]"/>
+      <species id="S2331" name="mmcoa_R[m]"/>
+      <species id="S2328" name="mmcoa_S[c]"/>
+      <species id="S2329" name="mmcoa_S[m]"/>
+      <species id="S2330" name="mmcoa_S[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S323" name="ppcoa[c]"/>
+      <species id="S289" name="ppcoa[m]"/>
+      <species id="S1053" name="ppcoa[x]"/>
+      <species id="S1000" name="q10[m]"/>
+      <species id="S1075" name="q10h2[m]"/>
+      <species id="S2431" name="succ[m]"/>
+      <species id="S556" name="succoa[m]"/>
+      <species id="S2749" name="val_L[c]"/>
+      <species id="S2750" name="val_L[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="L-3-aminoisobutyrate transaminase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S110"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S112"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="3-hydroxyisobutyryl-CoA hydrolase, mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S121"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S122"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACACT10m" name="acetyl-CoA C-acetyltransferase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S288"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S289"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACOAD10m" name="acyl-CoA dehydrogenase (2-methylbutanoyl-CoA), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S388"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S390"/>
+          <speciesReference id="SpeciesReference" species="S391"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACOAD8m" name="acyl-CoA dehydrogenase (isovaleryl-CoA), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S393"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S394"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACOAD9m" name="acyl-CoA dehydrogenase (isobutyryl-CoA), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S395"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ECOAH12m" name="3-hydroxyacyl-CoA dehydratase (3-hydroxyisobutyryl-CoA) (mitochondria)" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S121"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ECOAH9m" name="2-Methylprop-2-enoyl-CoA (2-Methylbut-2-enoyl-CoA), mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S390"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1362"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HACD9m" name="3-hydroxyacyl-CoA dehydrogenase (2-Methylacetoacetyl-CoA), mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1362"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S288"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HIBDm" name="3-hydroxyisobutyrate dehydrogenase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S122"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S110"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ILETA" name="isoleucine transaminase" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2183"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S138"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ILETAm" name="isoleucine transaminase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S2184"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LEUTA" name="leucine transaminase" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2221"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S172"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LEUTAm" name="leucine transaminase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S2222"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S173"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MCCCrm" name="methylcrotonoyl-CoA carboxylase, mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S317"/>
+          <speciesReference id="SpeciesReference" species="S394"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2280"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MGCHrm" name="methylglutaconyl-CoA hydratase (reversible), mitochondrial" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2280"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2120"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMCD" name="Methylmalonyl-CoA decarboxylase" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2328"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMCDm" name="Methylmalonyl-CoA decarboxylase, mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S2329"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S289"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMCDp" name="Methylmalonyl-CoA decarboxylase, peroxisomal" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S2330"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S993"/>
+          <speciesReference id="SpeciesReference" species="S1053"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMEm" name="methylmalonyl-CoA epimerase/racemase" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2331"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMMm" name="methylmalonyl-CoA mutase" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2331"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMSAD1m" name="methylmalonate-semialdehyde dehydrogenase" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S110"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S289"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MMTSADm" name="malonate-semialdehyde dehydrogenase (acetylating), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S110"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2331"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OCOAT1m" name="3-oxoacid CoA-transferase" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S296"/>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S291"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OIVD1m" name="2-oxoisovalerate dehydrogenase (acylating; 4-methyl-2-oxopentaoate), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S173"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S393"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OIVD2m" name="2-oxoisovalerate dehydrogenase (acylating; 3-methyl-2-oxobutanoate), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S137"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S395"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OIVD3m" name="2-oxoisovalerate dehydrogenase (acylating; 3-methyl-2-oxopentanoate), mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S139"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S388"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPCOACm" name="Propionyl-CoA carboxylase, mitochondrial" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S289"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S317"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S2329"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="VALTA" name="valine transaminase" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2749"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S136"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="VALTAm" name="valine transaminase, mitochondiral" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S2750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S137"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0560" name="2-Methylpropanoyl-CoA:oxygen 2,3-oxidoreductase Valine, leucine and isoleucine degradation EC:1.3.99.2" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S395"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S396"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0561" name="2-methylpropanoyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-(2-methylpropanoyl)transferase Valine, leucine and isoleucine degradation EC:2.3.1.168" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2843"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S395"/>
+          <speciesReference id="SpeciesReference" species="S1952"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0571" name="(S)-Methylmalonyl-CoA hydrolase Propanoate metabolism EC:3.1.2.17" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2329"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2883"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0603" name="(S)-2-methylbutanoyl-CoA:acceptor 2,3-oxidoreductase Valine, leucine and isoleucine degradation EC:1.3.99.12" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S388"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S390"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0643" name="(S)-Methylmalonate semialdehyde:NAD+ oxidoreductase Valine, leucine and isoleucine degradation EC:1.2.1.3" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S110"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S110"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2883"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0655" name="3-Methylbutanoyl-CoA:(acceptor) 2,3-oxidoreductase Valine, leucine and isoleucine degradation EC:1.3.99.10" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S393"/>
+          <speciesReference id="SpeciesReference" species="S1000"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S394"/>
+          <speciesReference id="SpeciesReference" species="S1075"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0669" name="(S)-3-Hydroxyisobutyryl-CoA hydro-lyase Valine, leucine and isoleucine degradation EC:4.2.1.17" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S396"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2922"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE1266C" name="RE1266" reversible="false" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S172"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S3416"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2292C" name="RE2292" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S3750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S172"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2453M" name="RE2453" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S317"/>
+          <speciesReference id="SpeciesReference" species="S390"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S3829"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2454M" name="RE2454" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S3829"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3830"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3326M" name="RE3326" reversible="true" compartment="C42">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S395"/>
+          <speciesReference id="SpeciesReference" species="S1952"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2843"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

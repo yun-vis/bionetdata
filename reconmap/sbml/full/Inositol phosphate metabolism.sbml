@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C64" name="Inositol phosphate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S38" name="adp[c]"/>
+      <species id="S1114" name="adp[n]"/>
+      <species id="S749" name="adp[r]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S755" name="atp[n]"/>
+      <species id="S750" name="atp[r]"/>
+      <species id="S927" name="dag_hs[c]"/>
+      <species id="S1124" name="dag_hs[n]"/>
+      <species id="S1859" name="g6p[c]"/>
+      <species id="S2033" name="glcur[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S842" name="h2o[n]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S921" name="inost[c]"/>
+      <species id="S2298" name="mi13456p[c]"/>
+      <species id="S2300" name="mi13456p[n]"/>
+      <species id="S2302" name="mi1345p[c]"/>
+      <species id="S2301" name="mi1345p[n]"/>
+      <species id="S2305" name="mi1346p[c]"/>
+      <species id="S2304" name="mi1346p[n]"/>
+      <species id="S2303" name="mi134p[c]"/>
+      <species id="S2306" name="mi13p[c]"/>
+      <species id="S2309" name="mi1456p[n]"/>
+      <species id="S2311" name="mi145p[c]"/>
+      <species id="S2310" name="mi145p[n]"/>
+      <species id="S2312" name="mi14p[c]"/>
+      <species id="S2314" name="mi14p[n]"/>
+      <species id="S2308" name="mi1p_D[c]"/>
+      <species id="S2315" name="mi1p_D[n]"/>
+      <species id="S2316" name="mi3456p[c]"/>
+      <species id="S2307" name="mi34p[c]"/>
+      <species id="S2317" name="mi3p_D[c]"/>
+      <species id="S2313" name="mi4p_D[c]"/>
+      <species id="S2299" name="minohp[c]"/>
+      <species id="S2320" name="minohp[n]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S2516" name="pail345p_hs[c]"/>
+      <species id="S2517" name="pail345p_hs[n]"/>
+      <species id="S2519" name="pail34p_hs[c]"/>
+      <species id="S2520" name="pail34p_hs[n]"/>
+      <species id="S2526" name="pail34p_hs[r]"/>
+      <species id="S2523" name="pail35p_hs[c]"/>
+      <species id="S2528" name="pail35p_hs[r]"/>
+      <species id="S2522" name="pail3p_hs[c]"/>
+      <species id="S2521" name="pail3p_hs[n]"/>
+      <species id="S2531" name="pail3p_hs[r]"/>
+      <species id="S2473" name="pail45p_hs[c]"/>
+      <species id="S2474" name="pail45p_hs[n]"/>
+      <species id="S2475" name="pail4p_hs[c]"/>
+      <species id="S2476" name="pail4p_hs[n]"/>
+      <species id="S2525" name="pail4p_hs[r]"/>
+      <species id="S2524" name="pail5p_hs[c]"/>
+      <species id="S2529" name="pail5p_hs[n]"/>
+      <species id="S2527" name="pail5p_hs[r]"/>
+      <species id="S922" name="pail_hs[c]"/>
+      <species id="S2472" name="pail_hs[n]"/>
+      <species id="S2530" name="pail_hs[r]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S2518" name="pi[n]"/>
+      <species id="S2534" name="ppmi12346p[c]"/>
+      <species id="S2535" name="ppmi12346p[n]"/>
+      <species id="S2536" name="ppmi1346p[c]"/>
+      <species id="S2537" name="ppmi1346p[n]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="INOSTO" name="inositol oxygenase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2033"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI13456PK" name="inositol-1,3,4,5,6-pentakisphosphate 2-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2298"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2299"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1345PKn" name="inositol-1,3,4,5-triphosphate 6-kinase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2301"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2300"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1345PP" name="inositol-1,3,4,5-trisphosphate 5-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2302"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2303"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1346PKn" name="inositol-1,3,4,6-tetrakisphosphate 5-kinase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2304"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2300"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI134P4P" name="inositol-1,3,4-trisphosphate 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2303"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2306"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI134PK" name="inositol-1,3,4-trisphosphate 6-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2303"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2305"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI134PP" name="inositol-1,3,4-trisphosphate 1-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2303"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2307"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI13PP" name="inositol-1,3-bisphosphate 3-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2306"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1456PKn" name="inositol-1,4,5,6- tetrakisphosphate 3-kinase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2309"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2300"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI145P6Kn" name="inositol-1,4,5-triphosphate 6-kinase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2310"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2309"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI145PK" name="inositol-1,4,5-trisphosphate 3-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2311"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2302"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI145PKn" name="inositol-1,4,5-trisphosphate 3-kinase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2310"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2301"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI145PP" name="inositol-1,4,5-trisphosphate 5-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2311"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2312"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI14P4P" name="inositol-1,4-bisphosphate 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2312"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI14PP" name="inositol-1,4-bisphosphate 1-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2312"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2313"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1PP" name="myo-inositol 1-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI1PS" name="myo-Inositol-1-phosphate synthase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI3456PK" name="inositol-3,4,5,6-tetrakisphosphate 1-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2298"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI34PP" name="inositol-3,4-bisphosphate 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2307"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2317"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI3PP" name="myo-inositol 3-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2317"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MI4PP" name="myo-inositol 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2313"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S921"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI345P3P" name="phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI345P3Pn" name="phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2517"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI345P5P" name="phosphatidylinositol-3,4,5-trisphosphate 5-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2516"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2519"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI345P5Pn" name="phosphatidylinositol-3,4,5-trisphosphate 5-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2517"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI34P3Pn" name="phosphatidylinositol-3,4-bisphosphate 3-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI34P4Pn" name="phosphatidylinositol-3,4-bisphosphate 4-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+          <speciesReference id="SpeciesReference" species="S2521"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI34P5K" name="phosphatidylinositol 3,4-bisphosphate 5-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2519"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2516"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI34P5Kn" name="phosphatidylinositol 3,4-bisphosphate 5-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2517"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI3P3Pn" name="phosphatidylinositol-3-phosphate 3-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2521"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI3P4K" name="phosphatidylinositol 3-phosphate 4-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2522"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2519"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI3P4Kn" name="phosphatidylinositol 3-phosphate 4-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2521"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI3P5K" name="phosphatidylinositol 3-phosphate 5-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2522"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2523"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45P3K" name="phosphatidylinositol 4,5-bisphosphate 3-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2516"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45P3Kn" name="phosphatidylinositol 4,5-bisphosphate 3-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2517"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45P4P" name="phosphatidylinositol-4,5-bisphosphate 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45P5P" name="phosphatidylinositol-4,5-bisphosphate 5-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2475"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45P5Pn" name="phosphatidylinositol-4,5-bisphosphate 5-phosphatase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45PLC" name="phosphatidylinositol 4,5-bisphosphate phospholipase C" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+          <speciesReference id="SpeciesReference" species="S2311"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI45PLCn" name="phosphatidylinositol 4,5-bisphosphate phospholipase C, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1124"/>
+          <speciesReference id="SpeciesReference" species="S2310"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4P3K" name="phosphatidylinositol 4-phosphate 3-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2475"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2519"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4P3Ker" name="phosphatidylinositol 4-phosphate 3-kinase, endoplasmic reticulum" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2525"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2526"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4P3Kn" name="phosphatidylinositol 4-phosphate 3-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2520"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4P5Kn" name="phosphatidylinositol 4-phosphate 5-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4PLC" name="phosphatidylinositol 4-phosphate phospholipase C" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2475"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+          <speciesReference id="SpeciesReference" species="S2312"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4PLCn" name="phosphatidylinositol 4-phosphate phospholipase C, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1124"/>
+          <speciesReference id="SpeciesReference" species="S2314"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI4PP" name="phosphatidylinositol-4-phosphate 4-phosphatase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2475"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI5P3K" name="phosphatidylinositol-5-phosphate 3-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2523"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI5P3Ker" name="phosphatidylinositol-5-phosphate 3-kinase, endoplasmic reticulum" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2527"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2528"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI5P4K" name="phosphatidylinositol-5-phosphate 4-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2473"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PI5P4Kn" name="phosphatidylinositol-5-phosphate 4-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2529"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2474"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK3" name="phosphatidylinositol 3-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2522"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK3er" name="phosphatidylinositol 3-kinase, endoplasmic reticulum" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S750"/>
+          <speciesReference id="SpeciesReference" species="S2530"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S749"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S2531"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK3n" name="phosphatidylinositol 3-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2521"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK4n" name="phosphatidylinositol 4-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2476"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK5" name="phosphatidylinositol 5-kinase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2524"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIK5n" name="phosphatidylinositol 5-kinase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S755"/>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1114"/>
+          <speciesReference id="SpeciesReference" species="S2529"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIPLC" name="phosphatidylinositol phospholipase C" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S922"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S927"/>
+          <speciesReference id="SpeciesReference" species="S2308"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PIPLCn" name="phosphatidylinositol phospholipase C, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2472"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S1124"/>
+          <speciesReference id="SpeciesReference" species="S2315"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMI12346PH" name="5-diphosphoinositol-1,2,3,4,6-pentakisphosphate diphosphohydrolase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2534"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2299"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMI12346PHn" name="5-diphosphoinositol-1,2,3,4,6-pentakisphosphate diphosphohydrolase, nuclear" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2535"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2320"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMI1346PH" name="diphosphoinositol-1,3,4,6-tetrakisphosphate diphosphohydrolase" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2536"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2298"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMI1346PHn" name="diphosphoinositol-1,3,4,6-tetrakisphosphate diphosphohydrolase, nucleus" reversible="false" compartment="C64">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S842"/>
+          <speciesReference id="SpeciesReference" species="S2537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2300"/>
+          <speciesReference id="SpeciesReference" species="S2518"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

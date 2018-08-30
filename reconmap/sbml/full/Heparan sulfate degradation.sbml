@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C27" name="Heparan sulfate degradation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S1041" name="Ser_Gly_Ala_X_Gly[l]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S350" name="acgam[l]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S1989" name="glcur[l]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S287" name="h[l]"/>
+      <species id="S2158" name="hs[l]"/>
+      <species id="S1990" name="hs_deg10[l]"/>
+      <species id="S2618" name="hs_deg11[l]"/>
+      <species id="S2136" name="hs_deg12[l]"/>
+      <species id="S2137" name="hs_deg13[l]"/>
+      <species id="S2021" name="hs_deg14[l]"/>
+      <species id="S2022" name="hs_deg15[l]"/>
+      <species id="S2176" name="hs_deg16[l]"/>
+      <species id="S2177" name="hs_deg17[l]"/>
+      <species id="S2138" name="hs_deg18[l]"/>
+      <species id="S2139" name="hs_deg19[l]"/>
+      <species id="S2132" name="hs_deg1[l]"/>
+      <species id="S2023" name="hs_deg20[l]"/>
+      <species id="S2024" name="hs_deg21[l]"/>
+      <species id="S2178" name="hs_deg22[l]"/>
+      <species id="S2179" name="hs_deg23[l]"/>
+      <species id="S2025" name="hs_deg24[l]"/>
+      <species id="S2026" name="hs_deg25[l]"/>
+      <species id="S2133" name="hs_deg2[l]"/>
+      <species id="S2018" name="hs_deg3[l]"/>
+      <species id="S2019" name="hs_deg4[l]"/>
+      <species id="S2174" name="hs_deg5[l]"/>
+      <species id="S2134" name="hs_deg6[l]"/>
+      <species id="S2135" name="hs_deg7[l]"/>
+      <species id="S2020" name="hs_deg8[l]"/>
+      <species id="S1988" name="hs_deg9[l]"/>
+      <species id="S2157" name="hspg[l]"/>
+      <species id="S2175" name="idour[l]"/>
+      <species id="S686" name="so4[l]"/>
+      <species id="S2228" name="xyl_D[l]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="GLCAASE1ly" name="beta-glucuronidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1988"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1989"/>
+          <speciesReference id="SpeciesReference" species="S1990"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACASE1ly" name="alpha-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2018"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2019"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACASE2ly" name="alpha-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2020"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S1988"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACASE3ly" name="alpha-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2021"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2022"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACASE4ly" name="alpha-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2023"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2024"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLCNACASE5ly" name="alpha-N-acetylglucosaminidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2025"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S350"/>
+          <speciesReference id="SpeciesReference" species="S2026"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HS1ly" name="heparan-N-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2132"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2133"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HS2ly" name="heparan-N-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2134"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2135"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HS3ly" name="heparan-N-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2136"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2137"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HS4ly" name="heparan-N-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2138"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2139"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSAT1ly" name="heparan-glucosaminide N-acetyltransferase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2133"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2018"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSAT2ly" name="heparan-glucosaminide N-acetyltransferase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2135"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2020"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSAT3ly" name="heparan-glucosaminide N-acetyltransferase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2137"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2021"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSAT4ly" name="heparan-glucosaminide N-acetyltransferase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S2139"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S2023"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HSPASEly" name="heparan sulfate proteoglycan protease, lysosome (endosome)" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2157"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1041"/>
+          <speciesReference id="SpeciesReference" species="S2158"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IDOAASE1ly" name="alpha-L-iduronidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2019"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2174"/>
+          <speciesReference id="SpeciesReference" species="S2175"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IDOAASE2ly" name="alpha-L-iduronidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2176"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2175"/>
+          <speciesReference id="SpeciesReference" species="S2177"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IDOAASE3ly" name="alpha-L-iduronidase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2178"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2175"/>
+          <speciesReference id="SpeciesReference" species="S2179"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LINKDEG1ly" name="degradation of proteoglycan linkage region, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2179"/>
+          <speciesReference id="SpeciesReference" species="S2026"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2026"/>
+          <speciesReference id="SpeciesReference" species="S1989"/>
+          <speciesReference id="SpeciesReference" species="S2228"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S2TASE1ly" name="iduronate-2-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2022"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2176"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S2TASE2ly" name="iduronate-2-sulfatase, lysosomal" reversible="false" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2024"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2178"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S3TASE1ly" name="N-acetylglucosamine-3-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1990"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2618"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S3TASE2ly" name="N-acetylglucosamine-3-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2177"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2138"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S3TASE3ly" name="N-acetylglucosamine-3-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2179"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2025"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE1ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2158"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2132"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE2ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2174"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2134"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="S6TASE3ly" name="N-acetylglucosamine-6-sulfatase, lysosomal" reversible="true" compartment="C27">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2618"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+          <speciesReference id="SpeciesReference" species="S2136"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

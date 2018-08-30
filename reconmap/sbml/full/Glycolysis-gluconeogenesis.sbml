@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="Glycolysis-gluconeogenesis">
+    <listOfCompartments>
+      <compartment id="C40" name="Glycolysis-gluconeogenesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S424" name="13dpg[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1331" name="23dpg[c]"/>
+      <species id="S1398" name="2pg[c]"/>
+      <species id="S425" name="3pg[c]"/>
+      <species id="S355" name="ac[c]"/>
+      <species id="S418" name="ac[m]"/>
+      <species id="S311" name="acald[c]"/>
+      <species id="S312" name="acald[m]"/>
+      <species id="S314" name="acald[x]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S906" name="cbp[r]"/>
+      <species id="S1096" name="cdp[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S888" name="co2[r]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S924" name="ctp[c]"/>
+      <species id="S442" name="dadp[c]"/>
+      <species id="S441" name="datp[c]"/>
+      <species id="S1098" name="dgdp[c]"/>
+      <species id="S1097" name="dgtp[c]"/>
+      <species id="S602" name="dhap[c]"/>
+      <species id="S1179" name="dhap[x]"/>
+      <species id="S592" name="etoh[c]"/>
+      <species id="S899" name="etoh[x]"/>
+      <species id="S1750" name="f6p[c]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S1744" name="fdp[c]"/>
+      <species id="S447" name="g1p[c]"/>
+      <species id="S1339" name="g3p[c]"/>
+      <species id="S1859" name="g6p[c]"/>
+      <species id="S908" name="g6p[r]"/>
+      <species id="S437" name="gdp[c]"/>
+      <species id="S439" name="gdp[m]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S907" name="glc_D[r]"/>
+      <species id="S1852" name="glyc3p[c]"/>
+      <species id="S2824" name="glyc3p[x]"/>
+      <species id="S436" name="gtp[c]"/>
+      <species id="S438" name="gtp[m]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S342" name="idp[c]"/>
+      <species id="S341" name="itp[c]"/>
+      <species id="S2207" name="lac_L[c]"/>
+      <species id="S2821" name="lac_L[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S45" name="nad[x]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S43" name="nadh[x]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S909" name="nh4[r]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S364" name="oaa[c]"/>
+      <species id="S748" name="oaa[m]"/>
+      <species id="S378" name="pep[c]"/>
+      <species id="S963" name="pep[m]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S155" name="pyr[m]"/>
+      <species id="S541" name="pyr[x]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S1069" name="utp[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACS" name="acetyl-CoA synthetase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S290"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACSm" name="acetyl-CoA synthetase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S418"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ACYP" name="acylphosphatase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S424"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S425"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD2if" name="alcohol dehydrogenase, forward rxn (ethanol -&gt; acetaldehyde)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S592"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALCD2yf" name="alcohol dehydrogenase (ethanol, NADP), forward reaction" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S592"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALDD2x" name="aldehyde dehydrogenase (acetaldehyde, NAD)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S311"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALDD2xm" name="aldehyde dehydrogenase (acetylaldehyde, NAD), mitochondrial" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S312"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S312"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S418"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALDD2y" name="aldehyde dehydrogenase (acetaldehyde, NADP)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S311"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S355"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CAT2p" name="catalase A, peroxisomal (ethanol)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S899"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S314"/>
+          <speciesReference id="SpeciesReference" species="S314"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CBPPer" name="Carbamoyl phosphate phosphotransferase, endoplasmic reticulum" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S906"/>
+          <speciesReference id="SpeciesReference" species="S907"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S888"/>
+          <speciesReference id="SpeciesReference" species="S908"/>
+          <speciesReference id="SpeciesReference" species="S909"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPGase" name="Diphosphoglycerate phosphatase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1331"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S425"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPGM" name="Diphosphoglyceromutase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S424"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1331"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ENO" name="enolase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1398"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ETOHMO" name="ethanol monooxygenase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S592"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S592"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S311"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FBA" name="fructose-bisphosphate aldolase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1744"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S602"/>
+          <speciesReference id="SpeciesReference" species="S1339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FBP" name="fructose-bisphosphatase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S1744"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G3PD2m" name="glycerol-3-phosphate dehydrogenase (FAD), mitochondrial" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S1852"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S602"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="G6PPer" name="glucose-6-phosphate phosphatase, edoplasmic reticular" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S908"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S907"/>
+          <speciesReference id="SpeciesReference" species="S911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAPD" name="glyceraldehyde-3-phosphate dehydrogenase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S1339"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S424"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HEX1" name="hexokinase (D-glucose:ATP)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LDH_L" name="L-lactate dehydrogenase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2207"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PDHm" name="pyruvate dehydrogenase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S155"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PEPCK" name="Phosphoenolpyruvate carboxykinase (GTP)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S364"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PEPCKm" name="Phosphoenolpyruvate carboxykinase (GTP)" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S438"/>
+          <speciesReference id="SpeciesReference" species="S748"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S439"/>
+          <speciesReference id="SpeciesReference" species="S963"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PFK" name="phosphofructokinase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S1744"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PGI" name="glucose-6-phosphate isomerase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1750"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PGK" name="phosphoglycerate kinase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S425"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S424"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PGM" name="phosphoglycerate mutase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1398"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S425"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PGMT" name="phosphoglucomutase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S447"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PYK" name="pyruvate kinase" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="TPI" name="triose-phosphate isomerase" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S602"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1339"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0122" name="GTP:pyruvate O2-phosphotransferase Purine metabolism EC:2.7.1.40" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S437"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S436"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0153" name="CTP:pyruvate O2-phosphotransferase EC:2.7.1.40" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S1096"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S924"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0165" name="UTP:pyruvate O2-phosphotransferase EC:2.7.1.40" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S1069"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0173" name="(S)-Lactate:NAD+ oxidoreductase Glycolysis / Gluconeogenesis / Pyruvate metabolism EC:1.1.1.27" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S45"/>
+          <speciesReference id="SpeciesReference" species="S2821"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S43"/>
+          <speciesReference id="SpeciesReference" species="S541"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0202" name="sn-Glycerol-3-phosphate:NAD+ 2-oxidoreductase Glycerophospholipid metabolism EC:1.1.1.8" reversible="true" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S45"/>
+          <speciesReference id="SpeciesReference" species="S2824"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S43"/>
+          <speciesReference id="SpeciesReference" species="S1179"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0280" name="dATP:pyruvate O2-phosphotransferase Purine metabolism EC:2.7.1.40" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S441"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0354" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S341"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S342"/>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0355" name="Glycolysis / Glyconeogenesis EC:2.7.1.1" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S441"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S442"/>
+          <speciesReference id="SpeciesReference" species="S1859"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0413" name="dATP:pyruvate O2-phosphotransferase Purine metabolism EC:2.7.1.40" reversible="false" compartment="C40">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S378"/>
+          <speciesReference id="SpeciesReference" species="S1098"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S1097"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

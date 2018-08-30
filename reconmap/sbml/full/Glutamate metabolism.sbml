@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C15" name="Glutamate metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1854" name="1pyr5c[m]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S1077" name="gthrd[c]"/>
+      <species id="S2054" name="gthrd[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S160" name="4abut[c]"/>
+      <species id="S161" name="4abut[m]"/>
+      <species id="S2870" name="4abutn[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S910" name="cbp[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S576" name="gln_L[c]"/>
+      <species id="S2039" name="gln_L[m]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S1078" name="gthox[c]"/>
+      <species id="S2082" name="gthox[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S317" name="hco3[m]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S735" name="nh4[m]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S320" name="pi[m]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S2431" name="succ[m]"/>
+      <species id="S280" name="sucsal[m]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ABTArm" name="4-aminobutyrate transaminase, reversible (mitochondrial)" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S161"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S280"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALATA_L" name="L-alanine transaminase" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S571"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CBPSam" name="carbamoyl-phosphate synthase (ammonia) (mitochondria" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S317"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S735"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+          <speciesReference id="SpeciesReference" species="S320"/>
+          <speciesReference id="SpeciesReference" species="S910"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLNS" name="glutamine synthetase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S576"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUDC" name="Glutamate Decarboxylase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S125"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S160"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUDxm" name="glutamate dehydrogenase (NAD) (mitochondrial)" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUDym" name="glutamate dehydrogenase (NADP), mitochondrial" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLUNm" name="glutaminase (mitochondrial)" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2039"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHO" name="glutathione oxidoreductase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S1078"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GTHOm" name="glutathione oxidoreductase" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2082"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P5CDm" name="1-pyrroline-5-carboxylate dehydrogenase, mitochondrial" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1854"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0178" name="Succinate-semialdehyde:NAD+ oxidoreductase Glutamate metabolism / Tyrosine metabolism / Butanoate metabolism EC:1.2.1.24 EC:1.2.1.16" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S280"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S280"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0179" name="Succinate-semialdehyde:NADP+ oxidoreductase Glutamate metabolism / Tyrosine metabolism / Butanoate metabolism EC:1.2.1.16" reversible="false" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S280"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S280"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S2431"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0464" name="4-Aminobutyraldehyde:NAD+ oxidoreductase Urea cycle and metabolism of amino groups EC:1.2.1.3" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2870"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2870"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S161"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0549" name="4-aminobutanal:NAD+ 1-oxidoreductase; 4-aminobutyraldehyde:NAD+ oxidoreductase Urea cycle and metabolism of amino groups / beta-Alanine metabolism EC:1.2.1.3 EC:1.2.1.19" reversible="true" compartment="C15">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S2870"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2870"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S161"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

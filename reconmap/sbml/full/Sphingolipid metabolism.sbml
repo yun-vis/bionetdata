@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C83" name="Sphingolipid metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S115" name="3dsphgn[c]"/>
+      <species id="S2872" name="HC00718[c]"/>
+      <species id="S2980" name="HC01842[c]"/>
+      <species id="S2979" name="HC02228[c]"/>
+      <species id="S688" name="Rtotal[c]"/>
+      <species id="S728" name="Rtotal[l]"/>
+      <species id="S687" name="Rtotalcoa[c]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S321" name="accoa[g]"/>
+      <species id="S333" name="acgagbside_hs[g]"/>
+      <species id="S334" name="acgagbside_hs[l]"/>
+      <species id="S343" name="acgal[g]"/>
+      <species id="S352" name="acgbgbside_hs[g]"/>
+      <species id="S353" name="acgbgbside_hs[l]"/>
+      <species id="S785" name="acglcgalgbside_hs[g]"/>
+      <species id="S367" name="acn13acngalgbside_hs[g]"/>
+      <species id="S370" name="acn23acngalgbside_hs[g]"/>
+      <species id="S376" name="acnacngalgbside_hs[g]"/>
+      <species id="S2650" name="acngalgbside_hs[g]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S942" name="cholp[c]"/>
+      <species id="S946" name="cholp[g]"/>
+      <species id="S947" name="cholp[l]"/>
+      <species id="S984" name="cmp[g]"/>
+      <species id="S986" name="cmpacna[g]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S994" name="coa[g]"/>
+      <species id="S930" name="crm_hs[c]"/>
+      <species id="S932" name="crm_hs[g]"/>
+      <species id="S727" name="crm_hs[l]"/>
+      <species id="S933" name="crm_hs[r]"/>
+      <species id="S931" name="crmp_hs[c]"/>
+      <species id="S927" name="dag_hs[c]"/>
+      <species id="S1189" name="dhcrm_hs[c]"/>
+      <species id="S1213" name="digalsgalside_hs[g]"/>
+      <species id="S1215" name="digalside_hs[g]"/>
+      <species id="S1216" name="digalside_hs[l]"/>
+      <species id="S1422" name="ethamp[c]"/>
+      <species id="S1240" name="ethamp[r]"/>
+      <species id="S1190" name="fad[c]"/>
+      <species id="S1191" name="fadh2[c]"/>
+      <species id="S1804" name="fucgalgbside_hs[g]"/>
+      <species id="S763" name="ga1_hs[g]"/>
+      <species id="S762" name="ga2_hs[g]"/>
+      <species id="S1870" name="gal[l]"/>
+      <species id="S786" name="galacglcgalgbside_hs[g]"/>
+      <species id="S784" name="galgalgalthcrm_hs[g]"/>
+      <species id="S783" name="galgalthcrm_hs[g]"/>
+      <species id="S770" name="galgbside_hs[g]"/>
+      <species id="S242" name="galgluside_hs[c]"/>
+      <species id="S246" name="galgluside_hs[g]"/>
+      <species id="S1910" name="galgluside_hs[l]"/>
+      <species id="S1864" name="galside_hs[g]"/>
+      <species id="S685" name="galside_hs[l]"/>
+      <species id="S782" name="galthcrm_hs[g]"/>
+      <species id="S761" name="gbside_hs[g]"/>
+      <species id="S1946" name="gbside_hs[l]"/>
+      <species id="S2673" name="gd1a_hs[g]"/>
+      <species id="S1959" name="gd1b2_hs[g]"/>
+      <species id="S767" name="gd1b_hs[g]"/>
+      <species id="S1961" name="gd1c_hs[g]"/>
+      <species id="S766" name="gd2_hs[g]"/>
+      <species id="S1934" name="gd3_hs[c]"/>
+      <species id="S1912" name="gd3_hs[g]"/>
+      <species id="S1672" name="gdp[g]"/>
+      <species id="S1669" name="gdpfuc[g]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S1944" name="glc_D[l]"/>
+      <species id="S934" name="gluside_hs[c]"/>
+      <species id="S790" name="gluside_hs[g]"/>
+      <species id="S1943" name="gluside_hs[l]"/>
+      <species id="S935" name="gluside_hs[r]"/>
+      <species id="S765" name="gm1_hs[g]"/>
+      <species id="S789" name="gm1a_hs[g]"/>
+      <species id="S2672" name="gm1b_hs[g]"/>
+      <species id="S764" name="gm2_hs[g]"/>
+      <species id="S788" name="gm2a_hs[g]"/>
+      <species id="S1911" name="gm3_hs[g]"/>
+      <species id="S2066" name="gp1c_hs[g]"/>
+      <species id="S2064" name="gp1calpha_hs[g]"/>
+      <species id="S2076" name="gq1b_hs[g]"/>
+      <species id="S2074" name="gq1balpha_hs[g]"/>
+      <species id="S2676" name="gq1c_hs[g]"/>
+      <species id="S2081" name="gt1a_hs[g]"/>
+      <species id="S2675" name="gt1alpha_hs[g]"/>
+      <species id="S2674" name="gt1b_hs[g]"/>
+      <species id="S769" name="gt1c_hs[g]"/>
+      <species id="S768" name="gt2_hs[g]"/>
+      <species id="S1937" name="gt3_hs[c]"/>
+      <species id="S1913" name="gt3_hs[g]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S787" name="h2o[g]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S248" name="h[g]"/>
+      <species id="S287" name="h[l]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2070" name="hdca[r]"/>
+      <species id="S2877" name="hxdcal[c]"/>
+      <species id="S2648" name="hxdcal[r]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S1935" name="oagd3_hs[c]"/>
+      <species id="S1936" name="oagd3_hs[g]"/>
+      <species id="S1938" name="oagt3_hs[c]"/>
+      <species id="S1939" name="oagt3_hs[g]"/>
+      <species id="S1866" name="pap[g]"/>
+      <species id="S1865" name="paps[g]"/>
+      <species id="S928" name="pchol_hs[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S911" name="pi[r]"/>
+      <species id="S691" name="pmtcoa[c]"/>
+      <species id="S581" name="ser_L[c]"/>
+      <species id="S1867" name="sgalside_hs[g]"/>
+      <species id="S684" name="sgalside_hs[l]"/>
+      <species id="S686" name="so4[l]"/>
+      <species id="S2657" name="spc_hs[c]"/>
+      <species id="S2652" name="sph1p[c]"/>
+      <species id="S2629" name="sph1p[r]"/>
+      <species id="S116" name="sphgn[c]"/>
+      <species id="S2630" name="sphgn[r]"/>
+      <species id="S2658" name="sphings[c]"/>
+      <species id="S729" name="sphings[l]"/>
+      <species id="S2632" name="sphings[r]"/>
+      <species id="S2659" name="sphmyln_hs[c]"/>
+      <species id="S2655" name="sphmyln_hs[g]"/>
+      <species id="S2656" name="sphmyln_hs[l]"/>
+      <species id="S2664" name="sphs1p[c]"/>
+      <species id="S2631" name="sphs1p[r]"/>
+      <species id="S244" name="thcrm_hs[c]"/>
+      <species id="S249" name="thcrm_hs[g]"/>
+      <species id="S252" name="uacgam[g]"/>
+      <species id="S245" name="udp[c]"/>
+      <species id="S250" name="udp[g]"/>
+      <species id="S2370" name="udp[l]"/>
+      <species id="S2375" name="udp[r]"/>
+      <species id="S265" name="udpacgal[g]"/>
+      <species id="S2371" name="udpacgal[l]"/>
+      <species id="S2736" name="udpg[r]"/>
+      <species id="S243" name="udpgal[c]"/>
+      <species id="S247" name="udpgal[g]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="3-Dehydrosphinganine reductase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S115"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="A4GALTc" name="Lactosylceramide 4-alpha-galactosyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S242"/>
+          <speciesReference id="SpeciesReference" species="S243"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S244"/>
+          <speciesReference id="SpeciesReference" species="S245"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="A4GALTg" name="Lactosylceramide 4-alpha-galactosyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S246"/>
+          <speciesReference id="SpeciesReference" species="S247"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S249"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ARSA" name="Arylsulfatase A" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S684"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S685"/>
+          <speciesReference id="SpeciesReference" species="S686"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASAH1" name="N-acylsphingosine amidohydrolase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S727"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S728"/>
+          <speciesReference id="SpeciesReference" species="S729"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT3g" name="Beta-1,3-galactosyltransferase 3" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S249"/>
+          <speciesReference id="SpeciesReference" species="S265"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S761"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT41g" name="Beta-1,3-galactosyltransferase 4" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S762"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S763"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT42g" name="Beta-1,3-galactosyltransferase 4" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S764"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S765"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT43g" name="Beta-1,3-galactosyltransferase 4" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S766"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S767"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT44g" name="Beta-1,3-galactosyltransferase 4" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S768"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S769"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GALT5g" name="Beta-1,3-galactosyltransferase 5" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S761"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S770"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT31g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S249"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S782"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT32g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S782"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S783"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT33g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S783"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S784"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT34g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S252"/>
+          <speciesReference id="SpeciesReference" species="S770"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S785"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT35g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S785"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S786"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT36g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S343"/>
+          <speciesReference id="SpeciesReference" species="S761"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S352"/>
+          <speciesReference id="SpeciesReference" species="S787"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT37g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S788"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S789"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="B3GNT39g" name="UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S247"/>
+          <speciesReference id="SpeciesReference" species="S790"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S246"/>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CERK" name="Ceramide kinase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S931"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCRD1" name="dihydroceramide desaturase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S1189"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCRD2" name="dihydroceramide desaturase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1189"/>
+          <speciesReference id="SpeciesReference" species="S1190"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S930"/>
+          <speciesReference id="SpeciesReference" species="S1191"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DSAT" name="dihydrosphingosine N-acyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S116"/>
+          <speciesReference id="SpeciesReference" species="S687"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S1189"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FUT11g" name="Galactoside 2-alpha-L-fucosyltransferase 1" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S770"/>
+          <speciesReference id="SpeciesReference" species="S1669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1672"/>
+          <speciesReference id="SpeciesReference" species="S1804"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAL3ST11" name="Galactosylceramide sulfotransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1864"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+          <speciesReference id="SpeciesReference" species="S1867"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAL3ST12" name="Galactosylceramide sulfotransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1215"/>
+          <speciesReference id="SpeciesReference" species="S1865"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S1213"/>
+          <speciesReference id="SpeciesReference" species="S1866"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALC" name="Galactocerebrosidase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S685"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S727"/>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGT1" name="Beta-1,4 N-acetylgalactosaminyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S246"/>
+          <speciesReference id="SpeciesReference" species="S265"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S762"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGT2" name="Beta-1,4 N-acetylgalactosaminyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S764"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGT3" name="Beta-1,4 N-acetylgalactosaminyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1912"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S766"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GALGT4" name="Beta-1,4 N-acetylgalactosaminyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S1913"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S768"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAO1" name="Ganglioside O-acetylation" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S1934"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S1935"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAO1g" name="Ganglioside O-acetylation" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S321"/>
+          <speciesReference id="SpeciesReference" species="S1912"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S994"/>
+          <speciesReference id="SpeciesReference" species="S1936"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAO2" name="Ganglioside O-acetylation" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S290"/>
+          <speciesReference id="SpeciesReference" species="S1937"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S1938"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GAO2g" name="Ganglioside O-acetylation" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S321"/>
+          <speciesReference id="SpeciesReference" species="S1913"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S994"/>
+          <speciesReference id="SpeciesReference" species="S1939"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GBA" name="Glucosylceramidase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S934"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S810"/>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GBAl" name="Glucosylceramidase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1943"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S727"/>
+          <speciesReference id="SpeciesReference" species="S1944"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GBGT1" name="globoside alpha-1,3-N-acetylgalactosaminyltransferase 1" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S265"/>
+          <speciesReference id="SpeciesReference" species="S761"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S250"/>
+          <speciesReference id="SpeciesReference" species="S333"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLAl" name="galactosidase, alpha" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1216"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S685"/>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLB1" name="Beta-galactosidase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S1910"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1870"/>
+          <speciesReference id="SpeciesReference" species="S1943"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NAGAlby" name="N-acetylgalactosaminidase, beta-" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S353"/>
+          <speciesReference id="SpeciesReference" species="S2370"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1946"/>
+          <speciesReference id="SpeciesReference" species="S2371"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NAGAly" name="N-acetylgalactosaminidase, alpha-" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S334"/>
+          <speciesReference id="SpeciesReference" species="S2370"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1946"/>
+          <speciesReference id="SpeciesReference" species="S2371"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SBPP1er" name="sphingoid base-phosphate phosphatase (sphinganine 1-phosphatase), endoplasmic reticulum" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2629"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S2630"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SBPP3er" name="sphingoid base-phosphate phosphatase (sphinganine 1-phosphatase), endoplasmic reticulum" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S911"/>
+          <speciesReference id="SpeciesReference" species="S2632"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SERPT" name="serine C-palmitoyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S581"/>
+          <speciesReference id="SpeciesReference" species="S691"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S115"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SGPL11r" name="Sphingosine-1-phosphate lyase 1" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2629"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1240"/>
+          <speciesReference id="SpeciesReference" species="S2648"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SGPL12r" name="Sphingosine-1-phosphate lyase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S2631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S1240"/>
+          <speciesReference id="SpeciesReference" species="S2070"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAT4Bg" name="Beta-galactoside alpha-2,3-sialyltransferase, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S770"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2650"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SIAT9g" name="Lactosylceramide alpha-2,3-sialyltransferase, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S246"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1911"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SLCBK1" name="sphingolipid long chain base kinase (sphinganine)" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S116"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2652"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SMPD3g" name="sphingomyelin phosphodiesterase 3, neutral membrane (neutral sphingomyelinase II)" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S787"/>
+          <speciesReference id="SpeciesReference" species="S2655"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S932"/>
+          <speciesReference id="SpeciesReference" species="S946"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SMPD3l" name="sphingomyelin phosphodiesterase 3, neutral membrane (neutral sphingomyelinase II)" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S2656"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S287"/>
+          <speciesReference id="SpeciesReference" species="S727"/>
+          <speciesReference id="SpeciesReference" species="S947"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SMPD4" name="sphingomyelinase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2657"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S942"/>
+          <speciesReference id="SpeciesReference" species="S2658"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SMS" name="Sphingomyelin synthase (homo sapiens)" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S928"/>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S927"/>
+          <speciesReference id="SpeciesReference" species="S2659"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHK21c" name="sphingosine kinase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2658"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2664"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPHMDAc" name="sphingomyelin deacylase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2659"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S688"/>
+          <speciesReference id="SpeciesReference" species="S2657"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL21g" name="CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S763"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2672"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL22g" name="CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S765"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2673"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST3GAL23g" name="CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase, Golgi apparatus" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S767"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2674"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC21" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2650"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S367"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC22" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2650"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S370"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC23" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S762"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S788"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC24" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S789"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1959"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC25" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2673"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2675"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC26" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2675"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2074"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC27" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S769"/>
+          <speciesReference id="SpeciesReference" species="S986"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2676"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC28" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 2" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2676"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2066"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC31" name="Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 3" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2672"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2673"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST6GALNAC62" name="sialytransferase 7 ((alpha-N-acetylneuraminyl 2,3-betagalactosyl-1,3)-N-acetyl galactosaminide alpha-2,6-sialytransferase) F" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2674"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2074"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA11" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2650"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S376"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA12" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1911"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1912"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA51g" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S1912"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1913"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA52g" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2674"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2076"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA53g" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2673"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2081"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA54g" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2672"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S1961"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ST8SIA55g" name="Beta-galactoside alpha-2,3-sialyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S986"/>
+          <speciesReference id="SpeciesReference" species="S2676"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S248"/>
+          <speciesReference id="SpeciesReference" species="S984"/>
+          <speciesReference id="SpeciesReference" species="S2064"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UGCG" name="Ceramide glucosyltransferase" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S933"/>
+          <speciesReference id="SpeciesReference" species="S2736"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S935"/>
+          <speciesReference id="SpeciesReference" species="S2375"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0786" name="sphinganine-1-phosphate palmitaldehyde-lyase Sphingolipid metabolism EC:4.1.2.27" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2664"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1422"/>
+          <speciesReference id="SpeciesReference" species="S2979"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0787" name="3-sn-phosphatidate phosphohydrolase Sphingolipid metabolism EC:3.1.3.4" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2652"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0788" name="S-Adenosyl-L-methionine:methylethanolamine phosphate N-methyltransferase Glycerophospholipid metabolism EC:2.1.1.103" reversible="true" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S2872"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2872"/>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S2980"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0789" name="S-Adenosyl-L-methionine:phosphodimethylethanolamine N-methyltransferase Glycerophospholipid metabolism EC:2.1.1.103" reversible="true" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S2980"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S942"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1457" name="hexadecanal:NADP+ delta2-oxidoreductase EC:1.3.1.27" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2979"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2877"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2675C" name="RE2675" reversible="false" compartment="C83">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S1189"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1189"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S930"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

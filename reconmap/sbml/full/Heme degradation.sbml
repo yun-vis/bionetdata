@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C3" name="Heme degradation"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S826" name="bildglcur[r]"/>
+      <species id="S829" name="bilglcur[r]"/>
+      <species id="S831" name="bilirub[c]"/>
+      <species id="S830" name="biliverd[c]"/>
+      <species id="S1011" name="co[c]"/>
+      <species id="S1756" name="fe2[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S2123" name="pheme[c]"/>
+      <species id="S2375" name="udp[r]"/>
+      <species id="S2735" name="udpglcur[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="BILIRED" name="Nad(p)h biliverdin reductase" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S830"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S831"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HOXG" name="Heme oxygenase 1" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S831"/>
+          <speciesReference id="SpeciesReference" species="S831"/>
+          <speciesReference id="SpeciesReference" species="S831"/>
+          <speciesReference id="SpeciesReference" species="S2123"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2123"/>
+          <speciesReference id="SpeciesReference" species="S2123"/>
+          <speciesReference id="SpeciesReference" species="S830"/>
+          <speciesReference id="SpeciesReference" species="S1011"/>
+          <speciesReference id="SpeciesReference" species="S1756"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BIDGLCURr" name="bilirubin di-glucuronide production" reversible="false" compartment="C3">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S829"/>
+          <speciesReference id="SpeciesReference" species="S2735"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S826"/>
+          <speciesReference id="SpeciesReference" species="S2375"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

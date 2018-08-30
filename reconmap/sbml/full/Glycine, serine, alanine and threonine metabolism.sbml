@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C37" name="Glycine, serine, alanine and threonine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S58" name="2amac[c]"/>
+      <species id="S640" name="2aobut[m]"/>
+      <species id="S388" name="2mbcoa[m]"/>
+      <species id="S73" name="2obut[c]"/>
+      <species id="S394" name="3mb2coa[m]"/>
+      <species id="S425" name="3pg[c]"/>
+      <species id="S2497" name="3php[c]"/>
+      <species id="S195" name="5aop[m]"/>
+      <species id="S3678" name="CE2020[m]"/>
+      <species id="S3675" name="CE2026[m]"/>
+      <species id="S3810" name="CE4968[m]"/>
+      <species id="S3812" name="CE4969[m]"/>
+      <species id="S3811" name="CE4970[m]"/>
+      <species id="S260" name="aact[c]"/>
+      <species id="S262" name="aact[m]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S95" name="ahcys[c]"/>
+      <species id="S68" name="akg[c]"/>
+      <species id="S571" name="ala_L[c]"/>
+      <species id="S538" name="ala_L[x]"/>
+      <species id="S1951" name="alpam[m]"/>
+      <species id="S1955" name="alpro[m]"/>
+      <species id="S94" name="amet[c]"/>
+      <species id="S877" name="arachdcoa[m]"/>
+      <species id="S2880" name="betald[c]"/>
+      <species id="S817" name="betald[m]"/>
+      <species id="S943" name="chol[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S86" name="co2[m]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S1952" name="dhlam[m]"/>
+      <species id="S1956" name="dhlpro[m]"/>
+      <species id="S822" name="dmgly[c]"/>
+      <species id="S1264" name="dmgly[m]"/>
+      <species id="S389" name="fad[m]"/>
+      <species id="S391" name="fadh2[m]"/>
+      <species id="S1265" name="fald[m]"/>
+      <species id="S2628" name="fald[x]"/>
+      <species id="S125" name="glu_L[c]"/>
+      <species id="S539" name="glx[x]"/>
+      <species id="S579" name="gly[c]"/>
+      <species id="S537" name="gly[m]"/>
+      <species id="S540" name="gly[x]"/>
+      <species id="S821" name="glyb[c]"/>
+      <species id="S818" name="glyb[m]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S398" name="h2o2[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S545" name="hcys_L[c]"/>
+      <species id="S2128" name="hpyr[c]"/>
+      <species id="S2130" name="hpyr[x]"/>
+      <species id="S395" name="ibcoa[m]"/>
+      <species id="S393" name="ivcoa[m]"/>
+      <species id="S1950" name="lpam[m]"/>
+      <species id="S1954" name="lpro[m]"/>
+      <species id="S823" name="met_L[c]"/>
+      <species id="S1208" name="mlthf[c]"/>
+      <species id="S1953" name="mlthf[m]"/>
+      <species id="S261" name="mthgxl[c]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S735" name="nh4[m]"/>
+      <species id="S1128" name="nh4[x]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S397" name="o2[x]"/>
+      <species id="S2712" name="phom[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S323" name="ppcoa[c]"/>
+      <species id="S2571" name="pser_L[c]"/>
+      <species id="S59" name="pyr[c]"/>
+      <species id="S541" name="pyr[x]"/>
+      <species id="S2062" name="sarcs[c]"/>
+      <species id="S1266" name="sarcs[m]"/>
+      <species id="S2627" name="sarcs[x]"/>
+      <species id="S581" name="ser_L[c]"/>
+      <species id="S1975" name="ser_L[m]"/>
+      <species id="S2646" name="ser_L[x]"/>
+      <species id="S556" name="succoa[m]"/>
+      <species id="S551" name="thf[c]"/>
+      <species id="S1766" name="thf[m]"/>
+      <species id="S584" name="thr_L[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="2-Aminoacrylate hydrolysis" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S58"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S59"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AACTOOR" name="Aminoacetone:oxygen oxidoreductase(deaminating)(flavin-containing)" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S260"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S261"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ALASm" name="5-aminolevulinate synthase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S556"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S195"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="AOBUTDsm" name="L-2-amino-3-oxobutanoate decarboxylation, mitochondrial (spontaneous)" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S640"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S262"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BETALDHxm" name="betaine-aldehyde dehydrogenase, mitochondrial" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S817"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S817"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S818"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BHMT" name="betaine-homocysteine S-methyltransferase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S545"/>
+          <speciesReference id="SpeciesReference" species="S821"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S822"/>
+          <speciesReference id="SpeciesReference" species="S823"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLD2m" name="choline dehydrogenase (FAD acceptor), mitochondrial" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S943"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S817"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DMGDHm" name="dimethylglycine dehydrogenase, mitochondrial" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S389"/>
+          <speciesReference id="SpeciesReference" species="S1264"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S391"/>
+          <speciesReference id="SpeciesReference" species="S1265"/>
+          <speciesReference id="SpeciesReference" species="S1266"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCC2am" name="glycine-cleavage complex (lipoamide), mitochondrial" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S1950"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S1951"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCC2bim" name="glycine-cleavage system (lipoamide) irreversible, mitochondrial" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+          <speciesReference id="SpeciesReference" species="S1951"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S735"/>
+          <speciesReference id="SpeciesReference" species="S1952"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCC2cm" name="glycine-cleavage complex (lipoamide), mitochondrial" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1952"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1950"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCCam" name="glycine-cleavage complex (lipoylprotein), mitochondrial" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S1954"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S1955"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCCbim" name="glycine-cleavage complex (lipoylprotein) irreversible, mitochondrial" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+          <speciesReference id="SpeciesReference" species="S1955"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S735"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+          <speciesReference id="SpeciesReference" species="S1956"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GCCcm" name="glycine-cleavage complex (lipoylprotein), mitochondrial" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S1956"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S1954"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GHMT2r" name="glycine hydroxymethyltransferase, reversible" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S551"/>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+          <speciesReference id="SpeciesReference" species="S1208"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GHMT2rm" name="glycine hydroxymethyltransferase, reversible, mitochondrial" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+          <speciesReference id="SpeciesReference" species="S1975"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYATm" name="glycine C-acetyltransferase" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S640"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GLYOp" name="glycine oxidase, perixosomal" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S540"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S539"/>
+          <speciesReference id="SpeciesReference" species="S1128"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GNMT" name="glycine N-methyltransferase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S94"/>
+          <speciesReference id="SpeciesReference" species="S579"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S95"/>
+          <speciesReference id="SpeciesReference" species="S2062"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="OBDHc" name="2-Oxobutanoate dehydrogenase, cytosolic" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S73"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S323"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PGCD" name="phosphoglycerate dehydrogenase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S425"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S2497"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PSERT" name="phosphoserine transaminase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S125"/>
+          <speciesReference id="SpeciesReference" species="S2497"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S68"/>
+          <speciesReference id="SpeciesReference" species="S2571"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PSP_L" name="phosphoserine phosphatase (L-serine)" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2571"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SARCOXp" name="sarcosine oxidase, peroxisomal" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S397"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2627"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S398"/>
+          <speciesReference id="SpeciesReference" species="S540"/>
+          <speciesReference id="SpeciesReference" species="S2628"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SERHL" name="L-Serine hydro-lyase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S58"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPTix" name="serine-pyruvate aminotransferase (irreversible), peroxisomal" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S541"/>
+          <speciesReference id="SpeciesReference" species="S2646"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S538"/>
+          <speciesReference id="SpeciesReference" species="S2130"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THRD_L" name="L-threonine deaminase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S584"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S23"/>
+          <speciesReference id="SpeciesReference" species="S73"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="THRS" name="threonine synthase" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2712"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S584"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0160" name="L-Serine:pyruvate aminotransferase Glycine, serine and threonine metabolism EC:2.6.1.51" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S59"/>
+          <speciesReference id="SpeciesReference" species="S581"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S571"/>
+          <speciesReference id="SpeciesReference" species="S2128"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0295" name="glycine synthase Nitrogen metabolism EC:2.1.2.10" reversible="false" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S86"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S735"/>
+          <speciesReference id="SpeciesReference" species="S1953"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S1766"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0552" name="p-cumic alcohol:NAD+ oxidoreductase Glycine, serine and threonine metabolism EC:1.2.1.8" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S2880"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2880"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S821"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0553" name="p-Cumic alcohol:NADP+ oxidoreductase Glycine, serine and threonine metabolism EC:1.2.1.8" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S2880"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2880"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S821"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2111M" name="RE2111" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S394"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3675"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2117M" name="RE2117" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S537"/>
+          <speciesReference id="SpeciesReference" species="S877"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3678"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2427M" name="RE2427" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S393"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3810"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2428M" name="RE2428" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S388"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3811"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2429M" name="RE2429" reversible="true" compartment="C37">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S395"/>
+          <speciesReference id="SpeciesReference" species="S537"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S3812"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

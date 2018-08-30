@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C62" name="Cholesterol metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S292" name="accoa[x]"/>
+      <species id="S1768" name="frdp[r]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S912" name="ppi[r]"/>
+      <species id="S2465" name="20ahchsterol[m]"/>
+      <species id="S2242" name="44mctr[c]"/>
+      <species id="S3805" name="C05109[c]"/>
+      <species id="S4154" name="CE2313[c]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S2241" name="lanost[c]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S4236" name="CE5049[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S2242" name="44mctr[c]"/>
+      <species id="S857" name="44mctr[r]"/>
+      <species id="S859" name="44mzym[r]"/>
+      <species id="S886" name="4mzym_int1[r]"/>
+      <species id="S887" name="4mzym_int2[r]"/>
+      <species id="S1332" name="5dpmev[x]"/>
+      <species id="S2296" name="5pmev[x]"/>
+      <species id="S229" name="7dhchsterol[c]"/>
+      <species id="S228" name="7dhchsterol[r]"/>
+      <species id="S3805" name="C05109[c]"/>
+      <species id="S3718" name="CE1293[c]"/>
+      <species id="S4154" name="CE2313[c]"/>
+      <species id="S4156" name="CE2313[r]"/>
+      <species id="S4155" name="CE2314[c]"/>
+      <species id="S4157" name="CE2314[r]"/>
+      <species id="S4158" name="CE2315[c]"/>
+      <species id="S3806" name="CE2321[c]"/>
+      <species id="S3808" name="CE2321[n]"/>
+      <species id="S4400" name="CE5956[c]"/>
+      <species id="S2820" name="HC01118[r]"/>
+      <species id="S692" name="R1coa_hs[c]"/>
+      <species id="S2661" name="R1coa_hs[r]"/>
+      <species id="S696" name="R2coa_hs[c]"/>
+      <species id="S2663" name="R2coa_hs[r]"/>
+      <species id="S687" name="Rtotalcoa[c]"/>
+      <species id="S2243" name="Ssq23epx[r]"/>
+      <species id="S257" name="aacoa[c]"/>
+      <species id="S291" name="aacoa[m]"/>
+      <species id="S293" name="aacoa[x]"/>
+      <species id="S296" name="acac[m]"/>
+      <species id="S309" name="acac[x]"/>
+      <species id="S290" name="accoa[c]"/>
+      <species id="S164" name="accoa[m]"/>
+      <species id="S292" name="accoa[x]"/>
+      <species id="S456" name="adp[x]"/>
+      <species id="S325" name="amp[m]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S756" name="atp[x]"/>
+      <species id="S1185" name="chlstol[r]"/>
+      <species id="S950" name="chsterol[c]"/>
+      <species id="S954" name="chsterol[m]"/>
+      <species id="S4151" name="chsterol[n]"/>
+      <species id="S937" name="chsterol[r]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S888" name="co2[r]"/>
+      <species id="S993" name="co2[x]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S84" name="coa[m]"/>
+      <species id="S996" name="coa[r]"/>
+      <species id="S294" name="coa[x]"/>
+      <species id="S1188" name="ddsmsterol[r]"/>
+      <species id="S1257" name="dmpp[c]"/>
+      <species id="S1260" name="dmpp[x]"/>
+      <species id="S3807" name="dsmsterol[c]"/>
+      <species id="S3809" name="dsmsterol[n]"/>
+      <species id="S1187" name="dsmsterol[r]"/>
+      <species id="S1183" name="fad[r]"/>
+      <species id="S1182" name="fadh2[r]"/>
+      <species id="S969" name="for[c]"/>
+      <species id="S1763" name="for[r]"/>
+      <species id="S1334" name="frdp[c]"/>
+      <species id="S1767" name="frdp[x]"/>
+      <species id="S1769" name="ggdp[c]"/>
+      <species id="S1259" name="grdp[c]"/>
+      <species id="S1262" name="grdp[x]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S614" name="h2o[r]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1091" name="h[n]"/>
+      <species id="S838" name="h[r]"/>
+      <species id="S42" name="h[x]"/>
+      <species id="S2119" name="hmgcoa[c]"/>
+      <species id="S2120" name="hmgcoa[m]"/>
+      <species id="S2117" name="hmgcoa[r]"/>
+      <species id="S2121" name="hmgcoa[x]"/>
+      <species id="S1258" name="ipdp[c]"/>
+      <species id="S1261" name="ipdp[x]"/>
+      <species id="S2241" name="lanost[c]"/>
+      <species id="S2244" name="lanost[r]"/>
+      <species id="S4159" name="lthstrl[c]"/>
+      <species id="S1186" name="lthstrl[r]"/>
+      <species id="S2873" name="mev_R[c]"/>
+      <species id="S2118" name="mev_R[r]"/>
+      <species id="S2295" name="mev_R[x]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S889" name="nad[r]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S890" name="nadh[r]"/>
+      <species id="S63" name="nadp[c]"/>
+      <species id="S30" name="nadp[m]"/>
+      <species id="S2667" name="nadp[n]"/>
+      <species id="S860" name="nadp[r]"/>
+      <species id="S60" name="nadph[c]"/>
+      <species id="S26" name="nadph[m]"/>
+      <species id="S2666" name="nadph[n]"/>
+      <species id="S858" name="nadph[r]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S27" name="o2[m]"/>
+      <species id="S612" name="o2[r]"/>
+      <species id="S1333" name="pi[x]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S326" name="ppi[m]"/>
+      <species id="S912" name="ppi[r]"/>
+      <species id="S1263" name="ppi[x]"/>
+      <species id="S2669" name="sql[r]"/>
+      <species id="S2761" name="xolest2_hs[c]"/>
+      <species id="S2660" name="xolest_hs[c]"/>
+      <species id="S2662" name="xolest_hs[r]"/>
+      <species id="S891" name="zym_int2[r]"/>
+      <species id="S892" name="zymst[r]"/>
+      <species id="S1184" name="zymstnl[r]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="ACACT1x" name="acetyl-CoA C-acetyltransferase, mitochondrial" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S27600208"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S293"/>
+          <speciesReference id="SpeciesReference" species="S294"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C14STRr" name="C-14 sterol reductase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S857"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S859"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C3STDH1Pr" name="C-3 sterol dehydrogenase (4-methylzymosterol)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S886"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S887"/>
+          <speciesReference id="SpeciesReference" species="S888"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C3STDH1r" name="C-3 sterol dehydrogenase (4-methylzymosterol)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S886"/>
+          <speciesReference id="SpeciesReference" species="S889"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S887"/>
+          <speciesReference id="SpeciesReference" species="S888"/>
+          <speciesReference id="SpeciesReference" species="S890"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C3STKR2r" name="C-3 sterol keto reductase (zymosterol)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S891"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S892"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C4STMO1r" name="C-4 sterol methyl oxidase (4,4-dimethylzymosterol)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S892"/>
+          <speciesReference id="SpeciesReference" species="S892"/>
+          <speciesReference id="SpeciesReference" species="S892"/>
+          <speciesReference id="SpeciesReference" species="S859"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S859"/>
+          <speciesReference id="SpeciesReference" species="S859"/>
+          <speciesReference id="SpeciesReference" species="S886"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C4STMO2Pr" name="C-4 methyl sterol oxidase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S887"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S888"/>
+          <speciesReference id="SpeciesReference" species="S891"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="C4STMO2r" name="C-4 methyl sterol oxidase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S887"/>
+          <speciesReference id="SpeciesReference" species="S889"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S888"/>
+          <speciesReference id="SpeciesReference" species="S890"/>
+          <speciesReference id="SpeciesReference" species="S891"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCR241r" name="24-dehydrocholesterol reductase [Precursor]" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S892"/>
+          <speciesReference id="SpeciesReference" species="S1182"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1183"/>
+          <speciesReference id="SpeciesReference" species="S1184"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCR242r" name="24-dehydrocholesterol reductase [Precursor]" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1182"/>
+          <speciesReference id="SpeciesReference" species="S1185"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1183"/>
+          <speciesReference id="SpeciesReference" species="S1186"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCR243r" name="24-dehydrocholesterol reductase [Precursor]" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1182"/>
+          <speciesReference id="SpeciesReference" species="S1187"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S937"/>
+          <speciesReference id="SpeciesReference" species="S1183"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCR71r" name="7-dehydrocholesterol reductase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1188"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S1187"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DHCR72r" name="7-dehydrocholesterol reductase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S228"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S937"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DMATT" name="dimethylallyltranstransferase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1257"/>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1259"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DMATTx" name="dimethylallyltranstransferase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1260"/>
+          <speciesReference id="SpeciesReference" species="S1261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1262"/>
+          <speciesReference id="SpeciesReference" species="S1263"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="DPMVDx" name="diphosphomevalonate decarboxylase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S756"/>
+          <speciesReference id="SpeciesReference" species="S1332"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S456"/>
+          <speciesReference id="SpeciesReference" species="S993"/>
+          <speciesReference id="SpeciesReference" species="S1261"/>
+          <speciesReference id="SpeciesReference" species="S1333"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EBP1r" name="3-beta-hydroxysteroid-delta(8),delta(7)-isomerase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S892"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1185"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EBP2r" name="3-beta-hydroxysteroid-delta(8),delta(7)-isomerase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1184"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1186"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FRTT" name="farnesyltranstransferase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+          <speciesReference id="SpeciesReference" species="S1334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1769"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GRTT" name="geranyltranstransferase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1258"/>
+          <speciesReference id="SpeciesReference" species="S1259"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S1334"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="GRTTx" name="geranyltranstransferase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1261"/>
+          <speciesReference id="SpeciesReference" species="S1262"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1263"/>
+          <speciesReference id="SpeciesReference" species="S1767"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGCOARr" name="Hydroxymethylglutaryl CoA reductase (ir)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1767"/>
+          <speciesReference id="SpeciesReference" species="S1767"/>
+          <speciesReference id="SpeciesReference" species="S2117"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2117"/>
+          <speciesReference id="SpeciesReference" species="S996"/>
+          <speciesReference id="SpeciesReference" species="S2118"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGCOASi" name="Hydroxymethylglutaryl CoA synthase (ir)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S257"/>
+          <speciesReference id="SpeciesReference" species="S290"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2119"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGCOASim" name="Hydroxymethylglutaryl CoA synthase (ir)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S291"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S2120"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGLm" name="hydroxymethylglutaryl-CoA lyase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2120"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S164"/>
+          <speciesReference id="SpeciesReference" species="S296"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMGLx" name="hydroxymethylglutaryl-CoA lyase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2121"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S292"/>
+          <speciesReference id="SpeciesReference" species="S309"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="IPDDIx" name="isopentenyl-diphosphate D-isomerase" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1261"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1260"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LNS14DM" name="cytochrome P450 lanosterol 14-alpha-demethylase (NADP)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1260"/>
+          <speciesReference id="SpeciesReference" species="S1260"/>
+          <speciesReference id="SpeciesReference" species="S1260"/>
+          <speciesReference id="SpeciesReference" species="S2241"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2241"/>
+          <speciesReference id="SpeciesReference" species="S2241"/>
+          <speciesReference id="SpeciesReference" species="S969"/>
+          <speciesReference id="SpeciesReference" species="S2242"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LNSTLSr" name="lanosterol synthase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2243"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2244"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LSTO1r" name="Lathosterol oxidase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1185"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1185"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S1188"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LSTO2r" name="Lathosterol oxidase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1186"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S228"/>
+          <speciesReference id="SpeciesReference" species="S228"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="MEVK1x" name="mevalonate kinase (atp)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S756"/>
+          <speciesReference id="SpeciesReference" species="S2295"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S456"/>
+          <speciesReference id="SpeciesReference" species="S2296"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="P450SCC1m" name="cholesterol monooxygenase" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S26"/>
+          <speciesReference id="SpeciesReference" species="S27"/>
+          <speciesReference id="SpeciesReference" species="S954"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S30"/>
+          <speciesReference id="SpeciesReference" species="S2465"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PMEVKx" name="phosphomevalonate kinase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S756"/>
+          <speciesReference id="SpeciesReference" species="S2296"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S456"/>
+          <speciesReference id="SpeciesReference" species="S1332"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SOAT11" name="sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S692"/>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2660"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SOAT11r" name="sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S937"/>
+          <speciesReference id="SpeciesReference" species="S2661"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S996"/>
+          <speciesReference id="SpeciesReference" species="S2662"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SOAT12" name="sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S696"/>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2660"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SOAT12r" name="sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S937"/>
+          <speciesReference id="SpeciesReference" species="S2663"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S996"/>
+          <speciesReference id="SpeciesReference" species="S2662"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SQLEr" name="Squalene epoxidase, endoplasmic reticular (NADP)" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S612"/>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S2669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S614"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S2243"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SQLSr" name="Squalene synthase" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S2669"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0170" name="Farnesyl-diphosphate:farnesyl-diphosphate farnesyltransferase Biosynthesis of steroids EC:2.5.1.21" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2669"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S912"/>
+          <speciesReference id="SpeciesReference" species="S2820"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0321" name="Acetoacetate:CoA ligase (AMP-forming) Butanoate metabolism EC:6.2.1.16" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S84"/>
+          <speciesReference id="SpeciesReference" species="S296"/>
+          <speciesReference id="SpeciesReference" species="S316"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S291"/>
+          <speciesReference id="SpeciesReference" species="S325"/>
+          <speciesReference id="SpeciesReference" species="S326"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0463" name="(S)-3-Hydroxy-3-methylglutaryl-CoA acetoacetyl-CoA-lyase (CoA-acetylating) Synthesis and degradation of ketone bodies / Valine, leucine and isoleucine degradation / Butanoate metabolism EC:2.3.3.10" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S42"/>
+          <speciesReference id="SpeciesReference" species="S294"/>
+          <speciesReference id="SpeciesReference" species="S2121"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S292"/>
+          <speciesReference id="SpeciesReference" species="S293"/>
+          <speciesReference id="SpeciesReference" species="S411"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0488" name="(R)-Mevalonate:NADP+ oxidoreductase (CoA acylating) Biosynthesis of steroids EC:1.1.1.34" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2873"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2873"/>
+          <speciesReference id="SpeciesReference" species="S2873"/>
+          <speciesReference id="SpeciesReference" species="S2119"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0575" name="Presqualene diphosphate:farnesyl-diphosphate farnesyltransferase Biosynthesis of steroids EC:2.5.1.21" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S2820"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S912"/>
+          <speciesReference id="SpeciesReference" species="S2669"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0780" name="4,4-dimethyl-5a-cholesta-8,24-dien-3b-ol:NADP+ D14-oxidoreductase Biosynthesis of steroids EC:1.3.1.70" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S859"/>
+          <speciesReference id="SpeciesReference" species="S860"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S857"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0781" name="Lanosterol,NADPH:oxygen oxidoreductase (14-methyl cleaving) Biosynthesis of steroids EC:1.14.13.70" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S2244"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2244"/>
+          <speciesReference id="SpeciesReference" species="S857"/>
+          <speciesReference id="SpeciesReference" species="S857"/>
+          <speciesReference id="SpeciesReference" species="S1763"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0783" name="lanosterol D24-reductase Biosynthesis of steroids EC:1.3.1.72" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S1186"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S1185"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1380" name="delta24-sterol reductase Biosynthesis of steroids EC:1.3.1.72" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S892"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S1184"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r1381" name="5alpha-Cholest-7-en-3beta-ol delta7-delta8-isomerase Biosynthesis of steroids EC:5.3.3.5" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1186"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1184"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2220C" name="RE2220" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S229"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S3718"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2407C" name="RE2407" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S2241"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S3805"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2410C" name="RE2410" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S3806"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S3807"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE2410N" name="RE2410" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2666"/>
+          <speciesReference id="SpeciesReference" species="S3808"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2667"/>
+          <speciesReference id="SpeciesReference" species="S3809"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3129N" name="RE3129" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1091"/>
+          <speciesReference id="SpeciesReference" species="S2666"/>
+          <speciesReference id="SpeciesReference" species="S3809"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2667"/>
+          <speciesReference id="SpeciesReference" species="S4151"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3134C" name="RE3134" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S60"/>
+          <speciesReference id="SpeciesReference" species="S4154"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S63"/>
+          <speciesReference id="SpeciesReference" species="S4155"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3134R" name="RE3134" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S838"/>
+          <speciesReference id="SpeciesReference" species="S858"/>
+          <speciesReference id="SpeciesReference" species="S4156"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S860"/>
+          <speciesReference id="SpeciesReference" species="S4157"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3136C" name="RE3136" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4158"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4159"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3180C" name="RE3180" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3181C" name="RE3181" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S104"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3372C" name="RE3372" reversible="true" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1257"/>
+          <speciesReference id="SpeciesReference" species="S1334"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S4400"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHOLESACATc" name="esterification of cholesterol to cholesterol ester within enterocytes" reversible="false" compartment="C62">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S687"/>
+          <speciesReference id="SpeciesReference" species="S950"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S129"/>
+          <speciesReference id="SpeciesReference" species="S2761"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

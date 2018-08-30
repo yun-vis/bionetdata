@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C14" name="Heme synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S194" name="5aop[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S1442" name="fe2[e]"/>
+      <species id="S1443" name="fe3[e]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S1753" name="ppp9[m]"/>
+      <species id="S2548" name="pppg9[m]"/>
+      <species id="S27" name="o2[m]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S2115" name="ppbng[c]"/>
+      <species id="S194" name="5aop[c]"/>
+      <species id="S195" name="5aop[m]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S4087" name="C02469[c]"/>
+      <species id="S4671" name="C05767[c]"/>
+      <species id="S4085" name="C05769[c]"/>
+      <species id="S4086" name="C05770[c]"/>
+      <species id="S733" name="ascb_L[e]"/>
+      <species id="S4084" name="cpppg1[c]"/>
+      <species id="S1018" name="cpppg3[c]"/>
+      <species id="S1177" name="dhdascb[e]"/>
+      <species id="S1752" name="fe2[m]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S76" name="h[e]"/>
+      <species id="S2116" name="hmbil[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S1754" name="pheme[m]"/>
+      <species id="S2115" name="ppbng[c]"/>
+      <species id="S1753" name="ppp9[m]"/>
+      <species id="S1019" name="pppg9[c]"/>
+      <species id="S2548" name="pppg9[m]"/>
+      <species id="S2744" name="uppg3[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="5-Aminolevulinate mitochondrial transport" reversible="true" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S194"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S195"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CPPPGO" name="coproporphyrinogen oxidase (O2 required)" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S1018"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1018"/>
+          <speciesReference id="SpeciesReference" species="S1018"/>
+          <speciesReference id="SpeciesReference" species="S1019"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FCLTm" name="Ferrochelatase, mitochondrial" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1752"/>
+          <speciesReference id="SpeciesReference" species="S1753"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S1753"/>
+          <speciesReference id="SpeciesReference" species="S1754"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="FE3R2e" name="Fe(III) reduction (ascorbate)" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S733"/>
+          <speciesReference id="SpeciesReference" species="S733"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S76"/>
+          <speciesReference id="SpeciesReference" species="S1177"/>
+          <speciesReference id="SpeciesReference" species="S1177"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="HMBS" name="hydroxymethylbilane synthase" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2116"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPBNGS" name="porphobilinogen synthase" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2116"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2116"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2115"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPPG9tm" name="protoporphyrinogen IX mitochondrial transport" reversible="true" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S1019"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2548"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PPPGOm" name="protoporphyrinogen oxidase, mitochondrial" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2548"/>
+          <speciesReference id="SpeciesReference" species="S2548"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2548"/>
+          <speciesReference id="SpeciesReference" species="S2548"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UPP3S" name="uroporphyrinogen-III synthase" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2116"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="UPPDC1" name="uroporphyrinogen decarboxylase (uroporphyrinogen III)" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+          <speciesReference id="SpeciesReference" species="S1018"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3051C" name="RE3051" reversible="true" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4084"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4084"/>
+          <speciesReference id="SpeciesReference" species="S4085"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3052C" name="RE3052" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4085"/>
+          <speciesReference id="SpeciesReference" species="S1018"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4086"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3053C" name="RE3053" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4086"/>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4087"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="RE3637C" name="RE3637" reversible="false" compartment="C14">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S4087"/>
+          <speciesReference id="SpeciesReference" species="S2744"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S4671"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

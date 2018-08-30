@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C12" name="beta-Alanine metabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S18" name="13dampp[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S127" name="3hpcoa[c]"/>
+      <species id="S2564" name="3hpcoa[m]"/>
+      <species id="S2566" name="3hpcoa[x]"/>
+      <species id="S128" name="3hpp[c]"/>
+      <species id="S160" name="4abut[c]"/>
+      <species id="S284" name="4abutn[c]"/>
+      <species id="S66" name="akg[m]"/>
+      <species id="S738" name="ala_B[c]"/>
+      <species id="S642" name="ala_B[m]"/>
+      <species id="S258" name="amp[c]"/>
+      <species id="S148" name="asp_L[c]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S21" name="bamppald[c]"/>
+      <species id="S803" name="bamppald[m]"/>
+      <species id="S2374" name="carn[c]"/>
+      <species id="S104" name="co2[c]"/>
+      <species id="S129" name="coa[c]"/>
+      <species id="S111" name="glu_L[m]"/>
+      <species id="S22" name="h2o2[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S29" name="h2o[m]"/>
+      <species id="S411" name="h2o[x]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S2111" name="his_L[c]"/>
+      <species id="S643" name="msa[m]"/>
+      <species id="S72" name="nad[c]"/>
+      <species id="S85" name="nad[m]"/>
+      <species id="S74" name="nadh[c]"/>
+      <species id="S88" name="nadh[m]"/>
+      <species id="S23" name="nh4[c]"/>
+      <species id="S20" name="o2[c]"/>
+      <species id="S259" name="ppi[c]"/>
+      <species id="S2546" name="prpncoa[m]"/>
+      <species id="S2565" name="prpncoa[x]"/>
+      <species id="S2665" name="spmd[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction name="1,3-Diaminopropane:oxygen oxidoreductase (deaminating)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S18"/>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S21"/>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S23"/>
+        </listOfProducts>
+      </reaction>
+      <reaction name="3-hydroxyisobutyryl-Coenzyme A hydrolase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S127"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S128"/>
+          <speciesReference id="SpeciesReference" species="S129"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ABUTD" name="Aminobutyraldehyde dehydrogenase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S284"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S160"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="APAT2rm" name="3-Aminopropanoate:2-oxoglutarate aminotransferase (m)" reversible="true" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S66"/>
+          <speciesReference id="SpeciesReference" species="S642"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S111"/>
+          <speciesReference id="SpeciesReference" species="S643"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ASP1DC" name="aspartate 1-decarboxylase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S148"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S104"/>
+          <speciesReference id="SpeciesReference" species="S738"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BAMPPALDOX" name="beta-Aminopropion aldehyde:NAD+ oxidoreductase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S21"/>
+          <speciesReference id="SpeciesReference" species="S72"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S72"/>
+          <speciesReference id="SpeciesReference" species="S74"/>
+          <speciesReference id="SpeciesReference" species="S738"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="BAMPPALDOXm" name="beta-Aminopropion aldehyde:NAD+ oxidoreductase (m)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S85"/>
+          <speciesReference id="SpeciesReference" species="S803"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S803"/>
+          <speciesReference id="SpeciesReference" species="S88"/>
+          <speciesReference id="SpeciesReference" species="S642"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="NBAHH_ir" name="Nalpha-(beta-alanyl)-L-histidine hydrolase IR" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2374"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S738"/>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRPNCOAHYDm" name="Propenoyl-CoA hydrolase (m)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S29"/>
+          <speciesReference id="SpeciesReference" species="S2546"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2564"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PRPNCOAHYDx" name="Propenoyl-CoA hydrolase (x)" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S411"/>
+          <speciesReference id="SpeciesReference" species="S2565"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2566"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="SPMDOX" name="Spermidine:(acceptor) oxidoreductase" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S2665"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S18"/>
+          <speciesReference id="SpeciesReference" species="S22"/>
+          <speciesReference id="SpeciesReference" species="S284"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0283" name="L-Histidine:beta-alanine ligase (AMP-forming) Alanine and aspartate metabolism / Histidine metabolism / beta-Alanine metabolism EC:6.3.2.11" reversible="false" compartment="C12">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S738"/>
+          <speciesReference id="SpeciesReference" species="S2111"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S258"/>
+          <speciesReference id="SpeciesReference" species="S259"/>
+          <speciesReference id="SpeciesReference" species="S2374"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

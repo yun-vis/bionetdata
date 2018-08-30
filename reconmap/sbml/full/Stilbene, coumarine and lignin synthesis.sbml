@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C2" name="Stilbene, coumarine and lignin synthesis"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2684" name="34dhcinm[c]"/>
+      <species id="S2683" name="T4hcinnm[c]"/>
+      <species id="S809" name="2coum[c]"/>
+      <species id="S808" name="bdg2hc[c]"/>
+      <species id="S810" name="glc_D[c]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S20" name="o2[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="BDG2HCGHD" name="beta-D-Glucosyl-2-coumarinate glucohydrolase" reversible="false" compartment="C2">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S808"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S809"/>
+          <speciesReference id="SpeciesReference" species="S810"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="T4HCINNOX" name="4-Coumarate:oxygen oxidoreductase" reversible="false" compartment="C2">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S20"/>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S20"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

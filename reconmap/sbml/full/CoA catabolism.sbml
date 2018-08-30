@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="C6" name="CoA catabolism"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S2545" name="4ppcys[c]"/>
+      <species id="S2895" name="4ppcys[m]"/>
+      <species id="S2888" name="HC01231[c]"/>
+      <species id="S2924" name="HC01231[m]"/>
+      <species id="S38" name="adp[c]"/>
+      <species id="S318" name="adp[m]"/>
+      <species id="S36" name="atp[c]"/>
+      <species id="S316" name="atp[m]"/>
+      <species id="S3225" name="coa[e]"/>
+      <species id="S995" name="coa[l]"/>
+      <species id="S2539" name="cysam[c]"/>
+      <species id="S5035" name="dpcoa[e]"/>
+      <species id="S1330" name="dpcoa[l]"/>
+      <species id="S19" name="h2o[c]"/>
+      <species id="S200" name="h2o[e]"/>
+      <species id="S144" name="h2o[l]"/>
+      <species id="S39" name="h[c]"/>
+      <species id="S25" name="h[m]"/>
+      <species id="S2477" name="pan4p[c]"/>
+      <species id="S40" name="pi[c]"/>
+      <species id="S753" name="pi[e]"/>
+      <species id="S146" name="pi[l]"/>
+      <species id="S2540" name="pnto_R[c]"/>
+      <species id="S2478" name="ptth[c]"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="LAPCOAl" name="lysosomal acid phosphorylase (CoA)" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S144"/>
+          <speciesReference id="SpeciesReference" species="S995"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S146"/>
+          <speciesReference id="SpeciesReference" species="S1330"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PAN4PP" name="phosphatase (pan4p)" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2477"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S40"/>
+          <speciesReference id="SpeciesReference" species="S2478"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="PNTEH" name="Hydrolase Class ( RXN R02973)" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S19"/>
+          <speciesReference id="SpeciesReference" species="S2478"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S2539"/>
+          <speciesReference id="SpeciesReference" species="S2540"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0679" name="ATP:pantothenate 4-phosphotransferase Pantothenate and CoA biosynthesis EC:2.7.1.33" reversible="true" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S36"/>
+          <speciesReference id="SpeciesReference" species="S2888"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S38"/>
+          <speciesReference id="SpeciesReference" species="S39"/>
+          <speciesReference id="SpeciesReference" species="S2545"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r0680" name="ATP:pantothenate 4-phosphotransferase Pantothenate and CoA biosynthesis EC:2.7.1.33" reversible="true" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S316"/>
+          <speciesReference id="SpeciesReference" species="S2924"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S25"/>
+          <speciesReference id="SpeciesReference" species="S318"/>
+          <speciesReference id="SpeciesReference" species="S2895"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="LAPCOAe" name="LAPCOAe" reversible="false" compartment="C6">
+        <listOfReactants>
+          <speciesReference id="SpeciesReference" species="S200"/>
+          <speciesReference id="SpeciesReference" species="S3225"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference id="SpeciesReference" species="S753"/>
+          <speciesReference id="SpeciesReference" species="S5035"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
